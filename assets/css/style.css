@@ -1,0 +1,15 @@
+/* ******* ******* style.sass ~ The SASS file used to render style.css ******* ******* */
+nav {
+  width: 100%;
+  height: 3.75rem;
+  margin: 0 4rem;
+  padding: 0.56rem 0;
+  border-top: 2px solid #fecc3c;
+  border-bottom: 2px solid #ec9053; }
+  nav img {
+    float: left; }
+  nav ul {
+    float: right; }
+  nav li {
+    list-style: none;
+    display: inline-flex; }
