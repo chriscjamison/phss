@@ -1,28 +1,63 @@
 /* ******* ******* style.sass ~ The SASS file used to render style.css ******* ******* */
 
 $yellow_1: #fecc3c;
+$yellow_2: #fbd055;
 $orange_1: #ec9053;
 $orange_2: #cd854b;
 $orange_3: #efae60;
 $purple_link: #8c0d98;
 $purple_1: #c86678;
+$brown_1: #483729;
 
 $border_1: 2px solid #fecc3c;
 $border_2: 2px solid #ec9053;
 $border_3: 2px solid #e86678;
+$border_4: 2px solid #efae60;
+$border_5: 2px solid #c86678;
 
 $sofia_font: "sofia-pro-soft";
 
 $font_weight_light: 300;
 $font_weight_normal: 400;
+$font-weight_medium: 500;
 $font_weight_bold: 700;
 
-$font_size_base: 1rem;
+$font_size_base: 1.25rem;
 $font_size_link: 1.25rem;
 $font_size_splash: 1.45rem;
 
-p, a {
+p, 
+a, 
+h3, 
+h5 {
   font-family: $sofia_font;
+}
+
+p {
+	font-weight: $font_weight_light;
+	letter-spacing: 0.4px;
+}
+
+section {
+	margin: 3rem 0;
+}
+
+h3 {
+	width: 35%;
+	margin: 0 auto 3.5rem auto;
+	padding: 1rem;
+	border-top: $border_1;
+	border-bottom: $border_1;
+	font-weight: $font-weight_medium;
+	color: $purple_1;
+}
+
+h5 {
+	color: $purple_1;
+}
+
+hr {
+	border-top: $border_1;
 }
 
 body {
@@ -59,7 +94,7 @@ header {
 
 .navbar {
 	padding: 0 4rem;
-	border-bottom: 2px solid $orange_3;
+	border-bottom: $border_4;
 }
 
 nav {
@@ -73,16 +108,16 @@ nav {
 	}
 	
 	li {
-		width: (104% / 7);
+		width: (104.5% / 7);
 		display: inline-flex;
-		border-right: 2px solid $orange_3;
+		border-right: $border_4;
 		list-style: none;
 		text-align: center;
 
 	}
 	
 	li:first-of-type {
-		width: ((104% / 7) / 2);
+		width: ((104.5% / 7) / 1.85);
 		text-align: left;
 	}
 	
@@ -128,18 +163,40 @@ p#p-splash:first-line {
 	font-weight: $font_weight_normal;
 }
 
-a#splash-learn_more {
-	margin-left: 5rem;
+a#splash-learn_more, 
+a#what_phss_does-more-mission {
 	display: block;
-	position: absolute;
- 	top: 33.25rem;
-  font-family: "sofia-pro-soft";
+	font-family: $sofia_font;
   font-size: $font_size_link;
   background-color: $yellow_1;
   padding: 0.8rem;
-	border: 2px solid $purple_1;
+	border: $border_5;
 	color: $purple_link;
 }
 
+a#splash-learn_more:hover, 
+a#what_phss_does-more-mission:hover {
+	background-color: $yellow_2;
+	border: $border_3;
+	text-decoration: none;
+}
 
+a#splash-learn_more {
+	margin-left: 5rem;
+	position: absolute;
+ 	top: 33.25rem;
+}
 
+a#what_phss_does-more-mission {
+	width: 12.25rem;
+	margin: 0 auto;
+}
+
+p#p-what_phss_does {
+	font-size: $font_size_base;
+	color: $brown_1;
+}
+
+p#p-what_phss_does:first-line {
+	font-weight: $font_weight_normal;
+}

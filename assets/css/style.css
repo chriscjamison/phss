@@ -1,6 +1,31 @@
 /* ******* ******* style.sass ~ The SASS file used to render style.css ******* ******* */
-p, a {
+p,
+a,
+h3,
+h5 {
   font-family: "sofia-pro-soft"; }
+
+p {
+  font-weight: 300;
+  letter-spacing: 0.4px; }
+
+section {
+  margin: 3rem 0; }
+
+h3 {
+  width: 35%;
+  margin: 0 auto 3.5rem auto;
+  padding: 1rem;
+  border-top: 2px solid #fecc3c;
+  border-bottom: 2px solid #fecc3c;
+  font-weight: 500;
+  color: #c86678; }
+
+h5 {
+  color: #c86678; }
+
+hr {
+  border-top: 2px solid #fecc3c; }
 
 body {
   margin: 0; }
@@ -37,13 +62,13 @@ nav {
     margin-bottom: 0.5rem;
     padding: 0; }
   nav li {
-    width: 14.85714%;
+    width: 14.92857%;
     display: inline-flex;
     border-right: 2px solid #efae60;
     list-style: none;
     text-align: center; }
   nav li:first-of-type {
-    width: 7.42857%;
+    width: 8.0695%;
     text-align: left; }
   nav li:last-of-type {
     border-right: none;
@@ -76,14 +101,34 @@ p#p-splash {
 p#p-splash:first-line {
   font-weight: 400; }
 
-a#splash-learn_more {
-  margin-left: 5rem;
+a#splash-learn_more,
+a#what_phss_does-more-mission {
   display: block;
-  position: absolute;
-  top: 33.25rem;
   font-family: "sofia-pro-soft";
   font-size: 1.25rem;
   background-color: #fecc3c;
   padding: 0.8rem;
   border: 2px solid #c86678;
   color: #8c0d98; }
+
+a#splash-learn_more:hover,
+a#what_phss_does-more-mission:hover {
+  background-color: #fbd055;
+  border: 2px solid #e86678;
+  text-decoration: none; }
+
+a#splash-learn_more {
+  margin-left: 5rem;
+  position: absolute;
+  top: 33.25rem; }
+
+a#what_phss_does-more-mission {
+  width: 12.25rem;
+  margin: 0 auto; }
+
+p#p-what_phss_does {
+  font-size: 1.25rem;
+  color: #483729; }
+
+p#p-what_phss_does:first-line {
+  font-weight: 400; }
