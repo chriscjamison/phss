@@ -1,4 +1,7 @@
 /* ******* ******* style.sass ~ The SASS file used to render style.css ******* ******* */
+p, a {
+  font-family: "sofia-pro-soft"; }
+
 body {
   margin: 0; }
 
@@ -23,22 +26,27 @@ header {
     color: #8c0d98; }
 
 .navbar {
-  padding: 0 4rem; }
+  padding: 0 4rem;
+  border-bottom: 2px solid #efae60; }
 
 nav {
   height: 3.75rem;
   background-color: #fecc3c; }
   nav ul {
+    width: 100%;
+    margin-bottom: 0.5rem;
     padding: 0; }
   nav li {
-    width: 248.5714285714px;
+    width: 14.85714%;
     display: inline-flex;
+    border-right: 2px solid #efae60;
     list-style: none;
     text-align: center; }
   nav li:first-of-type {
-    width: 108.75px;
+    width: 7.42857%;
     text-align: left; }
   nav li:last-of-type {
+    border-right: none;
     text-align: right; }
   nav a {
     width: 100%;
@@ -46,3 +54,36 @@ nav {
     font-size: 1.25rem;
     font-weight: 400;
     color: #8c0d98; }
+  nav a:hover {
+    text-decoration: underline;
+    color: #8c0d98; }
+
+div#section-splash {
+  margin-left: 0;
+  margin-right: 0; }
+  div#section-splash img {
+    width: 100%;
+    height: 50%; }
+
+p#p-splash {
+  position: absolute;
+  margin: 3rem 5rem;
+  width: 30%;
+  font-size: 1.45rem;
+  font-weight: 300;
+  color: #c86678; }
+
+p#p-splash:first-line {
+  font-weight: 400; }
+
+a#splash-learn_more {
+  margin-left: 5rem;
+  display: block;
+  position: absolute;
+  top: 33.25rem;
+  font-family: "sofia-pro-soft";
+  font-size: 1.25rem;
+  background-color: #fecc3c;
+  padding: 0.8rem;
+  border: 2px solid #c86678;
+  color: #8c0d98; }

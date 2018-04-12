@@ -1,0 +1,14 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Sass Compile",
+      "type": "shell",
+      "command": "node-sass \"C:\\Users\\chris\\OneDrive\\Chris C Jamison, Inc\\Projects\\web\\phss\\sc\\sass\\style.scss\" \"C:\\Users\\chris\\OneDrive\\Chris C Jamison, Inc\\Projects\\Web\\phss\\assets\\css\\style.css\"",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
