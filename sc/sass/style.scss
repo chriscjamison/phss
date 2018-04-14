@@ -16,6 +16,7 @@ $border_4: 2px solid #efae60;
 $border_5: 2px solid #c86678;
 
 $sofia_font: "sofia-pro-soft";
+$muli_font: "muli";
 
 $font_weight_light: 300;
 $font_weight_normal: 400;
@@ -26,11 +27,14 @@ $font_size_base: 1.25rem;
 $font_size_link: 1.25rem;
 $font_size_splash: 1.45rem;
 
+a {
+	font-family: $sofia_font;
+}
+
 p, 
-a, 
 h3, 
 h5 {
-  font-family: $sofia_font;
+  font-family: $muli_font;
 }
 
 p {
@@ -38,17 +42,21 @@ p {
 	letter-spacing: 0.4px;
 }
 
+p:first-line {
+	font-weight: $font_weight_bold;
+}
+
 section {
-	margin: 3rem 0;
+	margin: 3.5rem 0;
 }
 
 h3 {
-	width: 35%;
+	width: 36%;
 	margin: 0 auto 3.5rem auto;
-	padding: 1rem;
+	padding: 1rem 0 1.2rem 0;
 	border-top: $border_1;
 	border-bottom: $border_1;
-	font-weight: $font-weight_medium;
+	font-weight: $font-weight_bold;
 	color: $purple_1;
 }
 
@@ -159,10 +167,6 @@ p#p-splash {
 	color: $purple_1;
 }
 
-p#p-splash:first-line {
-	font-weight: $font_weight_normal;
-}
-
 a#splash-learn_more, 
 a#what_phss_does-more-mission {
 	display: block;
@@ -199,4 +203,69 @@ p#p-what_phss_does {
 
 p#p-what_phss_does:first-line {
 	font-weight: $font_weight_normal;
+}
+
+section#section-why_phss img {
+	margin-right: 1rem;
+	border: $border_2;
+}
+
+div.factoid-why_phss {
+	max-width: 12rem;
+	margin-right: 7rem;
+	display: inline-block;
+	flex: 0 0 10.75rem;
+	vertical-align: top;
+	text-align: left;
+
+	div.factoid-why_phss-header	{
+		height: 12rem;
+		background-image: url('/assets/img/content/polygon_1.gif');
+		color: #fecc3c;
+	}
+
+	div.factoid-why_phss-header span:first-of-type {
+		width: 10.06rem;
+		height: 6rem;
+		display: block;
+		position: relative;
+		top: 1.2rem;
+		text-align: center;
+		font-size: 5rem;
+		font-weight: $font-weight_medium;
+	}
+
+	div.factoid-why_phss-header span:nth-child(2)	{
+		width: 9.5rem;
+		margin: 0 0.25rem;
+		display: block;
+		position: relative;
+		top: 1.5rem;
+		text-align: center;
+		font-weight: $font-weight_medium;
+		line-height: 1.25rem;
+	}
+
+	div#factoid-why_phss-header-3	span:first-of-type {
+		top: 2.1rem;
+		font-size: 4rem;
+	}
+
+	p.p-why_phss-factoid	{
+		position: relative;
+		top: 0.75rem;
+		text-align: center;
+	}
+}
+
+div#factoid-why_phss-4 {
+	margin-right: 0;
+}
+
+.container {
+	@media (min-width: 1366px) {
+		.container {
+			max-width: 1334px; 
+		}
+	} 
 }
