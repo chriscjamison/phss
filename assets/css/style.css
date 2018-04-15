@@ -9,13 +9,14 @@ h5 {
 
 p {
   font-weight: 300;
-  letter-spacing: 0.4px; }
+  letter-spacing: 0.4px;
+  color: #483729; }
 
 p:first-line {
   font-weight: 700; }
 
 section {
-  margin: 3rem 0; }
+  margin: 3.5rem 0; }
 
 h3 {
   width: 36%;
@@ -104,7 +105,8 @@ p#p-splash {
   color: #c86678; }
 
 a#splash-learn_more,
-a#what_phss_does-more-mission {
+a#what_phss_does-more-mission,
+a#why_phss-more {
   display: block;
   font-family: "sofia-pro-soft";
   font-size: 1.25rem;
@@ -114,7 +116,8 @@ a#what_phss_does-more-mission {
   color: #8c0d98; }
 
 a#splash-learn_more:hover,
-a#what_phss_does-more-mission:hover {
+a#what_phss_does-more-mission:hover,
+a#why_phss-more:hover {
   background-color: #fbd055;
   border: 2px solid #e86678;
   text-decoration: none; }
@@ -124,16 +127,17 @@ a#splash-learn_more {
   position: absolute;
   top: 33.25rem; }
 
-a#what_phss_does-more-mission {
+a#what_phss_does-more-mission,
+a#why_phss-more {
   width: 12.25rem;
   margin: 0 auto; }
 
-p#p-what_phss_does {
-  font-size: 1.25rem;
-  color: #483729; }
+a#why_phss-more {
+  position: relative;
+  top: 1rem; }
 
-p#p-what_phss_does:first-line {
-  font-weight: 400; }
+p#p-what_phss_does {
+  font-size: 1.25rem; }
 
 section#section-why_phss img {
   margin-right: 1rem;
@@ -179,6 +183,12 @@ div.factoid-why_phss {
 div#factoid-why_phss-4 {
   margin-right: 0; }
 
+div.why_phss-row-link {
+  height: 4.7rem;
+  vertical-align: bottom; }
+
 @media (min-width: 1366px) {
-  .container .container {
-    max-width: 1334px; } }
+  .container {
+    max-width: 1334px; }
+  div.factoid-why_phss {
+    margin-right: 3.9rem; } }
