@@ -33,8 +33,14 @@ a {
 
 p, 
 h3, 
-h5 {
+h5, 
+h6, 
+ol {
   font-family: $muli_font;
+}
+
+li {
+	color: $brown_1;
 }
 
 p {
@@ -51,7 +57,8 @@ section {
 	margin: 3.5rem 0;
 }
 
-h3 {
+h3, 
+h6 {
 	width: 36%;
 	margin: 0 auto 3.5rem auto;
 	padding: 1rem 0 1.2rem 0;
@@ -61,8 +68,15 @@ h3 {
 	color: $purple_1;
 }
 
-h5 {
+h5, 
+h6 {
 	color: $purple_1;
+}
+
+
+h6 {
+	margin: 0;
+	padding: 0.3rem 0 0.5rem 0;
 }
 
 hr {
@@ -271,7 +285,49 @@ div.why_phss-row-link {
 	vertical-align: bottom;
 }
 
-@media (min-width: 1366px) {
+section#section-location {
+	div.row:nth-child(2) > div > img, 
+	div.row:nth-child(3) > div > img {
+		border: $border_2;
+	}
+
+	div:nth-child(3)	{
+		position: relative;
+		top: 3rem;
+	}
+
+	p.p-location-directions {
+		margin-bottom: 1.5rem;
+	}
+
+	p.p-location-directions:first-line {
+		font-weight: $font_weight_normal;
+	}
+
+	div:nth-child(3)	{
+		position: relative;
+		top: 3rem;
+	}
+
+	h6 {
+		margin-bottom: 0.75rem;
+	}
+
+	h6#location-header-address {
+		width: 3.8rem;
+	}
+
+	h6#location-header-directions	{
+		width: 4.8rem;
+	}
+
+	div.row:nth-child(3) > div + div > strong {
+		font-weight: $font_weight_bold;
+		color: $brown_1;
+	}
+}
+
+@media (max-width: 1366px) {
 	.container {
 		max-width: 1334px; 
 	}

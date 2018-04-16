@@ -4,8 +4,13 @@ a {
 
 p,
 h3,
-h5 {
+h5,
+h6,
+ol {
   font-family: "muli"; }
+
+li {
+  color: #483729; }
 
 p {
   font-weight: 300;
@@ -18,7 +23,8 @@ p:first-line {
 section {
   margin: 3.5rem 0; }
 
-h3 {
+h3,
+h6 {
   width: 36%;
   margin: 0 auto 3.5rem auto;
   padding: 1rem 0 1.2rem 0;
@@ -27,8 +33,13 @@ h3 {
   font-weight: 700;
   color: #c86678; }
 
-h5 {
+h5,
+h6 {
   color: #c86678; }
+
+h6 {
+  margin: 0;
+  padding: 0.3rem 0 0.5rem 0; }
 
 hr {
   border-top: 2px solid #fecc3c; }
@@ -187,7 +198,38 @@ div.why_phss-row-link {
   height: 4.7rem;
   vertical-align: bottom; }
 
-@media (min-width: 1366px) {
+section#section-location div.row:nth-child(2) > div > img,
+section#section-location div.row:nth-child(3) > div > img {
+  border: 2px solid #ec9053; }
+
+section#section-location div:nth-child(3) {
+  position: relative;
+  top: 3rem; }
+
+section#section-location p.p-location-directions {
+  margin-bottom: 1.5rem; }
+
+section#section-location p.p-location-directions:first-line {
+  font-weight: 400; }
+
+section#section-location div:nth-child(3) {
+  position: relative;
+  top: 3rem; }
+
+section#section-location h6 {
+  margin-bottom: 0.75rem; }
+
+section#section-location h6#location-header-address {
+  width: 3.8rem; }
+
+section#section-location h6#location-header-directions {
+  width: 4.8rem; }
+
+section#section-location div.row:nth-child(3) > div + div > strong {
+  font-weight: 700;
+  color: #483729; }
+
+@media (max-width: 1366px) {
   .container {
     max-width: 1334px; }
   div.factoid-why_phss {
