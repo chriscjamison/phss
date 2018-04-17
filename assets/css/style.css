@@ -6,18 +6,19 @@ p,
 h3,
 h5,
 h6,
-ol {
+ol,
+div#calendar-staff_events {
   font-family: "muli"; }
 
 li {
   color: #483729; }
 
 p {
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.4px;
   color: #483729; }
 
-p:first-line {
+p:first-of-type:first-line {
   font-weight: 700; }
 
 section {
@@ -228,6 +229,50 @@ section#section-location h6#location-header-directions {
 section#section-location div.row:nth-child(3) > div + div > strong {
   font-weight: 700;
   color: #483729; }
+
+section#section-staff_events h5 {
+  width: 6.5rem;
+  margin: 0 auto 1.5rem auto;
+  padding: 0.5rem 0 0.75rem 0;
+  border-top: 2px solid #fecc3c;
+  border-bottom: 2px solid #fecc3c;
+  text-align: center;
+  font-weight: 700; }
+
+section#section-staff_events div#calendar-staff_events {
+  width: 39.75rem;
+  padding: 0.7rem 0.5rem;
+  border: 2px solid #e86678; }
+
+section#section-staff_events #calendar-days_of_week > div {
+  width: 5em;
+  margin: 0 0.12rem;
+  padding: 0.1rem 0 0.25rem 0;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #c86678;
+  font-weight: 700;
+  text-align: center;
+  color: #fff; }
+
+section#section-staff_events div.calendar-dates-week {
+  margin: 0.5rem 0; }
+
+section#section-staff_events div.calendar-dates-week > div {
+  width: 5rem;
+  height: 3rem;
+  margin: 0 0.12rem;
+  padding: 0.65rem;
+  display: inline-block;
+  border: 1px dashed #fecc3c;
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: center;
+  line-height: 1.3rem;
+  color: #c86678; }
+
+section#section-staff_events div.calendar-dates-week > div.calendar-dates-empty {
+  border: 1px dotted #fecc3c; }
 
 @media (max-width: 1366px) {
   .container {

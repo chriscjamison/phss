@@ -14,13 +14,16 @@ $border_2: 2px solid #ec9053;
 $border_3: 2px solid #e86678;
 $border_4: 2px solid #efae60;
 $border_5: 2px solid #c86678;
+$border_6: 1px dashed #fecc3c;
+$border_7: 1px dotted #fecc3c;
 
 $sofia_font: "sofia-pro-soft";
 $muli_font: "muli";
 
+$font_weight_xl_light: 200;
 $font_weight_light: 300;
 $font_weight_normal: 400;
-$font-weight_medium: 500;
+$font_weight_medium: 500;
 $font_weight_bold: 700;
 
 $font_size_base: 1.25rem;
@@ -35,7 +38,8 @@ p,
 h3, 
 h5, 
 h6, 
-ol {
+ol, 
+div#calendar-staff_events  {
   font-family: $muli_font;
 }
 
@@ -44,12 +48,12 @@ li {
 }
 
 p {
-	font-weight: $font_weight_light;
+	font-weight: $font_weight_normal;
 	letter-spacing: 0.4px;
 	color: $brown_1;
 }
 
-p:first-line {
+p:first-of-type:first-line {
 	font-weight: $font_weight_bold;
 }
 
@@ -250,7 +254,7 @@ div.factoid-why_phss {
 		top: 1.2rem;
 		text-align: center;
 		font-size: 5rem;
-		font-weight: $font-weight_medium;
+		font-weight: $font_weight_medium;
 	}
 
 	div.factoid-why_phss-header span:nth-child(2)	{
@@ -260,7 +264,7 @@ div.factoid-why_phss {
 		position: relative;
 		top: 1.5rem;
 		text-align: center;
-		font-weight: $font-weight_medium;
+		font-weight: $font_weight_medium;
 		line-height: 1.25rem;
 	}
 
@@ -324,6 +328,58 @@ section#section-location {
 	div.row:nth-child(3) > div + div > strong {
 		font-weight: $font_weight_bold;
 		color: $brown_1;
+	}
+}
+
+section#section-staff_events {
+	h5 {
+		width: 6.5rem;
+		margin: 0 auto 1.5rem auto;
+		padding: 0.5rem 0 0.75rem 0;
+		border-top: $border_1;
+		border-bottom: $border_1;
+		text-align: center;
+		font-weight: $font_weight_bold;
+	}
+
+	div#calendar-staff_events {
+		width: 39.75rem;
+		padding: 0.7rem 0.5rem;
+		border: $border_3;
+	}
+
+	#calendar-days_of_week > div {
+		width: 5em;
+		margin: 0 0.12rem;
+		padding: 0.1rem 0 0.25rem 0;
+		display: inline-block;
+		vertical-align: top;
+		background-color: $purple_1;
+		font-weight: $font_weight_bold;
+		text-align: center;
+		color: #fff;
+	}
+
+	div.calendar-dates-week {
+		margin: 0.5rem 0;
+	}
+
+	div.calendar-dates-week > div {
+		width: 5rem;
+		height: 3rem;
+		margin: 0 0.12rem;
+		padding: 0.65rem;
+		display: inline-block;
+		border: $border_6;
+		font-size: 2rem;
+		font-weight: $font_weight_xl_light;
+		text-align: center;
+		line-height: 1.3rem;
+		color: $purple_1;
+	}
+	
+	div.calendar-dates-week > div.calendar-dates-empty {
+		border: $border_7;
 	}
 }
 
