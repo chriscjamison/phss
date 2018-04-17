@@ -16,10 +16,14 @@ li {
 p {
   font-weight: 400;
   letter-spacing: 0.4px;
-  color: #483729; }
+  color: #483729;
+  text-align: justify; }
 
 p:first-of-type:first-line {
   font-weight: 700; }
+
+p.after_first:first-line {
+  font-weight: 400; }
 
 section {
   margin: 3.5rem 0; }
@@ -114,22 +118,27 @@ p#p-splash {
   width: 30%;
   font-size: 1.45rem;
   font-weight: 300;
+  text-align: left;
   color: #c86678; }
 
 a#splash-learn_more,
 a#what_phss_does-more-mission,
-a#why_phss-more {
+a#why_phss-more,
+a#help_phss-volunteer,
+a#help_phss-donate {
   display: block;
   font-family: "sofia-pro-soft";
   font-size: 1.25rem;
   background-color: #fecc3c;
-  padding: 0.8rem;
+  padding: 0.7rem 0.8rem 0.8rem 0.8rem;
   border: 2px solid #c86678;
   color: #8c0d98; }
 
 a#splash-learn_more:hover,
 a#what_phss_does-more-mission:hover,
-a#why_phss-more:hover {
+a#why_phss-more:hover,
+a#help_phss-volunteer:hover,
+a#help_phss-donate:hover {
   background-color: #fbd055;
   border: 2px solid #e86678;
   text-decoration: none; }
@@ -140,7 +149,9 @@ a#splash-learn_more {
   top: 33.25rem; }
 
 a#what_phss_does-more-mission,
-a#why_phss-more {
+a#why_phss-more,
+a#help_phss-volunteer,
+a#help_phss-donate {
   width: 12.25rem;
   margin: 0 auto; }
 
@@ -148,8 +159,18 @@ a#why_phss-more {
   position: relative;
   top: 1rem; }
 
+a#help_phss-volunteer,
+a#help_phss-donate {
+  margin-top: 1.25rem; }
+
+a#help_phss-volunteer {
+  width: 13.81rem; }
+
+a#help_phss-donate {
+  width: 10.3rem; }
+
 p#p-what_phss_does {
-  font-size: 1.25rem; }
+  text-align: left; }
 
 section#section-why_phss img {
   margin-right: 1rem;
@@ -191,6 +212,8 @@ div.factoid-why_phss {
     position: relative;
     top: 0.75rem;
     text-align: center; }
+  div.factoid-why_phss p.p-why_phss-factoid:first-line {
+    font-weight: 500; }
 
 div#factoid-why_phss-4 {
   margin-right: 0; }
@@ -204,18 +227,13 @@ section#section-location div.row:nth-child(3) > div > img {
   border: 2px solid #ec9053; }
 
 section#section-location div:nth-child(3) {
-  position: relative;
-  top: 3rem; }
+  margin-top: 3rem; }
 
 section#section-location p.p-location-directions {
   margin-bottom: 1.5rem; }
 
 section#section-location p.p-location-directions:first-line {
   font-weight: 400; }
-
-section#section-location div:nth-child(3) {
-  position: relative;
-  top: 3rem; }
 
 section#section-location h6 {
   margin-bottom: 0.75rem; }
@@ -273,6 +291,13 @@ section#section-staff_events div.calendar-dates-week > div {
 
 section#section-staff_events div.calendar-dates-week > div.calendar-dates-empty {
   border: 1px dotted #fecc3c; }
+
+section#section-help_phss div.row:nth-child(3),
+section#section-help_phss div.row:nth-child(4) {
+  margin-top: 1.75rem; }
+
+section#section-help_phss div.row:nth-child(3) > div > img {
+  border: 2px solid #ec9053; }
 
 @media (max-width: 1366px) {
   .container {

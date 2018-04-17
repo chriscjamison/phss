@@ -51,10 +51,15 @@ p {
 	font-weight: $font_weight_normal;
 	letter-spacing: 0.4px;
 	color: $brown_1;
+	text-align: justify;
 }
 
 p:first-of-type:first-line {
 	font-weight: $font_weight_bold;
+}
+
+p.after_first:first-line {
+	font-weight: $font_weight_normal;
 }
 
 section {
@@ -183,24 +188,29 @@ p#p-splash {
   width: 30%;
   font-size: $font_size_splash;
 	font-weight: $font_weight_light;
+	text-align: left;
 	color: $purple_1;
 }
 
 a#splash-learn_more, 
 a#what_phss_does-more-mission, 
-a#why_phss-more {
+a#why_phss-more, 
+a#help_phss-volunteer, 
+a#help_phss-donate {
 	display: block;
 	font-family: $sofia_font;
   font-size: $font_size_link;
   background-color: $yellow_1;
-  padding: 0.8rem;
+  padding: 0.7rem 0.8rem 0.8rem 0.8rem;
 	border: $border_5;
 	color: $purple_link;
 }
 
 a#splash-learn_more:hover, 
 a#what_phss_does-more-mission:hover, 
-a#why_phss-more:hover {
+a#why_phss-more:hover, 
+a#help_phss-volunteer:hover, 
+a#help_phss-donate:hover {
 	background-color: $yellow_2;
 	border: $border_3;
 	text-decoration: none;
@@ -213,7 +223,9 @@ a#splash-learn_more {
 }
 
 a#what_phss_does-more-mission, 
-a#why_phss-more {
+a#why_phss-more, 
+a#help_phss-volunteer, 
+a#help_phss-donate {
 	width: 12.25rem;
 	margin: 0 auto;
 }
@@ -223,8 +235,21 @@ a#why_phss-more {
 	top: 1rem;
 }
 
+a#help_phss-volunteer, 
+a#help_phss-donate {
+	margin-top: 1.25rem;
+}
+
+a#help_phss-volunteer {
+	width: 13.81rem;
+}
+
+a#help_phss-donate {
+	width: 10.3rem;
+}
+
 p#p-what_phss_does {
-	font-size: $font_size_base;
+	text-align: left;
 }
 
 section#section-why_phss img {
@@ -243,7 +268,7 @@ div.factoid-why_phss {
 	div.factoid-why_phss-header	{
 		height: 12rem;
 		background-image: url('/assets/img/content/polygon_1.gif');
-		color: #fecc3c;
+		color: $yellow_1;
 	}
 
 	div.factoid-why_phss-header span:first-of-type {
@@ -278,6 +303,10 @@ div.factoid-why_phss {
 		top: 0.75rem;
 		text-align: center;
 	}
+
+	p.p-why_phss-factoid:first-line {
+		font-weight: $font_weight_medium;
+	}
 }
 
 div#factoid-why_phss-4 {
@@ -296,8 +325,7 @@ section#section-location {
 	}
 
 	div:nth-child(3)	{
-		position: relative;
-		top: 3rem;
+		margin-top: 3rem;
 	}
 
 	p.p-location-directions {
@@ -306,11 +334,6 @@ section#section-location {
 
 	p.p-location-directions:first-line {
 		font-weight: $font_weight_normal;
-	}
-
-	div:nth-child(3)	{
-		position: relative;
-		top: 3rem;
 	}
 
 	h6 {
@@ -383,6 +406,17 @@ section#section-staff_events {
 	}
 }
 
+section#section-help_phss {
+	div.row:nth-child(3), 
+	div.row:nth-child(4) {
+		margin-top: 1.75rem;
+	}
+
+	div.row:nth-child(3) > div > img { 
+		border: $border_2;
+	}
+
+}
 @media (max-width: 1366px) {
 	.container {
 		max-width: 1334px; 
