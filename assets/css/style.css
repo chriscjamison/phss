@@ -50,6 +50,10 @@ h6 {
 hr {
   border-top: 2px solid #fecc3c; }
 
+strong {
+  font-family: "muli";
+  font-weight: 700; }
+
 body {
   margin: 0; }
 
@@ -395,15 +399,25 @@ section#section-phss_supporters #phss_supporters-business-3 {
   a#help_phss-volunteer,
   a#help_phss-donate {
     font-size: 1rem; }
-  div.col-ipad-12 {
-    padding: 0 2rem;
-    flex: 0 0 100%;
-    max-width: 100%; }
   div.col-ipad-6 {
-    margin-top: 1.5rem;
-    padding: 0 3rem;
-    flex: 0 0 50%;
-    max-width: 50%; }
+    max-width: 50%;
+    margin-top: 1.75rem;
+    flex: 0 0 50%; }
+  div.col-ipad-9 {
+    max-width: 75%;
+    flex: 0 0 75%; }
+  div.col-ipad-12 {
+    max-width: 100%;
+    flex: 0 0 100%; }
+  div.col-ipad-2,
+  div.col-ipad-6,
+  div.col-ipad-9,
+  div.col-ipad-12 {
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative; }
   header {
     padding: 0.56rem 2rem; }
     header li {
@@ -433,8 +447,14 @@ section#section-phss_supporters #phss_supporters-business-3 {
   div#section-splash a#splash-learn_more {
     margin-left: 2rem;
     top: 22.25rem; }
+  section#section-what_phss_does p#p-what_phss_does {
+    width: 91%;
+    margin: 0 auto;
+    text-align: justify; }
   section#section-what_phss_does div.row:nth-child(2) > div:nth-child(2) > img {
     width: 18rem; }
+  section#section-what_phss_does hr {
+    width: 81%; }
   section#section-why_phss div.col-ipad-12 {
     text-align: center !important; }
   section#section-why_phss div.col-ipad-2 {
@@ -458,4 +478,16 @@ section#section-phss_supporters #phss_supporters-business-3 {
     top: 0; }
   section#section-why_phss p.p-why_phss-factoid {
     width: 65%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  section#section-location div.col-ipad-12 {
+    text-align: center !important; }
+  section#section-location div.col-ipad-12.col-xl-3 {
+    margin-top: 1.75rem; }
+  section#section-location div.col-ipad-6 {
+    float: left;
+    text-align: left; }
+  section#section-location div.col-ipad-9 {
+    margin: 0 auto; }
+  section#section-location p.p-location-desc {
+    width: 71%;
+    margin: 0 auto 1rem auto; } }
