@@ -7,7 +7,8 @@ h3,
 h5,
 h6,
 ol,
-div#calendar-staff_events {
+div#calendar-staff_events,
+section#section-phss_supporters > div.row:nth-child(3) > div > div > ul {
   font-family: "muli"; }
 
 li {
@@ -115,7 +116,6 @@ div#section-splash {
 p#p-splash {
   position: absolute;
   margin: 3rem 5rem;
-  width: 30%;
   font-size: 1.45rem;
   font-weight: 300;
   text-align: left;
@@ -299,8 +299,163 @@ section#section-help_phss div.row:nth-child(4) {
 section#section-help_phss div.row:nth-child(3) > div > img {
   border: 2px solid #ec9053; }
 
+section#section-phss_supporters h5 {
+  width: 11.2rem;
+  margin: 0 auto 1.5rem auto;
+  padding: 0.5rem 0 0.75rem 0;
+  border-top: 2px solid #fecc3c;
+  border-bottom: 2px solid #fecc3c;
+  text-align: center;
+  font-weight: 700; }
+
+section#section-phss_supporters div.row:nth-child(3) > div:nth-child(2) > h5 {
+  position: relative;
+  top: 2rem;
+  right: 1.75rem; }
+
+section#section-phss_supporters div.row:nth-child(2) > div:nth-child(2),
+section#section-phss_supporters div.row:nth-child(3) > div:nth-child(2) {
+  background-image: url("/assets/img/content/phss_supporters-polygon.png"); }
+
+section#section-phss_supporters div.row:nth-child(3) > div:nth-child(2) {
+  background-position: 0px -72px;
+  background-repeat: no-repeat; }
+
+section#section-phss_supporters .phss_supporters-photo {
+  margin-bottom: 1rem;
+  display: inline-flex; }
+
+section#section-phss_supporters div.phss_supporters-photo-img {
+  width: 6.25rem;
+  height: 7.375rem;
+  display: inline-block;
+  background-image: url(/assets/img/content/phss_supporters-photos.png); }
+
+section#section-phss_supporters div#phss_supporters-photo-img-2 {
+  background-position: -100px 0; }
+
+section#section-phss_supporters div#phss_supporters-photo-img-3 {
+  background-position: -200px 0; }
+
+section#section-phss_supporters div#phss_supporters-photo-img-4 {
+  background-position: -300px 0; }
+
+section#section-phss_supporters div.row:nth-child(3) > div > div > ul {
+  width: 14rem;
+  display: inline-block;
+  vertical-align: top; }
+
+section#section-phss_supporters div.phss_supporters-photo ul > li {
+  list-style-image: url("/assets/img/content/phss_supporters-bullet.png"); }
+
+section#section-phss_supporters div.phss_supporters-photo ul > li:first-of-type {
+  margin-bottom: 0.25rem;
+  list-style-type: none;
+  list-style-image: none;
+  font-weight: 700; }
+
+section#section-phss_supporters div.row:nth-child(3) > div:nth-child(2) > div {
+  width: 100px;
+  margin: 0 auto;
+  position: relative;
+  top: 1rem;
+  right: 1.75rem;
+  background-image: url(/assets/img/content/phss_supporters-businesses.gif); }
+
+section#section-phss_supporters #phss_supporters-business-1 {
+  height: 113px; }
+
+section#section-phss_supporters #phss_supporters-business-2 {
+  height: 44px;
+  top: 1.75rem;
+  background-position: 0 -113px; }
+
+section#section-phss_supporters #phss_supporters-business-3 {
+  height: 25px;
+  top: 3rem;
+  background-position: 0 -157px; }
+
 @media (max-width: 1366px) {
   .container {
     max-width: 1334px; }
   div.factoid-why_phss {
     margin-right: 3.9rem; } }
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 976px; }
+  section {
+    margin: 3rem 0; }
+  h3 {
+    width: 75%;
+    margin: 0 auto 2.5rem auto; }
+  a#splash-learn_more,
+  a#what_phss_does-more-mission,
+  a#why_phss-more,
+  a#help_phss-volunteer,
+  a#help_phss-donate {
+    font-size: 1rem; }
+  div.col-ipad-12 {
+    padding: 0 2rem;
+    flex: 0 0 100%;
+    max-width: 100%; }
+  div.col-ipad-6 {
+    margin-top: 1.5rem;
+    padding: 0 3rem;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  header {
+    padding: 0.56rem 2rem; }
+    header li {
+      margin: 0 0.8rem; }
+    header a {
+      font-size: 1rem; }
+  .navbar {
+    padding: 0 2rem; }
+  nav li {
+    width: 14.64286%;
+    display: inline-flex;
+    border-right: 2px solid #efae60;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle; }
+  nav li:first-of-type {
+    width: 7.91506%;
+    text-align: left; }
+  nav li:last-of-type {
+    margin-left: 0.15rem;
+    text-align: center; }
+  nav a {
+    font-size: 1rem; }
+  div#section-splash p#p-splash {
+    margin: 1rem 2rem;
+    font-size: 1rem; }
+  div#section-splash a#splash-learn_more {
+    margin-left: 2rem;
+    top: 22.25rem; }
+  section#section-what_phss_does div.row:nth-child(2) > div:nth-child(2) > img {
+    width: 18rem; }
+  section#section-why_phss div.col-ipad-12 {
+    text-align: center !important; }
+  section#section-why_phss div.col-ipad-2 {
+    position: relative;
+    top: 0.75rem; }
+  section#section-why_phss div.row:nth-child(2) > div:first-of-type > img {
+    width: 15.63rem; }
+  section#section-why_phss div.factoid-why_phss {
+    margin-right: 0;
+    display: inline; }
+  section#section-why_phss div.factoid-why_phss-header {
+    background-position: 50% 0;
+    background-repeat: no-repeat; }
+  section#section-why_phss div.factoid-why_phss-header span {
+    margin: 0 auto; }
+  section#section-why_phss div.factoid-why_phss-header span:first-of-type {
+    padding-top: 1.2rem;
+    top: 0; }
+  section#section-why_phss div#factoid-why_phss-header-3 span:first-of-type {
+    padding-top: 2.1rem;
+    top: 0; }
+  section#section-why_phss p.p-why_phss-factoid {
+    width: 65%;
+    margin: 0 auto; } }
