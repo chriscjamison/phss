@@ -490,4 +490,11 @@ section#section-phss_supporters #phss_supporters-business-3 {
     margin: 0 auto; }
   section#section-location p.p-location-desc {
     width: 71%;
-    margin: 0 auto 1rem auto; } }
+    margin: 0 auto 1rem auto; }
+  section#section-staff_events div.col-6.col-ipad-12 {
+    margin-top: 1.75rem; }
+  section#section-staff_events p.p-staff_events {
+    width: 91%;
+    margin: 0 auto 1.75rem auto; }
+  section#section-staff_events div#calendar-staff_events {
+    margin: 0 auto; } }

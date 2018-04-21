@@ -628,7 +628,6 @@ section#section-phss_supporters {
 		}
 	}
 
-
 	section#section-what_phss_does {
 		p#p-what_phss_does {
 			width: 91%;
@@ -710,6 +709,21 @@ section#section-phss_supporters {
 		p.p-location-desc {
 			width: 71%;
 			margin: 0 auto 1rem auto;
+		}
+	}
+
+	section#section-staff_events {
+		div.col-6.col-ipad-12 {
+			margin-top: 1.75rem;
+		}
+		
+		p.p-staff_events {
+			width: 91%;
+			margin: 0 auto 1.75rem auto;
+		}
+
+		div#calendar-staff_events {
+			margin: 0 auto;
 		}
 	}
 }
