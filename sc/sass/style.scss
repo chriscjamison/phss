@@ -48,7 +48,8 @@ section#section-phss_supporters > div.row:nth-child(3) > div > div > ul {
   font-family: $muli_font;
 }
 
-li {
+li {	
+	font-size: $font_size_base;
 	color: $brown_1;
 }
 
@@ -99,6 +100,7 @@ hr {
 
 strong {
 	font-family: $muli_font;
+	font-size: $font_size_base;
 	font-weight: $font_weight_bold;
 }
 
@@ -123,6 +125,10 @@ header {
 		display: inline-flex;
 		list-style: none;
 	}
+
+	li:last-of-type {
+		margin-right: 0;
+	}
 	
 	a {
 		font-family: $sofia_font;
@@ -134,8 +140,11 @@ header {
 }
 
 .navbar {
+	width: 100%;
 	padding: 0 4rem;
+	position: fixed;
 	border-bottom: $border_4;
+	z-index: 2;
 }
 
 nav {
@@ -177,11 +186,6 @@ nav {
 		font-family: $sofia_font;
 		font-size: $font_size_link;
 		font-weight: $font_weight_normal;
-		color: $purple_link;
-	}
-
-	a:hover {
-		text-decoration: underline;
 		color: $purple_link;
 	}
 }
@@ -577,6 +581,17 @@ section#section-phss_supporters {
 
 	div.factoid-why_phss {
 		margin-right: 3.9rem;
+	}
+
+	section#section-phss_supporters {
+		div.row:nth-child(3) > div:nth-child(2) > h5, 
+		div.row:nth-child(3) > div:nth-child(2) > div {
+			right: 1.75rem;
+		}
+
+		div.row:nth-child(3) > div > div > ul	{
+			width: 14rem;
+		}
 	}
 }
 

@@ -12,6 +12,7 @@ section#section-phss_supporters > div.row:nth-child(3) > div > div > ul {
   font-family: "muli"; }
 
 li {
+  font-size: 1.25rem;
   color: #483729; }
 
 p {
@@ -53,6 +54,7 @@ hr {
 
 strong {
   font-family: "muli";
+  font-size: 1.25rem;
   font-weight: 700; }
 
 body {
@@ -71,6 +73,8 @@ header {
     margin: 0 0.98rem;
     display: inline-flex;
     list-style: none; }
+  header li:last-of-type {
+    margin-right: 0; }
   header a {
     font-family: "sofia-pro-soft";
     font-size: 1.25rem;
@@ -79,8 +83,11 @@ header {
     color: #8c0d98; }
 
 .navbar {
+  width: 100%;
   padding: 0 4rem;
-  border-bottom: 2px solid #efae60; }
+  position: fixed;
+  border-bottom: 2px solid #efae60;
+  z-index: 2; }
 
 nav {
   height: 3.75rem;
@@ -109,9 +116,6 @@ nav {
     font-family: "sofia-pro-soft";
     font-size: 1.25rem;
     font-weight: 400;
-    color: #8c0d98; }
-  nav a:hover {
-    text-decoration: underline;
     color: #8c0d98; }
 
 div#section-splash {
@@ -319,7 +323,7 @@ section#section-phss_supporters h5 {
 section#section-phss_supporters div.row:nth-child(3) > div:nth-child(2) > h5 {
   position: relative;
   top: 2rem;
-  right: 2rem; }
+  right: 2.25rem; }
 
 section#section-phss_supporters div.row:nth-child(2) > div:nth-child(2),
 section#section-phss_supporters div.row:nth-child(3) > div:nth-child(2) {
@@ -373,7 +377,7 @@ section#section-phss_supporters div.row:nth-child(3) > div:nth-child(2) > div {
   margin: 0 auto;
   position: relative;
   top: 1rem;
-  right: 2rem;
+  right: 2.25rem;
   background-image: url(/assets/img/content/phss_supporters-businesses.gif); }
 
 section#section-phss_supporters #phss_supporters-business-1 {
@@ -412,7 +416,12 @@ section#section-phss_supporters #phss_supporters-business-3 {
   .container {
     max-width: 1334px; }
   div.factoid-why_phss {
-    margin-right: 3.9rem; } }
+    margin-right: 3.9rem; }
+  section#section-phss_supporters div.row:nth-child(3) > div:nth-child(2) > h5,
+  section#section-phss_supporters div.row:nth-child(3) > div:nth-child(2) > div {
+    right: 1.75rem; }
+  section#section-phss_supporters div.row:nth-child(3) > div > div > ul {
+    width: 14rem; } }
 
 @media (max-width: 1024px) {
   .container {
