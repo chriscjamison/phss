@@ -705,18 +705,27 @@ div#contact-confirmation_message {
 		max-width: 1334px; 
 	}
 
-	div.factoid-why_phss {
-		margin-right: 3.9rem;
+	section#section-why_phss {
+		div.factoid-why_phss	{
+			margin-right: 1rem;
+		}
 	}
 
+	section#section-location {
+		div.row:nth-child(3) > div > img, 
+		div.row:nth-child(4) > div > iframe	{
+			width: 30.25rem;
+		}
+	}
+	
 	section#section-phss_supporters {
 		div.row:nth-child(4) > div:nth-child(2) > h5, 
 		div.row:nth-child(4) > div:nth-child(2) > div {
-			right: 1.5rem;
+			right: 0.6rem;
 		}
 
 		div.row:nth-child(4) > div > div > ul	{
-			width: 14rem;
+			width: 12rem;
 		}
 	}
 
