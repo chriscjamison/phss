@@ -90,26 +90,32 @@ $(all_links_elements).mouseleave(
 
 $("nav > ul:nth-child(2) > li > a").click(
   function () {
-    var window_position;
+		var window_width;
 
-    window_position = $(window).scrollTop();
+		window_width = $(window).width();
 
-		if (window_position > 0)	{
-			setTimeout(
-				function () {
-					window_position = $(window).scrollTop();
+		if (window_width > 414)	{
+			var window_position;
 
-					$(window).scrollTop(window_position - 60);
-				}, 10
-			);
-		}	else {
-			setTimeout(
-				function () {
-					window_position = $(window).scrollTop();
+			window_position = $(window).scrollTop();
 
-					$(window).scrollTop(window_position - 120);
-				}, 10
-			);
+			if (window_position > 0)	{
+				setTimeout(
+					function () {
+						window_position = $(window).scrollTop();
+
+						$(window).scrollTop(window_position - 60);
+					}, 10
+				);
+			}	else {
+				setTimeout(
+					function () {
+						window_position = $(window).scrollTop();
+
+						$(window).scrollTop(window_position - 120);
+					}, 10
+				);
+			}
 		}
   }
 );
@@ -300,6 +306,24 @@ function showMenu ()	{
 }	// END of FUNCTION 'showMenu'
 
 function loadConfirmationMessage()	{
+	var window_width;
+
+	window_width = $(window).width();
+
+	if (window_width <= 1024)	{
+		var p_selector;
+		var p_element;
+
+		p_selector = "#contact-confirmation_message > p:last-of-type";
+		p_element = $(p_selector);
+
+		var p_content;
+
+		p_content = "Tap the background to close this message.";
+
+		$(p_element).html(p_content);
+	}
+
 	var div_selector_1;
 	var div_selector_2;
 	
@@ -343,8 +367,7 @@ function closeConfirmationMessage()	{
 	$(div_elements).css(visible_css);
 }
 
-function loadContactForm()	{
-	
+function loadContactForm()	{	
 	var div_selector;
 	var div_element = {};
 	

@@ -37,7 +37,7 @@ p.after_first:first-line {
   font-weight: 400; }
 
 section {
-  margin: 0; }
+  margin: 3rem; }
 
 section:last-of-type {
   margin-bottom: 3.5rem; }
@@ -217,8 +217,8 @@ div.factoid-why_phss {
   vertical-align: top;
   text-align: left; }
   div.factoid-why_phss div.factoid-why_phss-header {
-    height: 12.15rem;
-    background-image: url("/assets/img/content/polygon_1.gif");
+    height: 12.13rem;
+    background-image: url("/phss/assets/img/content/polygon_1.gif");
     color: #fecc3c; }
   div.factoid-why_phss div.factoid-why_phss-header span:first-of-type {
     width: 10.06rem;
@@ -348,7 +348,7 @@ section#section-phss_supporters div.row:nth-child(4) > div:nth-child(2) > h5 {
 
 section#section-phss_supporters div.row:nth-child(3) > div:nth-child(2),
 section#section-phss_supporters div.row:nth-child(4) > div:nth-child(2) {
-  background-image: url("/assets/img/content/phss_supporters-polygon.png");
+  background-image: url("/phss/assets/img/content/phss_supporters-polygon.png");
   background-repeat: no-repeat; }
 
 section#section-phss_supporters div.row:nth-child(4) > div:nth-child(2) {
@@ -366,7 +366,7 @@ section#section-phss_supporters div.phss_supporters-photo-img {
   width: 6.25rem;
   height: 7.375rem;
   display: inline-block;
-  background-image: url(/assets/img/content/phss_supporters-photos.png); }
+  background-image: url("/phss/assets/img/content/phss_supporters-photos.png"); }
 
 section#section-phss_supporters div#phss_supporters-photo-img-2 {
   background-position: -100px 0; }
@@ -378,13 +378,13 @@ section#section-phss_supporters div#phss_supporters-photo-img-4 {
   background-position: -300px 0; }
 
 section#section-phss_supporters div.row:nth-child(4) > div > div > ul {
-  width: 19rem;
+  width: 18rem;
   display: inline-block;
   vertical-align: top;
   font-size: 1.25rem; }
 
 section#section-phss_supporters div.phss_supporters-photo ul > li {
-  list-style-image: url("/assets/img/content/phss_supporters-bullet.png"); }
+  list-style-image: url("/phss/assets/img/content/phss_supporters-bullet.png"); }
 
 section#section-phss_supporters div.phss_supporters-photo ul > li:first-of-type {
   margin-bottom: 0.25rem;
@@ -399,7 +399,7 @@ section#section-phss_supporters div.row:nth-child(4) > div:nth-child(2) > div {
   position: relative;
   top: 1rem;
   right: 2.25rem;
-  background-image: url(/assets/img/content/phss_supporters-businesses.gif); }
+  background-image: url("/phss/assets/img/content/phss_supporters-businesses.gif"); }
 
 section#section-phss_supporters #phss_supporters-business-1 {
   height: 113px; }
@@ -484,6 +484,11 @@ div#contact-confirmation_message p {
   padding: 0.25em 0;
   font-size: 1.15em;
   color: #483729; }
+
+@media (max-width: 1920px) {
+  #contact-confirmation_message {
+    height: 22.75rem;
+    margin: 11% 38.25%; } }
 
 @media (max-width: 1600px) {
   section#section-location div.row:nth-child(2) > div > img,
@@ -724,9 +729,6 @@ div#contact-confirmation_message p {
     margin: 0 auto; }
   section#section-phss_supporters div.row:nth-child(3) > div:nth-child(2) > div {
     margin: 1.25rem auto; }
-  #content-form-contact,
-  #contact-bkgrnd {
-    width: 86%; }
   #contact-confirmation_message {
     margin: 10% 35.25%; } }
 
@@ -734,7 +736,7 @@ div#contact-confirmation_message p {
   section {
     margin: 3rem 0; }
   section:last-of-type {
-    margin-bottom: 2rem; }
+    margin-bottom: 0; }
   h3 {
     font-size: 1.5rem; }
   p {
@@ -820,12 +822,11 @@ div#contact-confirmation_message p {
     width: 22rem; }
   section#section-location p.p-location-desc {
     width: 92%; }
-  section#section-location div.row:nth-child(4) {
-    margin-top: 2rem; }
-  section#section-location div:nth-child(4) > div:first-of-type {
-    display: none; }
-  section#section-location div.row:nth-child(4) > div:nth-child(2) > div.col-iphone-12 {
-    margin-top: 0;
+  section#section-location div.row:nth-child(4) > div:nth-child(2) {
+    margin-top: 1.75rem; }
+  section#section-location div.col-ipad-6 {
+    margin-top: 0; }
+  section#section-location div.row:nth-child(4) > div:nth-child(2) > div:first-of-type {
     text-align: left; }
   section#section-location div.row:nth-child(4) > div:nth-child(2) > div.col-iphone-12:nth-child(2) > div:nth-child(2) > ol:nth-child(2) {
     margin-bottom: 0; }
@@ -865,6 +866,8 @@ div#contact-confirmation_message p {
     margin: 0 auto; }
   section#section-phss_supporters div.row:nth-child(4) > div:nth-child(2) > div {
     margin: 1.25rem auto; }
+  div#content-form-contact {
+    padding: 1rem; }
   #form-contact {
     height: 27.75rem; }
   #contact-confirmation_message {
@@ -885,8 +888,7 @@ div#contact-confirmation_message p {
     top: 24rem;
     left: 34%; }
   section#section-what_phss_does div.row:nth-child(3) > div:nth-child(2) > img {
-    width: 20rem;
-    margin: 3rem 0; }
+    width: 20rem; }
   section#section-why_phss img {
     margin-right: 0; }
   section#section-location div.row:nth-child(3) > div > img,
@@ -897,9 +899,21 @@ div#contact-confirmation_message p {
   section#section-phss_supporters #phss_supporters-business-1 {
     top: 2.25rem; }
   #contact-confirmation_message {
-    width: 22.5em;
-    height: 20.75em;
-    margin: 16% 13%;
+    width: 19.25em;
+    height: 22.5em;
     padding: 1em 1.5em; }
   #contact-confirmation_message p {
     font-size: 0.9em; } }
+
+@media (max-width: 360px) {
+  section#section-staff_events div#calendar-staff_events {
+    width: 20.5rem; }
+  section#section-staff_events div#calendar-days_of_week > div,
+  section#section-staff_events div.calendar-dates-week > div {
+    width: 2.26rem; }
+  section#section-staff_events div.calendar-dates-week > div {
+    height: 2.4rem;
+    padding: 0.4rem 0;
+    font-size: 1.5rem; }
+  section#section-phss_supporters div.row:nth-child(4) > div > div > ul {
+    width: 12rem; } }
