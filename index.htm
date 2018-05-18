@@ -13,18 +13,47 @@
 		<link href="assets/css/style.css" rel="stylesheet">
   </head>
   <body>
+<!-- 
+  DIV which contains the Confirmation Message which appears once a visitor sends an email message.
+-->
+    <div id="contact-confirmation_message">
+      <p>
+        Thank you for sending Perpetual Home Supportive Services your message!
+      </p>
+      <p>
+        Look out for an email message from no-reply@phss-stl.org which confirms that 
+        you sent a message to us.
+      </p>
+      <p>
+        Click the background to close this message.
+      </p>
+    </div>
+    <div id="content-form-contact">
+      <a href="javascript:closeContactForm();" title="Go Back to Page">Go Back to Page</a> 
+      <form method="post" action="/assets/php/contact.php" name="form-contact" id="form-contact">
+        <label for="full_name">Please enter your full name below:</label>
+        <input type="text" value="First and Last Name" size="25" max-size="80" name="full_name" id="input-contact-full_name" />
+        <label for="email_address">Please enter your email address below:</label>
+        <input type="text" value="____@_______.___" size="25" max-size="80" name="email_address" id="input-contact-email_address" />
+        <label for="message">Please compose your message below:</label>
+        <textarea cols="27" rows="8" name="message" id="input-contact-message">Type your message here</textarea>
+        <input type="reset" value="Clear Information" name="input-reset" id="input-contact-reset" />
+        <input type="submit" value="Send Message" name="input-submit" id="input-contact-submit" />
+      </form>
+    </div>
+    <div id="contact-bkgrnd"></div>
     <a id="home"></a>
 		<header>
 			<img src="assets/img/logo/logo.png" width="195" height="60" alt="Perpetual Home Supportive Services" id="header-logo">
 			<ul>
-				<li><a href="#contact" title="Contact Us" id="header-link-contact">Contact Us</a></li>
+				<li><a href="javascript:loadContactForm();" title="Contact Us" id="header-link-contact">Contact Us</a></li>
 				<li><a href="#donate" title="Donate" id="header-link-donate">Donate</a></li>
 				<li><a href="#map" title="Map" id="header-link-map">Map</a></li>
 			</ul>
 		</header>
     <nav class="navbar navbar-expand-lg">
       <ul>
-        <li><a href="#menu" title="Menu" id="nav-link-menu">Menu</a></li>
+        <li><a href="javascript:showMenu();" title="Menu" id="nav-link-menu">Menu</a></li>
       </ul>
 			<ul>
 				<li><a href="#home" title="Home" id="nav-link-home">Home</a></li>
@@ -36,7 +65,9 @@
         <li><a href="#phss_supporters" title="PHSS Supporters" id="nav-link-phss_supporters">PHSS Supporters</a></li>
       </ul>
       <ul>
-				<li><a href="#contact" title="Contact Us" id="header-link-contact">Contact Us</a></li>
+				<li><a href="javascript:loadContactForm();" title="Contact Us" id="header-link-contact">Contact Us</a></li>
+				<li><a href="#donate" title="Donate" id="header-link-donate">Donate</a></li>
+				<li><a href="#map" title="Map" id="header-link-map">Map</a></li>
 			</ul>
     </nav>
 
@@ -74,7 +105,7 @@
 <!-- 
   The left-most column for 'What PHSS Does' which contains the copy for the section
 -->
-          <div class="col-3 col-iphone-12 col-ipad-12 offset-1 offset-md-1 offset-lg-1 offset-xl-1">
+          <div class="col-3 col-iphone-12 col-ipad-12 offset-iphone-0 offset-sm-0 offset-1 offset-md-1 offset-lg-1 offset-xl-1">
             <p id="p-what_phss_does">
               Donec at vehicula quam. Donec efficitur faucibus fermentum. Pellentesque at augue metus. Integer risus neque, 
               consectetur a metus at, mattis auctor lacus. Sed dignissim ultrices facilisis. Nunc quis luctus libero. Phasellus 
@@ -86,7 +117,7 @@
 <!-- 
   The center column for 'What PHSS Does' which contains an graphic
 -->
-          <div class="col-4 col-iphone-12 col-ipad-5 offset-ipad-1 text-center">
+          <div class="col-4 col-iphone-12 col-ipad-5 offset-iphone-0 offset-ipad-1 text-center">
             <img src="assets/img/content/about_phss_1.jpg" alt="A variety of people who you may see at PHSS" class="img-responsive" />
           </div>
 <!-- 
@@ -193,7 +224,7 @@
 <!-- 
   The left column of the top row for 'Location' which contains the photo of the exterior
 -->
-          <div class="col-5 col-iphone-12 col-ipad-12 offset-1 text-right">
+          <div class="col-5 col-iphone-12 col-ipad-12 offset-iphone-0 offset-sm-0 offset-1 text-right">
             <img src="assets/img/content/location_1.jpg" alt="The exterior of our location at 2240 N Hwy 67 #276 Florissant, MO 63031 USA" />
           </div>
 <!-- 
@@ -223,7 +254,7 @@
 <!-- 
   The left column of the bottom row for 'Location' which contains the map of the location
 -->
-          <div class="col-5 col-iphone-12 col-ipad-12 offset-1 text-right">
+          <div class="col-5 col-iphone-12 col-ipad-12 offset-iphone-0 offset-sm-0 offset-1 text-right">
             <iframe
               width="529"
               height="468"
