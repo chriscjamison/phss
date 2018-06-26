@@ -12,18 +12,22 @@ if (url_hash.indexOf(url_hash_search_string) > -1)	{
 
 var header_links_selector;
 var nav_links_selector;
+var pdsa_links_selector;
 var all_links_selector;
 
 var header_links_elements;
 var nav_links_elements;
+var pdsa_links_elements;
 var all_links_elements;
 
 header_links_selector = "header > ul > li > a";
 nav_links_selector = "nav > ul > li > a";
-all_links_selector = header_links_selector + "," + nav_links_selector;
+pdsa_links_selector = "#p-splash-pdsa a";
+all_links_selector = header_links_selector + "," + nav_links_selector + "," + pdsa_links_selector;
 
 header_links_elements = $(header_links_selector);
 nav_links_elements = $(nav_links_selector);
+pdsa_links_elements = $(pdsa_links_selector);
 all_links_elements = $(all_links_selector);
 
 

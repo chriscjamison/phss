@@ -210,15 +210,35 @@ div#section-splash {
 		width: 100%;
 		height: 50%;
 	}
+
+	.carousel {
+		width: 100%;
+
+		.carousel-control-prev, 
+		.carousel-control-next	{
+			width: 4%;
+		}
+	}
 }
 
-p#p-splash {
+p#p-splash, 
+p#p-splash-pdsa {
 	position: absolute;
   margin: 3rem;
   font-size: $font_size_splash;
 	font-weight: $font_weight_light;
 	text-align: left;
 	color: $purple_1;
+}
+
+p#p-splash-pdsa {
+	margin: 1.75rem 0 0 0;
+	text-align: justify;
+	color: $brown_1;
+}
+
+p#p-splash-pdsa a {
+	color: $purple_link;
 }
 
 a#splash-learn_more, 
@@ -760,6 +780,10 @@ div#contact-confirmation_message {
 		margin-left: 0;
 	}
 
+	div.offset-ipad-3 {
+		margin-left: 25%;
+	}
+
 	div.col-ipad-4 {
 		flex: 0 0 33.3333333333%;
   	max-width: 33.3333333333%;
@@ -835,13 +859,13 @@ div#contact-confirmation_message {
 		}
 
 		li {
-			width: (102.5% / 7);
+			width: (104% / 7);
 			border-right: none;
 			vertical-align: middle;
 		}
 		
 		li:first-of-type {
-			width: ((102.5% / 7) / 1.85);
+			width: ((104% / 7) / 1.85);
 			text-align: left;
 		}
 
@@ -863,6 +887,17 @@ div#contact-confirmation_message {
 		a#splash-learn_more {
 			margin-left: 1rem;
 			top: 17.25rem;
+		}
+
+		div.col-ipad-6 {
+			margin-top: 0;
+		}
+
+		p#p-splash-pdsa {
+			width: 93%;
+			margin: 1rem 1rem 0 0;
+			padding: 0 1rem;
+			font-size: $font_size_base;
 		}
 	}
 
@@ -1072,9 +1107,14 @@ div#contact-confirmation_message {
 	}
 
 	div#section-splash {
-		p#p-splash {
+		p#p-splash, 
+		p#p-splash-pdsa {
 			margin: 1rem;
 			font-size: $font_size_base_ipad;
+		}
+
+		p#p-splash-pdsa {
+			width: 83%;
 		}
 
 		a#splash-learn_more {
@@ -1158,7 +1198,6 @@ div#contact-confirmation_message {
 	.container {
 		max-width: 414px;
 		position: relative;
-		top: 18rem;
 	}
 
 	header {
@@ -1223,7 +1262,8 @@ div#contact-confirmation_message {
 	}
 
 	div#section-splash {
-		p#p-splash {
+		p#p-splash, 
+		p#p-splash-pdsa {
 			width: 92%;
 			margin: 10.5rem 1rem 1rem 0;
 			text-align: justify;
@@ -1233,6 +1273,18 @@ div#contact-confirmation_message {
 			margin-left: 0;
 			top: 24rem;
 			left: 36%;
+		}
+
+		div#splash-item-desc	{
+			margin-bottom: 13rem;
+		}
+
+		p#p-splash-pdsa {
+			margin: 10rem auto 0 auto;
+		}
+
+		div#splash-item-pdsa-email {
+			margin-bottom: 5rem;
 		}
 	}
 
@@ -1272,7 +1324,8 @@ div#contact-confirmation_message {
 	}
 
 	section#section-location {
-		div.row:nth-child(3) > div > img {
+		div.row:nth-child(3) > div > img, 
+		div.row:nth-child(4) > div > iframe {
 			width: 22rem;
 		}
 
@@ -1399,6 +1452,10 @@ div#contact-confirmation_message {
 	}
 
 	div#section-splash {
+		div#splash-item-desc	{
+			margin-bottom: 14rem;
+		}
+
 		p#p-splash	{
 			width: 92%;
 			margin: 9rem 1rem 1rem 0;
@@ -1407,6 +1464,14 @@ div#contact-confirmation_message {
 		a#splash-learn_more	{
 			top: 24rem;
 			left: 34%;
+		}
+
+		div#splash-item-pdsa-email {
+			margin-bottom: 7rem;
+		}
+
+		p#p-splash-pdsa {
+			margin: 9rem auto 0 auto;
 		}
 	}
 

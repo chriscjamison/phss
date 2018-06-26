@@ -134,14 +134,28 @@ div#section-splash {
   div#section-splash img {
     width: 100%;
     height: 50%; }
+  div#section-splash .carousel {
+    width: 100%; }
+    div#section-splash .carousel .carousel-control-prev,
+    div#section-splash .carousel .carousel-control-next {
+      width: 4%; }
 
-p#p-splash {
+p#p-splash,
+p#p-splash-pdsa {
   position: absolute;
   margin: 3rem;
   font-size: 1.45rem;
   font-weight: 300;
   text-align: left;
   color: #c86678; }
+
+p#p-splash-pdsa {
+  margin: 1.75rem 0 0 0;
+  text-align: justify;
+  color: #483729; }
+
+p#p-splash-pdsa a {
+  color: #8c0d98; }
 
 a#splash-learn_more,
 a#what_phss_does-more-mission,
@@ -543,6 +557,8 @@ div#contact-confirmation_message p {
     font-size: 1rem; }
   div.offset-ipad-0 {
     margin-left: 0; }
+  div.offset-ipad-3 {
+    margin-left: 25%; }
   div.col-ipad-4 {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%; }
@@ -589,11 +605,11 @@ div#contact-confirmation_message p {
   nav ul {
     margin-bottom: 0; }
   nav li {
-    width: 14.64286%;
+    width: 14.85714%;
     border-right: none;
     vertical-align: middle; }
   nav li:first-of-type {
-    width: 7.91506%;
+    width: 8.03089%;
     text-align: left; }
   nav li:last-of-type {
     text-align: center; }
@@ -605,6 +621,13 @@ div#contact-confirmation_message p {
   div#section-splash a#splash-learn_more {
     margin-left: 1rem;
     top: 17.25rem; }
+  div#section-splash div.col-ipad-6 {
+    margin-top: 0; }
+  div#section-splash p#p-splash-pdsa {
+    width: 93%;
+    margin: 1rem 1rem 0 0;
+    padding: 0 1rem;
+    font-size: 1.25rem; }
   section#section-what_phss_does p#p-what_phss_does {
     width: 80%;
     margin: 0 auto;
@@ -713,9 +736,12 @@ div#contact-confirmation_message p {
     text-align: left; }
   nav li:last-of-type {
     text-align: center; }
-  div#section-splash p#p-splash {
+  div#section-splash p#p-splash,
+  div#section-splash p#p-splash-pdsa {
     margin: 1rem;
     font-size: 1rem; }
+  div#section-splash p#p-splash-pdsa {
+    width: 83%; }
   div#section-splash a#splash-learn_more {
     margin-left: 1rem;
     top: 12.25rem; }
@@ -759,8 +785,7 @@ div#contact-confirmation_message p {
     margin-left: 8.3333333333%; }
   .container {
     max-width: 414px;
-    position: relative;
-    top: 18rem; }
+    position: relative; }
   header img {
     margin: 0 auto;
     display: block; }
@@ -796,7 +821,8 @@ div#contact-confirmation_message p {
     font-size: 1.25rem; }
   nav a:first-of-type {
     margin-top: 0.5rem; }
-  div#section-splash p#p-splash {
+  div#section-splash p#p-splash,
+  div#section-splash p#p-splash-pdsa {
     width: 92%;
     margin: 10.5rem 1rem 1rem 0;
     text-align: justify; }
@@ -804,6 +830,12 @@ div#contact-confirmation_message p {
     margin-left: 0;
     top: 24rem;
     left: 36%; }
+  div#section-splash div#splash-item-desc {
+    margin-bottom: 13rem; }
+  div#section-splash p#p-splash-pdsa {
+    margin: 10rem auto 0 auto; }
+  div#section-splash div#splash-item-pdsa-email {
+    margin-bottom: 5rem; }
   section#section-what_phss_does p#p-what_phss_does {
     width: 92%; }
   section#section-what_phss_does div.row:nth-child(3) > div:nth-child(2) {
@@ -821,7 +853,8 @@ div#contact-confirmation_message p {
     margin-right: 0; }
   section#section-why_phss p.p-why_phss-factoid {
     margin: 0 auto 1.25rem auto; }
-  section#section-location div.row:nth-child(3) > div > img {
+  section#section-location div.row:nth-child(3) > div > img,
+  section#section-location div.row:nth-child(4) > div > iframe {
     width: 22rem; }
   section#section-location p.p-location-desc {
     width: 92%; }
@@ -884,12 +917,18 @@ div#contact-confirmation_message p {
   nav ul:nth-child(3) > li:first-of-type {
     width: 100%;
     text-align: center; }
+  div#section-splash div#splash-item-desc {
+    margin-bottom: 14rem; }
   div#section-splash p#p-splash {
     width: 92%;
     margin: 9rem 1rem 1rem 0; }
   div#section-splash a#splash-learn_more {
     top: 24rem;
     left: 34%; }
+  div#section-splash div#splash-item-pdsa-email {
+    margin-bottom: 7rem; }
+  div#section-splash p#p-splash-pdsa {
+    margin: 9rem auto 0 auto; }
   section#section-what_phss_does div.row:nth-child(3) > div:nth-child(2) > img {
     width: 20rem; }
   section#section-why_phss img {
