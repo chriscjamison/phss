@@ -120,9 +120,9 @@ $("nav > ul:nth-child(2) > li > a").click(
 					}, 10
 				);
 			}
+		}	else {
+			showMenu();
 		}
-
-		showMenu();
   }
 );
 
@@ -178,11 +178,17 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 
 					case 360:
 						div_img_top_css = {
-							top: "-24rem"
+							top: "-25.5rem"
 						};
 					break;
 
 					case 375:
+						div_img_top_css = {
+							top: "-24rem"
+						};
+					break;
+
+					case 414:
 						div_img_top_css = {
 							top: "-24rem"
 						};
@@ -202,7 +208,7 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 				var div_top_css = {};
 
 				div_top_css = {
-					top: "38rem"
+					top: "36rem"
 				};
 				
 				$(div_element).css(div_top_css);
@@ -247,7 +253,7 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 	
 						case 360:
 							div_img_top_css = {
-								top: "-26.75rem"
+								top: "-28.5rem"
 							};
 						break;
 
@@ -256,12 +262,25 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 								top: "-26.75rem"
 							};
 						break;
+
+						case 414:
+							div_img_top_css = {
+								top: "-26.75rem"
+							};
+						break;
 					}
 
 					div_selector = div_selector + "first-of-type";
-	
 					div_element = $(div_selector);
+
+					div_top_css = {
+						top: "36rem"
+					};
 				}	else {
+					div_top_css = {
+						top: "38rem"
+					};
+
 					switch (window_width)	{
 						case 320:
 							div_img_top_css = {
@@ -271,7 +290,11 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 	
 						case 360:
 							div_img_top_css = {
-								top: "-32rem"
+								top: "-35.5rem"
+							};
+
+							div_top_css = {
+								top: "36rem"
 							};
 						break;
 
@@ -280,32 +303,34 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 								top: "-28.5rem"
 							};
 						break;
+
+						case 414:
+							div_img_top_css = {
+								top: "-28.5rem"
+							};
+
+							div_top_css = {
+								top: "40rem"
+							};
+						break;
 					}
-					
 					div_selector = div_selector + "first-of-type";
 	
-					div_element = $(div_selector);
+					div_element = $(div_selector);					
 				}
 
-				$(div_img_element).css(div_img_top_css);
-				$(div_button_element).css(div_img_top_css);
-
-				var div_top_css = {};
+				var h5_and_p_elements;
+		
+				h5_and_p_elements = $(h5_and_p_selectors);
 	
-				div_top_css = {
-					top: "38rem"
-				};
-
-				$(div_element).css(div_top_css);
+				$(h5_and_p_elements).removeClass("not_visible");
+				$(h5_and_p_elements).addClass("visible");
 			}
-
-			var h5_and_p_elements;
-			
-			h5_and_p_elements = $(h5_and_p_selectors);
-
-			$(h5_and_p_elements).removeClass("not_visible");
-			$(h5_and_p_elements).addClass("visible");
 		}
+
+		$(div_img_element).css(div_img_top_css);
+		$(div_button_element).css(div_img_top_css);
+		$(div_element).css(div_top_css);
 	}
 );
 
@@ -380,6 +405,16 @@ $("a#a-help_phss-presenting, a#a-help_phss-platinum, a#a-help_phss-gold, a#a-hel
 								top: "-57rem"
 							};
 						break;
+
+						case 414:
+							div_desc_top_css = {
+								top: "26rem"
+							};
+		
+							div_button_top_css = {
+								top: "-52.5rem"
+							};
+						break;
 					}
 				break;
 
@@ -387,7 +422,7 @@ $("a#a-help_phss-presenting, a#a-help_phss-platinum, a#a-help_phss-gold, a#a-hel
 					switch (window_width)	{
 						case 320:
 							div_desc_top_css = {
-								top: "93.25rem"
+								top: "27.5rem"
 							};
 		
 							div_button_top_css = {
@@ -397,7 +432,7 @@ $("a#a-help_phss-presenting, a#a-help_phss-platinum, a#a-help_phss-gold, a#a-hel
 
 						case 360:
 							div_desc_top_css = {
-								top: "84.25rem"
+								top: "26rem"
 							};
 		
 							div_button_top_css = {
@@ -407,11 +442,21 @@ $("a#a-help_phss-presenting, a#a-help_phss-platinum, a#a-help_phss-gold, a#a-hel
 
 						case 375:
 							div_desc_top_css = {
-								top: "83rem"
+								top: "26rem"
 							};
 		
 							div_button_top_css = {
 								top: "-43.5rem"
+							};
+						break;
+
+						case 414:
+							div_desc_top_css = {
+								top: "26rem"
+							};
+		
+							div_button_top_css = {
+								top: "-39rem"
 							};
 						break;
 					}
@@ -448,6 +493,16 @@ $("a#a-help_phss-presenting, a#a-help_phss-platinum, a#a-help_phss-gold, a#a-hel
 								top: "-34.5rem"
 							};
 						break;
+
+						case 414:
+							div_desc_top_css = {
+								top: "26rem"
+							};
+		
+							div_button_top_css = {
+								top: "-31.5rem"
+							};
+						break;
 					}
 				break;
 
@@ -482,6 +537,16 @@ $("a#a-help_phss-presenting, a#a-help_phss-platinum, a#a-help_phss-gold, a#a-hel
 								top: "-25.35rem"
 							};
 						break;
+
+						case 414:
+							div_desc_top_css = {
+								top: "26rem"
+							};
+		
+							div_button_top_css = {
+								top: "-22.3rem"
+							};
+						break;
 					}
 				break;
 
@@ -514,6 +579,16 @@ $("a#a-help_phss-presenting, a#a-help_phss-platinum, a#a-help_phss-gold, a#a-hel
 		
 							div_button_top_css = {
 								top: "-12.85rem"
+							};
+						break;
+
+						case 414:
+							div_desc_top_css = {
+								top: "26rem"
+							};
+		
+							div_button_top_css = {
+								top: "-9.8rem"
 							};
 						break;
 					}
