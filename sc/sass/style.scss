@@ -41,6 +41,7 @@ a {
 
 p, 
 h3, 
+h4
 h5, 
 h6, 
 ol, 
@@ -214,6 +215,36 @@ div#section-splash {
 	.carousel {
 		width: 100%;
 
+		div.carousel-item a {
+			width: 10.82rem;
+			margin: 0 auto;
+			position: absolute;
+			left: 45%;
+		}
+
+		a#splash-learn_more {
+			width: 8.45rem;
+			margin: 0 0 0 3rem;
+			position: absolute;
+			top: 17.25rem;
+			left: 1rem;
+		}
+
+		a#a-splash-pdsa_1 {
+			bottom: 11.5rem;
+		}
+
+		a#a-splash-pdsa_4 {
+			bottom: 7.5rem;
+		} 
+
+		a#a-splash-pdsa_2, 
+		a#a-splash-pdsa_3, 
+		a#a-splash-pdsa_5, 
+		a#a-splash-pdsa_6 {
+			bottom: 8rem;
+		}
+
 		.carousel-control-prev, 
 		.carousel-control-next	{
 			width: 4%;
@@ -229,33 +260,23 @@ p#p-splash-pdsa {
 	font-weight: $font_weight_light;
 	text-align: left;
 	line-height: 2.1rem;
-	color: $purple_1;
+	color: $orange_3;
 }
 
 p#p-splash-pdsa {
-	margin: 1.75rem 0 0 0;
-	text-align: justify;
-	color: $brown_1;
+	width: 100%;
+	margin: 0 auto;
+	bottom: 16.5rem;
+	text-align: center;
+	color: $purple_1;
 }
 
 p#p-splash-pdsa a {
 	color: $purple_link;
 }
 
-a#splash-learn_more, 
-a#a-what_phss_does-more-base, 
-a#a-what_phss_does-more-mission, 
-a#a-what_phss_does-more-services, 
-a#why_phss-more, 
-a#a-help_phss-sponsor_cmmt, 
-a#a-help_phss-presenting, 
-a#a-help_phss-platinum, 
-a#a-help_phss-gold, 
-a#a-help_phss-silver, 
-a#a-help_phss-exhibitor,  
-div#content-form-contact a, 
-#input-contact-reset, 
-#input-contact-submit {
+a.a-button, 
+a#why_phss-more {
 	display: block;
 	font-family: $sofia_font;
   font-size: $font_size_link;
@@ -271,41 +292,15 @@ div#content-form-contact a,
 	font-size: $font_size_contact_form_button;
 }
 
-a#splash-learn_more:hover, 
-a#a-what_phss_does-more-base:hover, 
-a#a-what_phss_does-more-mission:hover, 
-a#a-what_phss_does-more-services:hover, 
-a#why_phss-more:hover, 
-a#a-help_phss-sponsor_cmmt:hover, 
-a#a-help_phss-presenting:hover, 
-a#a-help_phss-platinum:hover, 
-a#a-help_phss-gold:hover, 
-a#a-help_phss-silver:hover, 
-a#a-help_phss-exhibitor:hover, 
-div#content-form-contact a:hover, 
-#input-contact-reset:hover, 
-#input-contact-submit:hover {
+a.a-button:hover, 
+a#why_phss-more:hover {
 	background-color: $yellow_2;
 	border: $border_3;
 	text-decoration: none;
 }
 
-a#splash-learn_more {
-	margin-left: 3rem;
-	position: absolute;
- 	top: 17.25rem;
-}
-
-a#a-what_phss_does-more-base, 
-a#a-what_phss_does-more-mission, 
-a#a-what_phss_does-more-services, 
-a#why_phss-more, 
-a#a-help_phss-sponsor_cmmt, 
-a#a-help_phss-presenting, 
-a#a-help_phss-platinum, 
-a#a-help_phss-gold, 
-a#a-help_phss-silver, 
-a#a-help_phss-exhibitor {
+a.a-button, 
+a#why_phss-more {
 	width: 12.25rem;
 	margin: 0 auto;
 }
@@ -490,14 +485,39 @@ section#section-events {
 		margin-bottom: 1.75rem;
 	}
 
+	div.row:nth-child(5) > div:first-of-type { 
+		h5:first-of-type {
+			width: 7.6rem;
+			margin: 3rem auto;
+			padding-bottom: 0.75rem;
+			border-top: $border_1;
+			border-bottom: $border_1;
+			text-align: center;
+			font-weight: $font_weight_bold;
+		}
+
+		h5:nth-child(2)	{
+			width: 9rem;
+		}
+	}
+
 	h5 {
-		width: 6.5rem;
+		width: 7.3rem;
 		margin: 0 auto 1.5rem auto;
 		padding: 0.5rem 0 0.75rem 0;
-		border-top: $border_1;
+		border-top: none;
 		border-bottom: $border_1;
 		text-align: center;
 		font-weight: $font_weight_bold;
+	}
+
+	hr, 
+	img {
+		margin-top: 3rem;
+	}
+
+	img {
+		border: $border_2;
 	}
 
 	div#calendar-events {
@@ -806,11 +826,11 @@ div#contact-confirmation_message {
 @media (max-width: 1920px)	{
 	nav {
 		li {
-			width: (104.2% / 6);
+			width: (106% / 5);
 		}
 
 		li:first-of-type {
-			width: ((104.2% / 6) / 1.5);
+			width: ((106% / 5) / 1.5);
 		}
 	}
 
@@ -824,16 +844,16 @@ div#contact-confirmation_message {
 @media (max-width: 1600px)	{
 	nav {
 		li {
-			width: (104% / 6);
+			width: (104% / 5);
 		}
 
 		li:first-of-type {
-			width: ((104% / 6) / 1.5);
+			width: ((104% / 5) / 1.5);
 		}
 	}
 	
 	a#splash-learn_more {
-		top: 16rem;
+		top: 19rem;
 	}
 
 	section#section-location {
@@ -881,11 +901,11 @@ div#contact-confirmation_message {
 @media (max-width: 1366px) {
 	nav {
 		li {
-			width: (103.7% / 6);
+			width: (103.7% / 5);
 		}
 
 		li:first-of-type {
-			width: ((103.7% / 6) / 1.5);
+			width: ((103.7% / 5) / 1.5);
 		}
 	}
 
@@ -1037,13 +1057,13 @@ div#contact-confirmation_message {
 		}
 
 		li {
-			width: (103.25% / 6);
+			width: (103.25% / 5);
 			border-right: none;
 			vertical-align: middle;
 		}
 		
 		li:first-of-type {
-			width: ((103.25% / 6) / 1.5);
+			width: ((103.25% / 5) / 1.5);
 			text-align: left;
 		}
 /* 
@@ -1280,13 +1300,13 @@ div#contact-confirmation_message {
 		}
 
 		li {
-			width: (102.25% / 6);
+			width: (102.25% / 5);
 			border-right: none;
 			vertical-align: middle;
 		}
 		
 		li:first-of-type {
-			width: ((102.25% / 6) / 1.85);
+			width: ((102.25% / 5) / 1.85);
 			text-align: left;
 		}
 
