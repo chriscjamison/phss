@@ -140,23 +140,11 @@ div#section-splash {
     div#section-splash .carousel div.carousel-item a {
       width: 10.82rem;
       margin: 0 auto;
-      position: absolute;
-      left: 45%; }
-    div#section-splash .carousel a#splash-learn_more {
+      position: absolute; }
+    div#section-splash .carousel a#a-splash-learn_more {
       width: 8.45rem;
-      margin: 0 0 0 3rem;
       position: absolute;
-      top: 17.25rem;
       left: 1rem; }
-    div#section-splash .carousel a#a-splash-pdsa_1 {
-      bottom: 11.5rem; }
-    div#section-splash .carousel a#a-splash-pdsa_4 {
-      bottom: 7.5rem; }
-    div#section-splash .carousel a#a-splash-pdsa_2,
-    div#section-splash .carousel a#a-splash-pdsa_3,
-    div#section-splash .carousel a#a-splash-pdsa_5,
-    div#section-splash .carousel a#a-splash-pdsa_6 {
-      bottom: 8rem; }
     div#section-splash .carousel .carousel-control-prev,
     div#section-splash .carousel .carousel-control-next {
       width: 4%; }
@@ -182,7 +170,9 @@ p#p-splash-pdsa a {
   color: #8c0d98; }
 
 a.a-button,
-a#why_phss-more {
+a#why_phss-more,
+#input-contact-reset,
+#input-contact-submit {
   display: block;
   font-family: "sofia-pro-soft";
   font-size: 1.25rem;
@@ -608,17 +598,36 @@ div#contact-confirmation_message p {
     width: 21.2%; }
   nav li:first-of-type {
     width: 14.13333%; }
+  div#section-splash .carousel div.carousel-item a {
+    left: 45%; }
+  div#section-splash .carousel a#a-splash-learn_more {
+    top: 17.25rem; }
+  div#section-splash .carousel a#a-splash-pdsa_1 {
+    bottom: 11.5rem; }
+  div#section-splash .carousel a.a-pdsa {
+    bottom: 8rem; }
+  div#section-splash .carousel a#a-splash-pdsa_4 {
+    bottom: 7.5rem; }
   #contact-confirmation_message {
     height: 22.75rem;
     margin: 11% 38.25%; } }
 
 @media (max-width: 1600px) {
   nav li {
-    width: 20.8%; }
+    width: 21.12%; }
   nav li:first-of-type {
-    width: 13.86667%; }
-  a#splash-learn_more {
-    top: 19rem; }
+    width: 14.08%; }
+  div#section-splash .carousel a#a-splash-learn_more {
+    top: 15.25rem; }
+  div#section-splash .carousel p#p-splash-pdsa {
+    bottom: 13.5rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem; }
+  div#section-splash .carousel a#a-splash-pdsa_1 {
+    bottom: 9.25rem; }
+  div#section-splash .carousel a.a-pdsa,
+  div#section-splash .carousel a#a-splash-pdsa_4 {
+    bottom: 6.5rem; }
   section#section-location div.row:nth-child(2) > div > img,
   section#section-location div.row:nth-child(3) > div > iframe {
     width: 31rem; }
@@ -641,11 +650,25 @@ div#contact-confirmation_message p {
 
 @media (max-width: 1366px) {
   nav li {
-    width: 20.74%; }
+    width: 21.1%; }
   nav li:first-of-type {
-    width: 13.82667%; }
+    width: 14.06667%; }
   .container {
     max-width: 1334px; }
+  div#section-splash .carousel div.carousel-item a {
+    left: 43.7%; }
+  div#section-splash .carousel a#a-splash-learn_more {
+    top: 19.5rem;
+    left: 4rem; }
+  div#section-splash .carousel p#p-splash-pdsa {
+    bottom: 11.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem; }
+  div#section-splash .carousel a#a-splash-pdsa_1 {
+    bottom: 7.5rem; }
+  div#section-splash .carousel a.a-pdsa,
+  div#section-splash .carousel a#a-splash-pdsa_4 {
+    bottom: 5.25rem; }
   section#section-why_phss div.factoid-why_phss {
     margin-right: 1rem; }
   section#section-location div.row:nth-child(3) > div > img,
@@ -667,7 +690,7 @@ div#contact-confirmation_message p {
   h3 {
     width: 75%;
     margin: 0 auto 2.5rem auto; }
-  a#splash-learn_more,
+  a#a-splash-learn_more,
   a#a-what_phss_does-more-mission,
   a#why_phss-more,
   a#a-help_phss-sponsor_cmmt,
@@ -722,6 +745,8 @@ div#contact-confirmation_message p {
     margin-left: 8.3333333333%; }
   header {
     padding: 0.56rem 2rem; }
+    header ul {
+      margin-top: 0.9rem; }
     header li {
       margin: 0 0.8rem; }
     header a {
@@ -736,27 +761,32 @@ div#contact-confirmation_message p {
     nav ul {
       margin-bottom: 0; }
     nav li {
-      width: 20.65%;
+      width: 21%;
       border-right: none;
       vertical-align: middle; }
     nav li:first-of-type {
-      width: 13.76667%;
+      width: 14%;
       text-align: left; }
     nav a {
       font-size: 1rem; }
-  div#section-splash p#p-splash {
+  div#section-splash .carousel p#p-splash {
     margin: 1rem;
     font-size: 1.25rem; }
-  div#section-splash a#splash-learn_more {
-    margin-left: 1rem;
-    top: 14.25rem; }
-  div#section-splash div.col-ipad-6 {
+  div#section-splash .carousel div.carousel-item a {
+    left: 42%; }
+  div#section-splash .carousel a#a-splash-learn_more {
+    width: 7.2rem;
+    top: 17rem;
+    left: 2rem; }
+  div#section-splash .carousel div.col-ipad-6 {
     margin-top: 0; }
-  div#section-splash p#p-splash-pdsa {
-    width: 93%;
-    margin: 1rem 1rem 0 0;
-    padding: 0 1rem;
-    font-size: 1.25rem; }
+  div#section-splash .carousel p#p-splash-pdsa {
+    display: none; }
+  div#section-splash .carousel a#a-splash-pdsa_1 {
+    bottom: 7.5rem; }
+  div#section-splash .carousel a.a-pdsa,
+  div#section-splash .carousel a#a-splash-pdsa_4 {
+    bottom: 4.25rem; }
   section#section-what_phss_does p.p-what_phss_does {
     width: 80%;
     margin: 0 auto; }
@@ -821,6 +851,8 @@ div#contact-confirmation_message p {
   section#section-events p.p-events {
     width: 80%;
     margin: 0 auto 1.75rem auto; }
+  section#section-events hr {
+    width: 40%; }
   section#section-events div#calendar-events {
     margin: 0 auto; }
   section#section-help_phss hr {
@@ -865,23 +897,31 @@ div#contact-confirmation_message p {
   nav ul {
     margin-bottom: 0; }
   nav li {
-    width: 20.45%;
+    width: 21.02%;
     border-right: none;
     vertical-align: middle; }
   nav li:first-of-type {
-    width: 11.05405%;
+    width: 13.1375%;
     text-align: left; }
   nav li:last-of-type {
-    text-align: center; }
-  div#section-splash p#p-splash,
-  div#section-splash p#p-splash-pdsa {
+    text-align: right; }
+  div#section-splash .carousel p#p-splash,
+  div#section-splash .carousel p#p-splash-pdsa {
     margin: 1rem;
     font-size: 1rem; }
-  div#section-splash p#p-splash-pdsa {
+  div#section-splash .carousel p#p-splash-pdsa {
     width: 83%; }
-  div#section-splash a#splash-learn_more {
-    margin-left: 1rem;
-    top: 12.25rem; }
+  div#section-splash .carousel a#a-splash-learn_more {
+    top: 10.75rem; }
+  div#section-splash .carousel div.carousel-item a {
+    width: 9.1rem;
+    left: 40.5%;
+    font-size: 1rem; }
+  div#section-splash .carousel a#a-splash-pdsa_1 {
+    bottom: 5.25rem; }
+  div#section-splash .carousel a.a-pdsa,
+  div#section-splash .carousel a#a-splash-pdsa_4 {
+    bottom: 2.75rem; }
   section#section-help_phss div.row:nth-child(5) > div:first-of-type {
     margin-left: 8.3333333333%; }
   section#section-help_phss div.row:nth-child(5) > div:nth-child(2) hr {
@@ -907,6 +947,7 @@ div#contact-confirmation_message p {
   section#section-location > div.row:nth-child(3) > div > img,
   section#section-location > div.row:nth-child(4) > div > iframe,
   section#section-events video,
+  section#section-events img,
   section#section-help_phss > div.row:nth-child(3) > div > img,
   section#section-help_phss div.row:nth-child(5) div > div > h6 {
     width: 22rem;
@@ -967,6 +1008,8 @@ div#contact-confirmation_message p {
   nav ul:nth-child(3) > li:first-of-type {
     width: 100%;
     text-align: center; }
+  nav li:last-of-type {
+    text-align: center; }
   nav a {
     font-size: 1.25rem; }
   nav a:first-of-type {
@@ -974,22 +1017,33 @@ div#contact-confirmation_message p {
   div#section-splash hr {
     width: 100%;
     margin: 0; }
-  div#section-splash p#p-splash,
-  div#section-splash p#p-splash-pdsa {
+  div#section-splash .carousel div.carousel-item {
+    margin-bottom: 5rem; }
+  div#section-splash .carousel div#splash-item-desc {
+    margin-bottom: 15.75rem; }
+  div#section-splash .carousel p#p-splash {
     width: 92%;
     margin: 10.5rem 1rem 1rem 0;
     text-align: justify;
     line-height: 1.8rem; }
-  div#section-splash a#splash-learn_more {
+  div#section-splash .carousel a#a-splash-learn_more {
     margin-left: 0;
-    top: 24rem;
+    top: 22rem;
     left: 36%; }
-  div#section-splash div#splash-item-desc {
-    margin-bottom: 13rem; }
-  div#section-splash p#p-splash-pdsa {
+  div#section-splash .carousel div.carousel-item a {
+    left: 32%;
+    top: 11rem;
+    bottom: auto; }
+  div#section-splash .carousel a.a-pdsa,
+  div#section-splash .carousel a#a-splash-pdsa_1,
+  div#section-splash .carousel a#a-splash-pdsa_4 {
+    bottom: auto; }
+  div#section-splash .carousel p#p-splash-pdsa {
     margin: 10rem auto 0 auto; }
-  div#section-splash div#splash-item-pdsa-email {
-    margin-bottom: 5rem; }
+  div#section-splash .carousel .carousel-control-prev,
+  div#section-splash .carousel .carousel-control-next {
+    width: 13%;
+    height: 10rem; }
   section#section-what_phss_does div.row:nth-child(3) > div:first-of-type,
   section#section-what_phss_does div.row:nth-child(3) > div:nth-child(2),
   section#section-what_phss_does div.row:nth-child(3) > div:nth-child(3) {
@@ -1066,6 +1120,8 @@ div#contact-confirmation_message p {
   section#section-phss_supporters div.row:nth-child(3) > div > div > ul {
     width: 22.1rem;
     margin-bottom: 6rem; }
+  a#a-contact-back {
+    width: 10.7rem; }
   div#content-form-contact {
     padding: 1rem; }
   #form-contact {
@@ -1079,6 +1135,7 @@ div#contact-confirmation_message p {
   section#section-location > div.row:nth-child(3) > div > img,
   section#section-location > div.row:nth-child(4) > div > iframe,
   section#section-events video,
+  section#section-events img,
   section#section-help_phss > div.row:nth-child(3) > div > img,
   section#section-help_phss div.row:nth-child(5) div > div > h6 {
     width: 21.6rem;
@@ -1089,17 +1146,19 @@ div#contact-confirmation_message p {
   nav ul:nth-child(3) > li:first-of-type {
     width: 100%;
     text-align: center; }
-  div#section-splash div#splash-item-desc {
+  div#section-splash .carousel div#splash-item-desc {
     margin-bottom: 15.75rem; }
-  div#section-splash p#p-splash {
+  div#section-splash .carousel p#p-splash {
     width: 92%;
     margin: 9rem 1rem 1rem 0; }
-  div#section-splash a#splash-learn_more {
+  div#section-splash .carousel div.carousel-item a {
+    top: 10.5rem; }
+  div#section-splash .carousel a#a-splash-learn_more {
     top: 21rem;
     left: 34%; }
-  div#section-splash div#splash-item-pdsa-email {
+  div#section-splash .carousel div#splash-item-pdsa-email {
     margin-bottom: 7.75rem; }
-  div#section-splash p#p-splash-pdsa {
+  div#section-splash .carousel p#p-splash-pdsa {
     margin: 9rem auto 0 auto; }
   section#section-what_phss_does div.row:nth-child(3) > div:first-of-type,
   section#section-what_phss_does div.row:nth-child(3) > div:nth-child(2),
@@ -1153,10 +1212,18 @@ div#contact-confirmation_message p {
   section#section-location > div.row:nth-child(3) > div > img,
   section#section-location > div.row:nth-child(4) > div > iframe,
   section#section-events video,
+  section#section-events img,
   section#section-help_phss > div.row:nth-child(3) > div > img,
   section#section-help_phss div.row:nth-child(5) div > div > h6 {
     width: 20.5rem;
     height: auto; }
+  div#section-splash .carousel div.carousel-item {
+    margin-bottom: 4.5rem; }
+  div#section-splash .carousel div.carousel-item a {
+    top: 9.5rem;
+    left: 29.25%; }
+  div#section-splash .carousel a#a-splash-learn_more {
+    top: 20.5rem; }
   section#section-what_phss_does div.row:nth-child(3) > div:first-of-type,
   section#section-what_phss_does div.row:nth-child(3) > div:nth-child(2),
   section#section-what_phss_does div.row:nth-child(3) > div:nth-child(3) {

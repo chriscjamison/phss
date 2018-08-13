@@ -10,7 +10,7 @@
     <link href="assets/css/bootstrap-4.0.0.css" rel="stylesheet">
 		
 		<!-- Site CSS -->
-		<link href="assets/css/style.css?v=1" rel="stylesheet">
+		<link href="assets/css/style.css?v=2" rel="stylesheet">
   </head>
   <body>
 <!-- 
@@ -29,7 +29,7 @@
       </p>
     </div>
     <div id="content-form-contact">
-      <a href="javascript:closeContactForm();" class="a-button" title="Go Back to Page">Go Back to Page</a> 
+      <a href="javascript:closeContactForm();" title="Go Back to Page" class="a-button" id="a-contact-back">Go Back to Page</a> 
       <form method="post" action="assets/php/contact.php" name="form-contact" id="form-contact">
         <label for="full_name">Please enter your full name below:</label>
         <input type="text" value="First and Last Name" size="25" max-size="80" name="full_name" id="input-contact-full_name" />
@@ -37,8 +37,8 @@
         <input type="text" value="____@_______.___" size="25" max-size="80" name="email_address" id="input-contact-email_address" />
         <label for="message">Please compose your message below:</label>
         <textarea cols="27" rows="8" name="message" id="input-contact-message">Type your message here</textarea>
-        <input type="reset" value="Clear Information" name="input-reset" class="a-button" id="input-contact-reset" />
-        <input type="submit" value="Send Message" name="input-submit" class="a-button" id="input-contact-submit" />
+        <input type="reset" value="Clear Information" name="input-reset" id="input-contact-reset" />
+        <input type="submit" value="Send Message" name="input-submit" id="input-contact-submit" />
       </form>
     </div>
     <div id="contact-bkgrnd"></div>
@@ -46,28 +46,24 @@
 		<header>
 			<img src="assets/img/logo/logo.png" width="195" height="60" alt="Perpetual Home Supportive Services" id="header-logo">
 			<ul>
-				<li><a href="javascript:loadContactForm();" title="Contact Us" id="header-link-contact">Contact Us</a></li>
-				<li><a href="#donate" title="Donate" id="header-link-donate">Donate</a></li>
-				<li><a href="#map" title="Map" id="header-link-map">Map</a></li>
+				<li><a href="javascript:loadContactForm();" title="Contact Us" id="a-header-contact">Contact Us</a></li>
+				<li><a href="https://www.facebook.com/PHSS01/" target="_blank" title="Like PHSS on Facebook" id="a-header-facebook">Like PHSS on Facebook</a></li>
 			</ul>
 		</header>
     <nav class="navbar navbar-expand-lg">
       <ul>
-        <li><a href="javascript:showMenu();" title="Menu" id="nav-link-menu">Menu</a></li>
+        <li><a href="javascript:showMenu();" title="Menu" id="a-nav-menu">Menu</a></li>
       </ul>
 			<ul>
-				<li><a href="#home" title="Home" id="nav-link-home">Home</a></li>
-				<li><a href="#what_phss_does" title="What PHSS Does" id="nav-link-what_phss_does">What PHSS Does</a></li>
-				<!-- <li><a href="#why_phss" title="Why PHSS" id="nav-link-why_phss">Why PHSS</a></li> -->
-				<!-- <li><a href="#location" title="Location" id="nav-link-location">Location</a></li> -->
-				<li><a href="#events" title="Events" id="nav-link-events">Events</a></li>
-				<li><a href="#help_phss" title="Help PHSS" id="nav-link-help_phss">Help PHSS</a></li>
-        <li><a href="#phss_supporters" title="PHSS Supporters" id="nav-link-phss_supporters">PHSS Supporters</a></li>
+				<li><a href="#home" title="Home" id="a-nav-home">Home</a></li>
+				<li><a href="#what_phss_does" title="What PHSS Does" id="a-nav-what_phss_does">What PHSS Does</a></li>
+				<li><a href="#events" title="Events" id="a-nav-events">Events</a></li>
+				<li><a href="#help_phss" title="Help PHSS" id="a-nav-help_phss">Help PHSS</a></li>
+        <li><a href="#phss_supporters" title="PHSS Supporters" id="a-nav-phss_supporters">PHSS Supporters</a></li>
       </ul>
       <ul>
-				<li><a href="javascript:loadContactForm();" title="Contact Us" id="header-link-contact">Contact Us</a></li>
-				<li><a href="#donate" title="Donate" id="header-link-donate">Donate</a></li>
-				<li><a href="#map" title="Map" id="header-link-map">Map</a></li>
+				<li><a href="javascript:loadContactForm();" title="Contact Us" id="a-header-contact">Contact Us</a></li>
+				<li><a href="https://www.facebook.com/PHSS01/" target="_blank" title="Like PHSS on Facebook" id="a-header-facebook">Like PHSS on Facebook</a></li>
 			</ul>
     </nav>
     <div class="row" id="section-splash">
@@ -80,7 +76,7 @@
                   Provide the structure and safety for your loved one with an intellectual disability or who suffers from HIV/AIDS 
                   that guides them towards independence by placing them in the sure care of Perpetual Home Supportive Services.
                 </p>
-                <a href="#section-what_phss_does" title="Learn More" class="a-button" id="splash-learn_more">Learn More</a>
+                <a href="#section-what_phss_does" title="Learn More" class="a-button" id="a-splash-learn_more">Learn More</a>
               </div>
               <img src="assets/img/splash/splash_3.jpg" alt="Learn More about Perpetual Home Supportive Services" class="img-responsive" id="splash-img-desc" />
             </div>
@@ -96,23 +92,23 @@
               <img src="assets/img/splash/pdsa_1.jpg" alt="Immune Thrombocytopenia - Tough to pronounce, more challenging to live with." class="img-responsive" id="splash-img-pdsa_1" />
             </div>
             <div class="carousel-item">
-              <a href="http://www.itpwalk.org/get-involved/participant" target="_blank" title="Click to Register" class="a-button" id="a-splash-pdsa_2">Click to Register</a>
+              <a href="http://www.itpwalk.org/get-involved/participant" target="_blank" title="Click to Register" class="a-button a-pdsa" id="a-splash-pdsa_2">Click to Register</a>
               <img src="assets/img/splash/pdsa_2.jpg" alt="IBT can cause DEBILITATING fatigue." class="img-responsive" id="splash-img-pdsa_2" />
             </div>
             <div class="carousel-item">
-              <a href="http://www.itpwalk.org/get-involved/participant" target="_blank" title="Click to Register" class="a-button" id="a-splash-pdsa_3">Click to Register</a>
+              <a href="http://www.itpwalk.org/get-involved/participant" target="_blank" title="Click to Register" class="a-button a-pdsa" id="a-splash-pdsa_3">Click to Register</a>
               <img src="assets/img/splash/pdsa_3.jpg" alt="IBT does NOT DESCRIMINATE, it affects children &amp; adults". class="img-responsive" id="splash-img-pdsa_3" />
             </div>
             <div class="carousel-item">
-              <a href="http://www.itpwalk.org/get-involved/participant" target="_blank" title="Click to Register" class="a-button" id="a-splash-pdsa_4">Click to Register</a>
+              <a href="http://www.itpwalk.org/get-involved/participant" target="_blank" title="Click to Register" class="a-button a-pdsa" id="a-splash-pdsa_4">Click to Register</a>
               <img src="assets/img/splash/pdsa_4.jpg" alt="IBT is the most COMMON autoimmune bleeding disorder." class="img-responsive" id="splash-img-pdsa_4" />
             </div>
             <div class="carousel-item">
-              <a href="http://www.itpwalk.org/get-involved/participant" target="_blank" title="Click to Register" class="a-button" id="a-splash-pdsa_5">Click to Register</a>
+              <a href="http://www.itpwalk.org/get-involved/participant" target="_blank" title="Click to Register" class="a-button a-pdsa" id="a-splash-pdsa_5">Click to Register</a>
               <img src="assets/img/splash/pdsa_5.jpg" alt="IBT has NO CURE." class="img-responsive" id="splash-img-pdsa_5" />
             </div>
             <div class="carousel-item">
-              <a href="http://www.itpwalk.org/get-involved/participant" target="_blank" title="Click to Register" class="a-button" id="a-splash-pdsa_6">Click to Register</a>
+              <a href="http://www.itpwalk.org/get-involved/participant" target="_blank" title="Click to Register" class="a-button a-pdsa" id="a-splash-pdsa_6">Click to Register</a>
               <img src="assets/img/splash/pdsa_6.jpg" alt="IBT isn&squo;t caused by by clumsiness or abuse, it's caused by low platelets." class="img-responsive" id="splash-img-pdsa_6" />
             </div>
             <!-- <div class="carousel-item" id="splash-item-pdsa-email">
@@ -311,7 +307,7 @@
             <h5>St. Louis, MO &ndash; 1st National Walk for ITP</h5>
             <h5>Pump It Up &ndash; St Louis, MO 2018</h5>
             <h5>with Perpetual Home Support Services</h5>
-            <a href="assets/pdf/sponsorship_proposal.pdf" target="_blank" title="Sponsor Commitment" id="a-help_phss-sponsor_cmmt">Sponsor Commitment</a>
+            <a href="assets/pdf/sponsorship_proposal.pdf" target="_blank" title="Sponsor Commitment" class="a-button" id="a-help_phss-sponsor_cmmt">Sponsor Commitment</a>
             <hr>
             <img src="assets/img/content/pump_it_up_flyer.jpg" width="525" height="679" alt="St. Louis, MO &ndash; 1st National Walk for ITP Pump It Up &ndash; St Louis, MO 2018 with Perpetual Home Support Services" />
             <hr>
@@ -543,6 +539,6 @@
   	<script src="assets/js/bootstrap-4.0.0.js"></script>
 		
 		<!-- Site JavaScript -->
-	  <script src="assets/js/script.js?v=2"></script>
+	  <script src="assets/js/script.js?v=3"></script>
   </body>
 </html>

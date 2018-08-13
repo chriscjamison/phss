@@ -676,6 +676,8 @@ $(window).scroll(
 			ul_element = $(ul_selector);
 
 			var nav_css = {};
+			var nav_bottom_css = {};
+			var nav_top_css = {};
 			var ul_css = {};
 
 			var nav_height;
@@ -701,31 +703,41 @@ $(window).scroll(
 
 					if ($(nav_element).css("top") === "0px" )  {
 						
-						$(nav_element).stop().hide("slide", { direction: "up" }, 750, 
-							function () {  
-								$(nav_element).css(nav_css);
+						nav_css.bottom = "0";
 
-								$(nav_element).stop().show("slide", { direction: "down" }, 500);
+						$(nav_element).css(nav_css);
+						
+						/* $(nav_element).stop().hide("slide", { direction: "up", distance: $(nav_element).height() }, 250, 
+							function () {  
+								$(nav_element).css(nav_css).css(;
+
+
+								$(nav_element).delay(200).stop().show("slide", { direction: "down", distance: $(nav_element).height() }, 150);
 							}
-						); 
+						); */ 
 
 					} else {
+						nav_css.top = "0"
+						
 						$(nav_element).css(nav_css);
 
-						$(nav_element).stop().show("slide", { direction: "down" }, 500);
+						// $(nav_element).stop().show("slide", { direction: "down", distance: $(nav_element).height() }, 150);
 					}
 				} else {
 					nav_css.top = "0px";
+
+					$(nav_element).css(nav_css);
+
 					if (window_position < body_height - (window_height * 1.4))  {
-						if ($(nav_element).css("top") !== "0px")  {
-							$(nav_element).stop().hide("slide", { direction: "down" }, 500, 
+						/* if ($(nav_element).css("top") !== "0px")  {
+							$(nav_element).stop().hide("slide", { direction: "down", distance: $(nav_element).height() }, 150, 
 								function () {
 									$(nav_element).css(nav_css);
 
-									$(nav_element).stop().show("slide", { direction: "up" }, 500);
+									$(nav_element).delay(300).stop().show("slide", { direction: "up", distance: $(nav_element).height() });
 								}
 							);
-						}
+						} */
 		
 						if ($(nav_element).css("position") === "relative")  {
 							$(nav_element).css(nav_css);
