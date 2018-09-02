@@ -131,11 +131,13 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 		var class_selectors;
 		var class_elements = {};
 	
-		class_selector = "section#section-what_phss_does > div.row:nth-child(3) > div:nth-child(1) h5, .p-what_phss_does, #ul-what_phss_does-services";
-		class_elements = $(class_selector);
+		class_selectors = "section#section-what_phss_does > div.row:nth-child(4) > div:nth-child(1) h5, #p-what_phss_does-base, #p-what_phss_does-mission, #p-what_phss_does-services, #ul-what_phss_does-services";
+		class_elements = $(class_selectors);
 	
 		$(class_elements).delay(500).removeClass("visible");
 		$(class_elements).delay(500).addClass("not_visible");
+
+
 	
 		var id_selector;
 
@@ -144,7 +146,7 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 		var h5_and_p_selectors;
 
 		h5_and_p_selectors = " #header-what_phss_does-" + id_selector + ", #p-what_phss_does-" + id_selector;
-
+// console.log("h5_and_p_selectors = " + h5_and_p_selectors);
 		var window_width;
 
 		window_width = $(window).width();
@@ -153,7 +155,7 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 			if (window_width <= 414)	{
 				var div_selector;
 				
-				div_selector = "section#section-what_phss_does div.row:nth-child(3) > div:";
+				div_selector = "section#section-what_phss_does div.row:nth-child(4) > div:";
 
 				var div_img_selector;
 				var div_img_element = {};
@@ -171,33 +173,60 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 
 				switch (window_width)	{
 					case 320:
+						div_top_css = {
+							top: "32.5rem"
+						};
+
 						div_img_top_css = {
-							top: "-25.5rem"
+							top: "-24rem"
+						};
+
+						div_button_top_css = {
+							top: "-22.25rem"
 						};
 					break;
 
 					case 360:
 						div_img_top_css = {
-							top: "-25.5rem"
+							top: "-22rem"
+						};
+
+						div_button_top_css = {
+							top: "-20rem"
 						};
 					break;
 
-					case 375:
+					case 375:	
+						div_top_css = {
+							top: "34.5rem"
+						};
+
 						div_img_top_css = {
-							top: "-24rem"
+							top: "-22rem"
+						};
+
+						div_button_top_css = {
+							top: "-20.5em"
 						};
 					break;
 
 					case 414:
+						div_top_css = {
+							top: "38rem"
+						};
+
 						div_img_top_css = {
-							top: "-24rem"
+							top: "-21.5rem"
+						};
+
+						div_button_top_css = {
+							top: "-19.75rem"
 						};
 					break;
 				}
 				
-
 				$(div_img_element).css(div_img_top_css);
-				$(div_button_element).css(div_img_top_css);
+				$(div_button_element).css(div_button_top_css);
 
 				div_selector = div_selector + "first-of-type";
 
@@ -206,28 +235,15 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 				div_element = $(div_selector);
 
 				var div_top_css = {};
-
-				div_top_css = {
-					top: "36rem"
-				};
 				
 				$(div_element).css(div_top_css);
 			}
-
-			var h5_and_p_and_ul_selectors;
-			var h5_and_p_and_ul_elements = {};
-
-			h5_and_p_and_ul_selectors = h5_and_p_selectors + ", #ul-what_phss_does-services";
-			h5_and_p_and_ul_elements = $(h5_and_p_and_ul_selectors);
-
-			$(h5_and_p_and_ul_elements).removeClass("not_visible");
-			$(h5_and_p_and_ul_elements).addClass("visible");
 		}	else {
 			if (window_width <= 414)	{
 				var div_selector;
 				var div_element = {};
 				
-				div_selector = "#section-what_phss_does > div.row:nth-child(3) > div:";
+				div_selector = "#section-what_phss_does > div.row:nth-child(4) > div:";
 
 				var div_img_selector;
 				var div_img_element = {};
@@ -242,30 +258,63 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 				div_button_element = $(div_button_selector);
 
 				var div_img_top_css = {};
+				var div_button_top_css = {};
 
 				if (id_selector === "base")	{
 					switch (window_width)	{
 						case 320:
+							div_top_css = {
+								top: "32.5rem"
+							};
+
 							div_img_top_css = {
-								top: "-28.5rem"
+								top: "-34rem"
+							};
+
+							div_button_top_css = {
+								top: "-32.25rem"
 							};
 						break;
 	
 						case 360:
+							div_top_css = {
+								top: "35rem"
+							};
+
 							div_img_top_css = {
-								top: "-28.5rem"
+								top: "-30rem"
+							};
+
+							div_button_top_css = {
+								top: "-28rem"
 							};
 						break;
 
 						case 375:
+							div_top_css = {
+								top: "34.5rem"
+							};
+
 							div_img_top_css = {
-								top: "-26.75rem"
+								top: "-26.5rem"
+							};
+
+							div_button_top_css = {
+								top: "-25rem"
 							};
 						break;
 
 						case 414:
+							div_top_css = {
+								top: "35.5rem"
+							};
+
 							div_img_top_css = {
-								top: "-26.75rem"
+								top: "-26rem"
+							};
+
+							div_button_top_css = {
+								top: "-24.25rem"
 							};
 						break;
 					}
@@ -273,9 +322,9 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 					div_selector = div_selector + "first-of-type";
 					div_element = $(div_selector);
 
-					div_top_css = {
+					/* div_top_css = {
 						top: "36rem"
-					};
+					}; */
 				}	else {
 					div_top_css = {
 						top: "38rem"
@@ -283,34 +332,58 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 
 					switch (window_width)	{
 						case 320:
+							div_top_css = {
+								top: "32.5rem"
+							};
+
 							div_img_top_css = {
-								top: "-35.5rem"
+								top: "-37.5rem"
+							};
+
+							div_button_top_css = {
+								top: "-35.75rem"
 							};
 						break;
 	
 						case 360:
-							div_img_top_css = {
-								top: "-35.5rem"
+							div_top_css = {
+								top: "35rem"
 							};
 
-							div_top_css = {
-								top: "36rem"
+							div_img_top_css = {
+								top: "-33.5rem"
+							};
+
+							div_button_top_css = {
+								top: "-31.5rem"
 							};
 						break;
 
 						case 375:
+							div_top_css = {
+								top: "34.5rem"
+							};
+
 							div_img_top_css = {
-								top: "-28.5rem"
+								top: "-31.75rem"
+							};
+
+							div_button_top_css = {
+								top: "-30.25rem"
 							};
 						break;
 
 						case 414:
-							div_img_top_css = {
-								top: "-28.5rem"
+							div_top_css = {
+								top: "35.5rem"
 							};
 
-							div_top_css = {
-								top: "40rem"
+							div_img_top_css = {
+								top: "-27.75rem"
+							};
+
+							div_button_top_css = {
+								top: "-26rem"
 							};
 						break;
 					}
@@ -318,28 +391,48 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 	
 					div_element = $(div_selector);					
 				}
-
-				var h5_and_p_elements;
 		
 				h5_and_p_elements = $(h5_and_p_selectors);
 	
-				$(h5_and_p_elements).removeClass("not_visible");
-				$(h5_and_p_elements).addClass("visible");
-			}
-		}
+				$(h5_and_p_elements).removeClass("not_visible");				
 
-		$(div_img_element).css(div_img_top_css);
-		$(div_button_element).css(div_img_top_css);
-		$(div_element).css(div_top_css);
+				$(div_img_element).css(div_img_top_css);
+				$(div_button_element).css(div_button_top_css);
+				$(div_element).css(div_top_css);
+			}	
+		}
+		
+		if (id_selector === "services")	{
+			var h5_and_p_and_ul_selectors;
+			var h5_and_p_and_ul_elements = {};
+
+			h5_and_p_and_ul_selectors = h5_and_p_selectors + ", #ul-what_phss_does-services";
+			h5_and_p_and_ul_elements = $(h5_and_p_and_ul_selectors);
+
+			$(h5_and_p_and_ul_elements).removeClass("not_visible");
+
+			$(h5_and_p_and_ul_elements).addClass("visible");
+// console.log("h5_and_p_and_ul_selectors = " + h5_and_p_and_ul_selectors);
+		}	else {
+			var h5_and_p_elements = {};
+
+			h5_and_p_elements = $(h5_and_p_selectors);
+
+			$(h5_and_p_elements).removeClass("not_visible");
+
+			$(h5_and_p_elements).addClass("visible");
+
+// console.log("h5_and_p_selectors = " + h5_and_p_selectors);
+		}
 	}
 );
 
-$("a#a-help_phss-presenting, a#a-help_phss-platinum, a#a-help_phss-gold, a#a-help_phss-silver, a#a-help_phss-exhibitor").click(
+$("a#a-events-presenting, a#a-events-platinum, a#a-events-gold, a#a-events-silver, a#a-events-exhibitor").click(
 	function ()	{
 		var class_selectors;
 		var class_elements = {};
 	
-		class_selector = ".div-help_phss";
+		class_selector = ".div-events";
 		class_elements = $(class_selector);
 	
 		$(class_elements).delay(500).removeClass("visible");
@@ -356,7 +449,7 @@ $("a#a-help_phss-presenting, a#a-help_phss-platinum, a#a-help_phss-gold, a#a-hel
 		if (window_width <= 414)	{
 			var div_selector;
 			
-			div_selector = "section#section-help_phss div.row:nth-child(5) > div:";
+			div_selector = "section#section-events div.row:nth-child(6) > div:";
 
 			var div_desc_selector;
 			var div_desc_element = {};
@@ -378,41 +471,41 @@ $("a#a-help_phss-presenting, a#a-help_phss-platinum, a#a-help_phss-gold, a#a-hel
 					switch (window_width)	{
 						case 320:
 							div_desc_top_css = {
-								top: "27.5rem"
+								top: "29.5rem"
 							};
 		
 							div_button_top_css = {
-								top: "-65.75rem"
+								top: "-81.5rem"
 							};
 						break;
 
 						case 360:
 							div_desc_top_css = {
-								top: "26rem"
+								top: "29.75rem"
 							};
 		
 							div_button_top_css = {
-								top: "-58.25rem"
+								top: "-68rem"
 							};
 						break;
 
 						case 375:
 							div_desc_top_css = {
-								top: "26rem"
+								top: "29.5rem"
 							};
 		
 							div_button_top_css = {
-								top: "-57rem"
+								top: "-66.5rem"
 							};
 						break;
 
 						case 414:
 							div_desc_top_css = {
-								top: "26rem"
+								top: "29.5rem"
 							};
 		
 							div_button_top_css = {
-								top: "-52.5rem"
+								top: "-60.5rem"
 							};
 						break;
 					}
@@ -422,41 +515,41 @@ $("a#a-help_phss-presenting, a#a-help_phss-platinum, a#a-help_phss-gold, a#a-hel
 					switch (window_width)	{
 						case 320:
 							div_desc_top_css = {
-								top: "27.5rem"
+								top: "29.5rem"
 							};
 		
 							div_button_top_css = {
-								top: "-46.25rem"
+								top: "-56rem"
 							};
 						break;
 
 						case 360:
 							div_desc_top_css = {
-								top: "26rem"
+								top: "29.75rem"
 							};
 		
 							div_button_top_css = {
-								top: "-43.25rem"
+								top: "-48.5rem"
 							};
 						break;
 
 						case 375:
 							div_desc_top_css = {
-								top: "26rem"
+								top: "29.5rem"
 							};
 		
 							div_button_top_css = {
-								top: "-43.5rem"
+								top: "-47rem"
 							};
 						break;
 
 						case 414:
 							div_desc_top_css = {
-								top: "26rem"
+								top: "29.5rem"
 							};
 		
 							div_button_top_css = {
-								top: "-39rem"
+								top: "-45.5rem"
 							};
 						break;
 					}
@@ -466,41 +559,41 @@ $("a#a-help_phss-presenting, a#a-help_phss-platinum, a#a-help_phss-gold, a#a-hel
 					switch (window_width)	{
 						case 320:
 							div_desc_top_css = {
-								top: "27.5rem"
+								top: "29.5rem"
 							};
 		
 							div_button_top_css = {
-								top: "-37.25rem"
+								top: "-42.5rem"
 							};
 						break;
 
 						case 360:
 							div_desc_top_css = {
-								top: "26rem"
+								top: "29.75rem"
 							};
 		
 							div_button_top_css = {
-								top: "-34.25rem"
+								top: "-38rem"
 							};
 						break;
 
 						case 375:
 							div_desc_top_css = {
-								top: "26rem"
+								top: "29.5rem"
 							};
 		
 							div_button_top_css = {
-								top: "-34.5rem"
+								top: "-38rem"
 							};
 						break;
 
 						case 414:
 							div_desc_top_css = {
-								top: "26rem"
+								top: "29.5rem"
 							};
 		
 							div_button_top_css = {
-								top: "-31.5rem"
+								top: "-38rem"
 							};
 						break;
 					}
@@ -510,41 +603,41 @@ $("a#a-help_phss-presenting, a#a-help_phss-platinum, a#a-help_phss-gold, a#a-hel
 					switch (window_width)	{
 						case 320:
 							div_desc_top_css = {
-								top: "27.5rem"
+								top: "29.5rem"
 							};
 		
 							div_button_top_css = {
-								top: "-26.55rem"
+								top: "-31.8rem"
 							};
 						break;
 
 						case 360:
 							div_desc_top_css = {
-								top: "26rem"
+								top: "29.75rem"
 							};
 		
 							div_button_top_css = {
-								top: "-25.05rem"
+								top: "-27.3rem"
 							};
 						break;
 
 						case 375:
 							div_desc_top_css = {
-								top: "26rem"
+								top: "29.5rem"
 							};
 		
 							div_button_top_css = {
-								top: "-25.35rem"
+								top: "-27.35rem"
 							};
 						break;
 
 						case 414:
 							div_desc_top_css = {
-								top: "26rem"
+								top: "29.5rem"
 							};
 		
 							div_button_top_css = {
-								top: "-22.3rem"
+								top: "-27.3rem"
 							};
 						break;
 					}
@@ -554,41 +647,41 @@ $("a#a-help_phss-presenting, a#a-help_phss-platinum, a#a-help_phss-gold, a#a-hel
 					switch (window_width)	{
 						case 320:
 							div_desc_top_css = {
-								top: "27.5rem"
+								top: "29.5rem"
 							};
 
 							div_button_top_css = {
-								top: "-12.55rem"
+								top: "-14.85rem"
 							};
 						break;
 
 						case 360:
 							div_desc_top_css = {
-								top: "26rem"
+								top: "29.75rem"
 							};
 		
 							div_button_top_css = {
-								top: "-12.6rem"
+								top: "-13.3rem"
 							};
 						break;
 
 						case 375:
 							div_desc_top_css = {
-								top: "26rem"
+								top: "29.5rem"
 							};
 		
 							div_button_top_css = {
-								top: "-12.85rem"
+								top: "-13.35rem"
 							};
 						break;
 
 						case 414:
 							div_desc_top_css = {
-								top: "26rem"
+								top: "29.5rem"
 							};
 		
 							div_button_top_css = {
-								top: "-9.8rem"
+								top: "-13.3rem"
 							};
 						break;
 					}
@@ -603,7 +696,7 @@ $("a#a-help_phss-presenting, a#a-help_phss-platinum, a#a-help_phss-gold, a#a-hel
 		var div_selector;
 		var div_element = {};
 		
-		div_selector = "#div-help_phss-" + id_selector;
+		div_selector = "#div-events-" + id_selector;
 
 		div_element = $(div_selector);
 
@@ -656,6 +749,10 @@ $(window).scroll(
 
 		window_position = $(window).scrollTop();
 
+		var url_string;
+
+		url_string = window.location.href;
+
 		if (window_width > 414)	{
 			var window_height;
 			var body_height;
@@ -676,8 +773,6 @@ $(window).scroll(
 			ul_element = $(ul_selector);
 
 			var nav_css = {};
-			var nav_bottom_css = {};
-			var nav_top_css = {};
 			var ul_css = {};
 
 			var nav_height;
@@ -691,13 +786,13 @@ $(window).scroll(
 			var window_at_bottom_value;
 
 			window_at_bottom_value = window_position - (Math.round(body_height) - window_height);
-
+// console.log("window_at_bottom_value = " + window_at_bottom_value);
 			if (window_position >= 78) {
 				nav_css = {
 					position: "fixed"
 				};
 
-				if (window_at_bottom_value === 56 || 
+				if (window_at_bottom_value === 112 || 
 						window_at_bottom_value === -4) {
 					nav_css.top = nav_top_value;
 

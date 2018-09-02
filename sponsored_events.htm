@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sponsored Events -- PHSS - Perpetual Home Supportive Services</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap-4.0.0.css" rel="stylesheet">
+		
+		<!-- Site CSS -->
+		<link href="assets/css/style.css?v=2" rel="stylesheet">
+  </head>
+  <body>
+<!-- 
+  DIV which contains the Confirmation Message which appears once a visitor sends an email message.
+-->
+    <div id="contact-confirmation_message">
+      <p>
+        Thank you for sending Perpetual Home Supportive Services your message!
+      </p>
+      <p>
+        Look out for an email message from no-reply@phss-stl.org which confirms that 
+        you sent a message to us.
+      </p>
+      <p>
+        Click the background to close this message.
+      </p>
+    </div>
+    <div id="content-form-contact">
+      <a href="javascript:closeContactForm();" title="Go Back to Page" class="a-button" id="a-contact-back">Go Back to Page</a> 
+      <form method="post" action="assets/php/contact.php" name="form-contact" id="form-contact">
+        <label for="full_name">Please enter your full name below:</label>
+        <input type="text" value="First and Last Name" size="25" max-size="80" name="full_name" id="input-contact-full_name" />
+        <label for="email_address">Please enter your email address below:</label>
+        <input type="text" value="____@_______.___" size="25" max-size="80" name="email_address" id="input-contact-email_address" />
+        <label for="message">Please compose your message below:</label>
+        <textarea cols="27" rows="8" name="message" id="input-contact-message">Type your message here</textarea>
+        <input type="reset" value="Clear Information" name="input-reset" id="input-contact-reset" />
+        <input type="submit" value="Send Message" name="input-submit" id="input-contact-submit" />
+      </form>
+    </div>
+    <div id="contact-bkgrnd"></div>
+    <a id="home"></a>
+		<header>
+			<img src="assets/img/logo/logo.png" width="195" height="60" alt="Perpetual Home Supportive Services" id="header-logo">
+			<ul>
+				<li><a href="javascript:loadContactForm();" title="Contact Us" id="a-header-contact">Contact Us</a></li>
+				<li><a href="https://www.facebook.com/PHSS01/" target="_blank" title="Like PHSS on Facebook" id="a-header-facebook">Like PHSS on Facebook</a></li>
+			</ul>
+		</header>
+    <nav class="navbar navbar-expand-lg">
+      <ul>
+        <li><a href="javascript:showMenu();" title="Menu" id="a-nav-menu">Menu</a></li>
+      </ul>
+			<ul>
+        <li><a href="index.htm" title="Home" id="a-nav-home">Home</a></li>
+        <li><a href="sponsored_events.htm" title="Sponsored Events" id="a-nav-events">Sponsored Events</a></li>
+        <li><a href="phss_supporters.htm" title="PHSS Supporters" id="a-nav-phss_supporters">PHSS Supporters</a></li>
+      </ul>
+      <ul>
+				<li><a href="javascript:loadContactForm();" title="Contact Us" id="a-header-contact">Contact Us</a></li>
+				<li><a href="https://www.facebook.com/PHSS01/" target="_blank" title="Like PHSS on Facebook" id="a-header-facebook">Like PHSS on Facebook</a></li>
+			</ul>
+    </nav>
+    <div class="row" id="section-splash">
+      <hr>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"> 
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active" id="splash-item-desc">
+            <div class="col-8 col-iphone-11 col-md-5 col-lg-5 col-xl-4 offset-iphone-1">
+              <p id="p-splash-pdsa">
+                1<sup>st</sup> National Walk for ITP &ndash; Pump It Up
+                <br />
+                with Perpetual Home Supportive Services
+                <br />
+                St Louis, MO
+                <br />
+                2018 
+              </p>  
+              <a href="http://www.itpwalk.org/get-involved/participant" target="_blank" title="Click to Register" class="a-button" id="a-splash-pdsa_1">Click to Register</a>
+            </div>
+            <img src="assets/img/splash/pdsa_1.jpg" alt="Immune Thrombocytopenia - Tough to pronounce, more challenging to live with." class="img-responsive" id="splash-img-pdsa_1" />
+          </div>
+          <div class="carousel-item">
+            <a href="http://www.itpwalk.org/get-involved/participant" target="_blank" title="Click to Register" class="a-button a-pdsa" id="a-splash-pdsa_2">Click to Register</a>
+            <img src="assets/img/splash/pdsa_2.jpg" alt="IBT can cause DEBILITATING fatigue." class="img-responsive" id="splash-img-pdsa_2" />
+          </div>
+          <div class="carousel-item">
+            <a href="http://www.itpwalk.org/get-involved/participant" target="_blank" title="Click to Register" class="a-button a-pdsa" id="a-splash-pdsa_3">Click to Register</a>
+            <img src="assets/img/splash/pdsa_3.jpg" alt="IBT does NOT DESCRIMINATE, it affects children &amp; adults". class="img-responsive" id="splash-img-pdsa_3" />
+          </div>
+          <div class="carousel-item">
+            <a href="http://www.itpwalk.org/get-involved/participant" target="_blank" title="Click to Register" class="a-button a-pdsa" id="a-splash-pdsa_4">Click to Register</a>
+            <img src="assets/img/splash/pdsa_4.jpg" alt="IBT is the most COMMON autoimmune bleeding disorder." class="img-responsive" id="splash-img-pdsa_4" />
+          </div>
+          <div class="carousel-item">
+            <a href="http://www.itpwalk.org/get-involved/participant" target="_blank" title="Click to Register" class="a-button a-pdsa" id="a-splash-pdsa_5">Click to Register</a>
+            <img src="assets/img/splash/pdsa_5.jpg" alt="IBT has NO CURE." class="img-responsive" id="splash-img-pdsa_5" />
+          </div>
+          <div class="carousel-item">
+            <a href="http://www.itpwalk.org/get-involved/participant" target="_blank" title="Click to Register" class="a-button a-pdsa" id="a-splash-pdsa_6">Click to Register</a>
+            <img src="assets/img/splash/pdsa_6.jpg" alt="IBT isn&squo;t caused by by clumsiness or abuse, it's caused by low platelets." class="img-responsive" id="splash-img-pdsa_6" />
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+<!-- 
+  DIV which contains the copy, images, and interactive content for the webpage.
+-->
+    <div class="container">
+<!-- 
+  SECTION which contains the content for the section 'Events'
+-->
+      <section id="section-events">
+        <a id="events">&nbsp;</a>  
+        <div class="row text-center">
+          <div class="col-12 text-center">
+<!-- 
+The Header for 'Events'
+-->
+            <h3>Sponsored Events</h3>
+          </div>
+        </div>
+<!-- 
+The top row which contains the video complimenting the copy for the Walk for ITP event.
+-->
+        <div class="row">
+          <div class="col-10 col-iphone-12 col-ipad-12 offset-ipad-0 offset-md-1 offset-lg-1 offset-xl-1 text-center">
+     <!-- <div class="col-8 col-iphone-12 col-ipad-12 col-md-8 col-lg-8 col-xl-6 offset-iphone-0 offset-ipad-0 offset-md-2 offset-lg-2 offset-xl-3"> -->
+            <h5>1st National Walk for ITP &ndash; Pump It Up</h5>
+            <h5>with Perpetual Home Support Services</h5>
+            <h5>St Louis, MO</h5>
+            <h5>2018</h5>
+            <a href="assets/pdf/sponsorship_proposal.pdf" target="_blank" title="Sponsor Commitment" class="a-button" id="a-events-sponsor_cmmt">Sponsor Commitment</a>
+            <hr>
+            <img src="assets/img/content/pump_it_up_flyer.jpg" width="525" height="679" alt="St. Louis, MO &ndash; 1st National Walk for ITP Pump It Up &ndash; St Louis, MO 2018 with Perpetual Home Support Services" />
+            <hr>
+          <!-- </div> -->
+            <!-- <h5 class="text-center">Walk for ITP</h5> -->
+            <video width="940" height="490" controls>
+              <source src="assets/video/walk_itp.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+<!-- 
+The second row that contains content describing the Walk for ITP Event.
+-->
+        <div class="row">
+          <div class="col-6 col-iphone-12 col-ipad-10 col-lg-6 col-xl-4 offset-ipad-1 offset-md-3 offset-lg-3 offset-xl-4">
+            <p class="p-events">
+              Saturday, September 15, 2018 Perpetual Home Supportive Services (PHSS) will host St. Louis&rsquo; 1st Annual National 
+              Walk for ITP with the Platelet Disorder Association (PDA) 501c3.  ITP stands for immune thrombocytopenia, 
+              which is an auto immune disorder which occurs when the blood cell platelet count severely drops. ITP, if 
+              not treated, can result in bleeding out and death. 
+            </p>
+            <p class="p-events after_first">
+              ITP primarily affects women and children and can be debilitating to live with. Currently there is no 
+              cure for this disease. The September event will be the 1st ever National Walk for ITP/PDA to take place 
+              in the state of Missouri. This event is in honor of a dear friend who suffers from ITP. She is only 
+              25 years old and was diagnosed when she was barely 13 years old and this disorder completely changed her life. 
+            </p>
+            <p class="p-events after_first">
+              The walk will take place at the Carondalet Park Boathouse. We are seeking monetary, nonmonetary sponsors, 
+              and direct partnerships for this great event as it will help PHSS and PDA continue to fight for a cure and 
+              help educate those directly and indirectly impacted with this auto immune disorder. We anticipate the total 
+              cost for this event to be right at $12,000.00. Marketing and radio promotional ads will cost $7000.00, 
+              supplies, equipment, decorations, park rental fees, entertainment/ DJ to host the event, will cost $2000.00, 
+              and PHSS will donate a minimum of $3,000.00 to the PDA foundation as the organization does not receive any 
+              federal funding. The lack of funding is the reason why we need your support. 
+            </p>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8 col-iphone-12 col-ipad-10 col-md-8 col-lg-10 col-xl-6 offset-iphone-0 offset-ipad-1 offset-md-2 offset-lg-1 offset-xl-3">
+            <h5>Sponsorship Packages</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-7 col-iphone-12 col-ipad-6 col-md-6 col-lg-5 col-xl-5 offset-ipad-1 offset-md-1 offset-lg-2 offset-xl-2">
+            <div class="div-events visible" id="div-events-presenting">
+              <h5>Presenting Sponsor&ndash;$5,000</h5>
+              <h6>Company Pre-Event Visibility</h6>
+              <ul>
+                <li>Company Name or Logo prominently featured on all event promotional materials, including:</li>
+                <ul>
+                  <li>Perpetual Home Support Services and Platelet Disorder Support Association by (Company Name)</li>
+                  <ul>
+                    <li>Event website</li>
+                    <li>Event brochures (cover)<sup>*</sup></li>
+                    <li>Event posters<sup>*</sup></li>
+                    <li>Event banners</li>
+                    <li>Press releases</li>
+                    <li>Advertisements (indicate media partnership benefits that may apply)</li> 
+                  </ul>
+                </ul>
+              </ul>
+              <h6><sup>*</sup>Commitment and logo must be received by 8/1/2018</h6>
+              <h6>Day-of-Event Visibility</h6>
+              <ul>
+                <li>Opportunity to welcome participants from the stage and make opening remarks </li>
+                <li>Company banner displayed on stages</li>
+                <li>Company logo on all official signage including:</li>
+                <ul>
+                  <li>Start/finish line banner</li>
+                  <li>T-shirts</li>
+                  <li>Special event signage</li>
+                </ul>
+                <li>Recognition from the podium</li>
+                <li>Exhibit area including 8&rsquo; table and chairs</li>
+                <li>Opportunity for product sampling/material distribution to participants</li> 
+              </ul>
+            </div>
+            <div class="div-events not_visible" id="div-events-platinum">
+              <h5>Platinum Sponsor&ndash;$2,500</h5>
+              <h6>Company Pre-Event Visibility</h6>
+              <ul>
+                <li>Company Name or Logo prominently featured on all event promotional materials, including:</li>
+                <ul>
+                  <li>Event website</li>
+                  <li>Event brochures (cover)<sup>*</sup></li>
+                  <li>Event posters<sup>*</sup></li>
+                  <li>Event banners</li>
+                  <li>Press releases</li>
+                  <li>Advertisements (indicate media partnership benefits that may apply)</li> 
+                </ul>
+              </ul>
+              <h6><sup>*</sup>Commitment and logo must be received by 8/1/2018</h6>
+              <h6>Day-of-Event Visibility</h6>
+              <ul>
+                <li>Company name or logo included on:</li>
+                <ul>
+                  <li>T-shirts</li>
+                  <li>Special event signage</li>
+                </ul>
+                <li>Recognition from the podium</li>
+                <li>Exhibit area including 8&rsquo; table and chairs</li>
+                <li>Opportunity for product sampling/material distribution to participants</li> 
+              </ul>
+            </div>
+            <div class="div-events not_visible" id="div-events-gold">
+              <h5>Gold Sponsor&ndash;$1,000</h5>
+              <h6>Company Pre-Event Visibility</h6>
+              <ul>
+                <li>Company Name or Logo prominently featured on the following event promotional materials:</li>
+                <ul>
+                  <li>Event website</li>
+                  <li>Event brochures (cover)<sup>*</sup></li>
+                  <li>Press releases</li>
+                </ul>
+              </ul>
+              <h6><sup>*</sup>Commitment and logo must be received by 8/1/2018</h6>
+              <h6>Day-of-Event Visibility</h6>
+              <ul>
+                <li>Company name or logo included on:</li>
+                <ul>
+                  <li>T-shirts</li>
+                  <li>Special event signage</li>
+                </ul>
+                <li>Exhibit area including 8&rsquo; table and chairs</li>
+                <li>Opportunity for product sampling/material distribution to participants</li> 
+              </ul>
+            </div>
+            <div class="div-events not_visible" id="div-events-silver">
+              <h5>Silver Sponsor&ndash;$500</h5>
+              <h6>Company Pre-Event Visibility</h6>
+              <ul>
+                <li>Company name or logo included on event website </li>
+              </ul>
+              <h6>Day-of-Event Visibility</h6>
+              <ul>
+                <li>Company name or logo included on:</li>
+                <ul>
+                  <li>T-shirts</li>
+                  <li>Special event signage</li>
+                </ul>
+                <li>Exhibit area including 8&rsquo; table and chairs</li>
+                <li>Opportunity for product sampling/material distribution to participants</li> 
+              </ul>
+            </div>
+            <div class="div-events not_visible" id="div-events-exhibitor">
+              <h5>Exhibitor&ndash;$100</h5>
+              <h6>Day-of-Event Visibility</h6>
+              <ul>
+                <li>Exhibit area including 8&rsquo; table and chairs</li>
+                <li>Opportunity for product sampling/material distribution to participants</li> 
+              </ul>
+            </div>
+          </div>
+          <div class="col-2 col-iphone-12 col-ipad-4 col-md-3 col-xl-2 offset-ipad-0 offset-md-1 offset-lg-1 text-center">
+            <h5 class="text-center">Click below to view more options</h5>
+            <hr>
+            <a href="#events-presenting" title="Presenting Sponsor" class="a-button" id="a-events-presenting">Presenting Sponsor</a>
+            <a href="#events-platinum" title="Platinum Sponsor" class="a-button" id="a-events-platinum">Platinum Sponsor</a>
+            <a href="#events-golf" title="Gold Sponsor" class="a-button" id="a-events-gold">Gold Sponsor</a>
+            <a href="#events-silver" title="Silver Sponsor" class="a-button" id="a-events-silver">Silver Sponsor</a>
+            <a href="#events-exhibitor" title="Exhibitor" class="a-button" id="a-events-exhibitor">Exhibitor</a>
+          </div>
+        </div>
+  
+<!-- 
+The top row which contains the video complimenting the copy for the Walk for ITP event.
+-->
+        <div class="row">
+          <div class="col-10 col-iphone-12 col-ipad-12 offset-ipad-0 offset-md-1 offset-lg-1 offset-xl-1 text-center">
+            <h5 class="text-center">Past Sponsored Events</h5>
+            <h5 class="text-center">Feed the Warm</h5>
+            <h5 class="text-center">St. Louis, MO</h5>
+            <h5 class="text-center">2016</h5>
+            <video width="940" height="490" controls>
+              <source src="assets/video/feed_the_warm.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8 col-iphone-12 col-ipad-12 col-lg-8 col-xl-6 offset-ipad-0 offset-md-2 offset-lg-2 offset-xl-3 text-center">
+            <img src="assets/img/content/feed_the_warm_flyer.jpg" width="525" height="788" alt="PHSS 5th Annual Feed and Warm the Homeless" />
+          </div>
+        </div>
+      </section>
+
+    </div>
+		<!-- TypeKit Reference -->
+		<link rel="stylesheet" href="https://use.typekit.net/yne4agd.css">
+		
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="assets/js/popper.min.js"></script>
+  	<script src="assets/js/bootstrap-4.0.0.js"></script>
+		
+		<!-- Site JavaScript -->
+	  <script src="assets/js/script.js?v=3"></script>
+  </body>
+</html>

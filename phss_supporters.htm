@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PHSS Supporters -- PHSS - Perpetual Home Supportive Services</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap-4.0.0.css" rel="stylesheet">
+		
+		<!-- Site CSS -->
+		<link href="assets/css/style.css?v=2" rel="stylesheet">
+  </head>
+  <body>
+<!-- 
+  DIV which contains the Confirmation Message which appears once a visitor sends an email message.
+-->
+    <div id="contact-confirmation_message">
+      <p>
+        Thank you for sending Perpetual Home Supportive Services your message!
+      </p>
+      <p>
+        Look out for an email message from no-reply@phss-stl.org which confirms that 
+        you sent a message to us.
+      </p>
+      <p>
+        Click the background to close this message.
+      </p>
+    </div>
+    <div id="content-form-contact">
+      <a href="javascript:closeContactForm();" title="Go Back to Page" class="a-button" id="a-contact-back">Go Back to Page</a> 
+      <form method="post" action="assets/php/contact.php" name="form-contact" id="form-contact">
+        <label for="full_name">Please enter your full name below:</label>
+        <input type="text" value="First and Last Name" size="25" max-size="80" name="full_name" id="input-contact-full_name" />
+        <label for="email_address">Please enter your email address below:</label>
+        <input type="text" value="____@_______.___" size="25" max-size="80" name="email_address" id="input-contact-email_address" />
+        <label for="message">Please compose your message below:</label>
+        <textarea cols="27" rows="8" name="message" id="input-contact-message">Type your message here</textarea>
+        <input type="reset" value="Clear Information" name="input-reset" id="input-contact-reset" />
+        <input type="submit" value="Send Message" name="input-submit" id="input-contact-submit" />
+      </form>
+    </div>
+    <div id="contact-bkgrnd"></div>
+    <a id="home"></a>
+		<header>
+			<img src="assets/img/logo/logo.png" width="195" height="60" alt="Perpetual Home Supportive Services" id="header-logo">
+			<ul>
+				<li><a href="javascript:loadContactForm();" title="Contact Us" id="a-header-contact">Contact Us</a></li>
+				<li><a href="https://www.facebook.com/PHSS01/" target="_blank" title="Like PHSS on Facebook" id="a-header-facebook">Like PHSS on Facebook</a></li>
+			</ul>
+		</header>
+    <nav class="navbar navbar-expand-lg">
+      <ul>
+        <li><a href="javascript:showMenu();" title="Menu" id="a-nav-menu">Menu</a></li>
+      </ul>
+			<ul>
+				<li><a href="index.htm" title="Home" id="a-nav-home">Home</a></li>
+				<li><a href="sponsored_events.htm" title="Sponsored Events" id="a-nav-events">Sponsored Events</a></li>
+        <li><a href="phss_supporters.htm" title="PHSS Supporters" id="a-nav-phss_supporters">PHSS Supporters</a></li>
+      </ul>
+      <ul>
+				<li><a href="javascript:loadContactForm();" title="Contact Us" id="a-header-contact">Contact Us</a></li>
+				<li><a href="https://www.facebook.com/PHSS01/" target="_blank" title="Like PHSS on Facebook" id="a-header-facebook">Like PHSS on Facebook</a></li>
+			</ul>
+    </nav>
+    <div class="row" id="section-splash">
+      <hr>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"> 
+        <div class="carousel-inner" role="listbox">
+          <!-- <div class="carousel-item active" id="splash-item-desc">
+            <div class="col-8 col-iphone-12 col-md-5 col-lg-5 col-xl-4">
+              <p id="p-splash">
+                Provide the structure and safety for your loved one with an intellectual disability or who suffers from HIV/AIDS 
+                that guides them towards independence by placing them in the sure care of Perpetual Home Supportive Services.
+              </p>
+              <a href="#section-what_phss_does" title="Learn More" class="a-button" id="a-splash-learn_more">Learn More</a>
+            </div> -->
+            <img src="assets/img/splash/splash_5.jpg" alt="Perpetual Home Supportive Services Supporters" class="img-responsive" id="splash-img-desc" />
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+<!-- 
+  DIV which contains the copy, images, and interactive content for the webpage.
+-->
+    <div class="container">
+      
+<!-- 
+  SECTION which contains the content for the section 'PHSS Supporters'
+-->
+      <section id="section-phss_supporters">
+        <a id="phss_supporters">&nbsp;</a>
+        <div class="row text-center">
+          <div class="col-12 text-center">
+<!-- 
+The Header for 'PHSS Supporters'
+-->
+            <h3>Perpetual Home Supportive Services Supporters</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-7 col-iphone-12 col-md-8 col-lg-7 col-xl-7 offset-iphone-0 offset-ipad-2 offset-md-2 offset-lg-3 offset-xl-3">
+            <div class="phss_supporters-photo col-6 col-iphone-12 col-ipad-7 col-md-10 col-lg-10 col-xl-9 offset-xl-2">
+              <div class="phss_supporters-photo-img" id="phss_supporters-photo-img-1"></div>
+              <ul>
+                <li>Kawanda Reid</li>
+                <li>Board Committee member&ndash;Lupus</li>
+                <li>Raised thousands of dollars to support research for Lupus</li>
+                <li>Participates in:</li>
+                <ul>
+                  <li>Sister Strut</li>
+                  <li>NAOMI Walk</li>
+                  <li>Susan G. Kolman Walk</li>                  
+                  <li>Walk for Autism</li>
+                  <li>Relief efforts to assist domestic violence survivors</li>
+                </ul>
+              </ul>
+            </div>
+        </div>
+      </section>
+    </div>
+		<!-- TypeKit Reference -->
+		<link rel="stylesheet" href="https://use.typekit.net/yne4agd.css">
+		
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="assets/js/popper.min.js"></script>
+  	<script src="assets/js/bootstrap-4.0.0.js"></script>
+		
+		<!-- Site JavaScript -->
+	  <script src="assets/js/script.js?v=3"></script>
+  </body>
+</html>
