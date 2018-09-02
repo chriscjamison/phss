@@ -854,25 +854,27 @@ div#contact-confirmation_message p {
   div#section-splash .carousel div.col-ipad-6 {
     margin-top: 0; }
   div#section-splash .carousel p#p-splash-pdsa {
-    top: 7.5rem;
-    left: 9.75rem;
+    top: 12.25rem;
+    left: 18.5rem;
     bottom: auto;
-    line-height: 1.3rem; }
+    line-height: 1.5; }
   div#section-splash .carousel a#a-splash-pdsa_1 {
-    bottom: 7.5rem; }
+    display: none; }
   div#section-splash .carousel a.a-pdsa,
   div#section-splash .carousel a#a-splash-pdsa_4 {
     bottom: 4.25rem; }
   section#section-what_phss_does p.p-what_phss_does {
     width: 80%;
     margin: 0 auto; }
-  section#section-what_phss_does div.row:nth-child(3) div:nth-child(1) h5,
-  section#section-what_phss_does div.row:nth-child(3) div:nth-child(1) ul {
-    margin-left: 10%; }
-  section#section-what_phss_does div.row:nth-child(3) div:nth-child(2),
-  section#section-what_phss_does div.row:nth-child(3) div:nth-child(3) {
+  section#section-what_phss_does div.row:nth-child(4) div:nth-child(1) h5 {
+    text-align: center; }
+  section#section-what_phss_does div.row:nth-child(4) div:nth-child(1) p#p-what_phss_does-services,
+  section#section-what_phss_does div.row:nth-child(4) div:nth-child(1) ul {
+    margin-left: 18%; }
+  section#section-what_phss_does div.row:nth-child(4) div:nth-child(2),
+  section#section-what_phss_does div.row:nth-child(4) div:nth-child(3) {
     margin-top: 1.75rem; }
-  section#section-what_phss_does div.row:nth-child(3) div:nth-child(2) > img {
+  section#section-what_phss_does div.row:nth-child(4) div:nth-child(2) > img {
     width: 15rem; }
   section#section-what_phss_does hr {
     width: 81%; }
@@ -947,7 +949,10 @@ div#contact-confirmation_message p {
 		div.row:nth-child(3) > div:nth-child(2) {
 			display: none;
 		}
- */ }
+ */
+    /* div.phss_supporters-photo-img {
+			width: 9.5rem;
+		} */ }
     section#section-phss_supporters div.row:nth-child(3) > div > div > ul {
       width: 29rem; }
     section#section-phss_supporters div.row:nth-child(3) > div:nth-child(2),
@@ -1000,7 +1005,10 @@ div#contact-confirmation_message p {
     margin: 1rem;
     font-size: 1rem; }
   div#section-splash .carousel p#p-splash-pdsa {
-    width: 83%; }
+    width: 83%;
+    top: 7.25rem;
+    left: 9.5rem;
+    line-height: 1.4; }
   div#section-splash .carousel a#a-splash-learn_more {
     top: 10.75rem; }
   div#section-splash .carousel div.carousel-item a {
@@ -1018,6 +1026,8 @@ div#contact-confirmation_message p {
     width: 100%; }
   section#section-what_phss_does div.row:nth-child(3) > div.col-3.col-ipad-12 {
     margin-left: 0; }
+  section#section-phss_supporters div.phss_supporters-photo-img {
+    width: 9.5rem; }
   section#section-phss_supporters div.row:nth-child(3) > div {
     max-width: 100%;
     flex: 0 0 100%; }
@@ -1140,10 +1150,14 @@ div#contact-confirmation_message p {
     bottom: auto; }
   div#section-splash .carousel a#a-splash-pdsa_1 {
     top: 10rem;
-    left: 6.2rem; }
+    left: 6.2rem;
+    display: block; }
   div#section-splash .carousel p#p-splash-pdsa {
+    width: 82%;
     margin: 1rem auto 0 auto;
-    bottom: auto; }
+    top: 0;
+    bottom: auto;
+    left: 1rem; }
   div#section-splash .carousel .carousel-control-prev,
   div#section-splash .carousel .carousel-control-next {
     width: 13%;

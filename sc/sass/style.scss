@@ -1268,14 +1268,14 @@ div#contact-confirmation_message {
 			}
 	
 			p#p-splash-pdsa {
-				top: 7.5rem;
-				left: 9.75rem;
+				top: 12.25rem;
+				left: 18.5rem;
 				bottom: auto;
-				line-height: 1.3rem;
+				line-height: 1.5;
 			}
 
 			a#a-splash-pdsa_1 {
-				bottom: 7.5rem;
+				display: none;
 			}
 
 			a.a-pdsa, 
@@ -1291,11 +1291,15 @@ div#contact-confirmation_message {
 			margin: 0 auto;
 		}
 
-		div.row:nth-child(3) {
+		div.row:nth-child(4) {
 			div:nth-child(1) {
-				h5, 
+				h5 {
+					text-align: center;
+				}
+
+				p#p-what_phss_does-services, 
 				ul	{
-					margin-left: 10%;
+					margin-left: 18%;
 				}
 			}
 
@@ -1451,6 +1455,11 @@ div#contact-confirmation_message {
 			display: none;
 		}
  */
+
+		/* div.phss_supporters-photo-img {
+			width: 9.5rem;
+		} */
+
 		div.row:nth-child(3) > div > div > ul {
 			width: 29rem;
 		}
@@ -1541,6 +1550,9 @@ div#contact-confirmation_message {
 
 			p#p-splash-pdsa {
 				width: 83%;
+				top: 7.25rem;
+				left: 9.5rem;
+				line-height: 1.4;
 			}
 
 			a#a-splash-learn_more {
@@ -1581,6 +1593,10 @@ div#contact-confirmation_message {
 	}
 
 	section#section-phss_supporters {
+		div.phss_supporters-photo-img {
+			width: 9.5rem;
+		}
+
 		div.row:nth-child(3) > div {
 			max-width: 100%;
 			flex: 0 0 100%;
@@ -1789,11 +1805,15 @@ div#contact-confirmation_message {
 			a#a-splash-pdsa_1 {
 				top: 10rem;
 				left: 6.2rem;
+				display: block;
 			}
 
 			p#p-splash-pdsa {
+				width: 82%;
 				margin: 1rem auto 0 auto;
+				top: 0;
 				bottom: auto;
+				left: 1rem;
 			}	
 
 			.carousel-control-prev, 
