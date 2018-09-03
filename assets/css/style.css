@@ -1056,8 +1056,6 @@ div#contact-confirmation_message p {
     margin: 2rem 0; }
     section div:nth-child(2) > div > h3 {
       width: 81%; }
-  section:last-of-type {
-    margin-bottom: 8rem; }
   h3 {
     font-size: 1.5rem; }
   h5 {
@@ -1166,16 +1164,20 @@ div#contact-confirmation_message p {
   section#section-what_phss_does div.row:nth-child(4) > div:nth-child(2),
   section#section-what_phss_does div.row:nth-child(4) > div:nth-child(3) {
     position: relative; }
-  section#section-what_phss_does div.row:nth-child(4) > div:first-of-type {
-    top: 36rem; }
-    section#section-what_phss_does div.row:nth-child(4) > div:first-of-type h5 {
+  section#section-what_phss_does p#p-what_phss_does-desc {
+    width: 81%; }
+  section#section-what_phss_does div.row:nth-child(4) div:first-of-type {
+    top: 32.75rem; }
+    section#section-what_phss_does div.row:nth-child(4) div:first-of-type h5 {
       text-align: center;
       margin-bottom: 0.75rem; }
-  section#section-what_phss_does div.row:nth-child(4) > div:nth-child(2) {
-    top: -26rem; }
-  section#section-what_phss_does div.row:nth-child(4) > div:nth-child(3) {
-    top: -24.25rem; }
-    section#section-what_phss_does div.row:nth-child(4) > div:nth-child(3) a#a-what_phss_does-more-mission {
+    section#section-what_phss_does div.row:nth-child(4) div:first-of-type ul li {
+      width: 81%; }
+  section#section-what_phss_does div.row:nth-child(4) div:nth-child(2) {
+    top: -34.25rem; }
+  section#section-what_phss_does div.row:nth-child(4) div:nth-child(3) {
+    top: -34.25rem; }
+    section#section-what_phss_does div.row:nth-child(4) div:nth-child(3) a#a-what_phss_does-more-mission {
       padding: 0.9rem; }
   section#section-what_phss_does hr {
     width: 76%; }
@@ -1191,6 +1193,7 @@ div#contact-confirmation_message p {
   section#section-location div.row:nth-child(4) > div:nth-child(2) > div.col-iphone-12:nth-child(2) > div:nth-child(2) > ol:nth-child(2) {
     margin-bottom: 0; }
   section#section-events {
+    margin-bottom: 7rem;
     /*div#calendar-events {
 			width: 22rem;
 		}
@@ -1235,7 +1238,7 @@ div#contact-confirmation_message p {
         section#section-events div.row:nth-child(6) div:first-of-type div ul ul {
           width: 100%; }
     section#section-events div.row:nth-child(6) div:nth-child(2) {
-      top: -60.5rem; }
+      top: -76.25rem; }
       section#section-events div.row:nth-child(6) div:nth-child(2) hr {
         width: 81%; }
       section#section-events div.row:nth-child(6) div:nth-child(2) a {
@@ -1332,18 +1335,18 @@ div#contact-confirmation_message p {
   section#section-what_phss_does div.row:nth-child(4) > div:nth-child(3) {
     position: relative; }
   section#section-what_phss_does div.row:nth-child(4) > div:first-of-type {
-    top: 34.5rem; }
+    top: 32.25rem; }
     section#section-what_phss_does div.row:nth-child(4) > div:first-of-type h5 {
       text-align: center;
       margin-bottom: 0.75rem; }
   section#section-what_phss_does div.row:nth-child(4) > div:nth-child(2) {
-    top: -26.5rem; }
+    top: -34rem; }
   section#section-what_phss_does div.row:nth-child(4) > div:nth-child(3) {
-    top: -25rem; }
+    top: -34rem; }
   section#section-events div.row:nth-child(6) div:first-of-type {
-    top: 29.5rem; }
+    top: 29rem; }
   section#section-events div.row:nth-child(6) div:nth-child(2) {
-    top: -66.5rem; }
+    top: -84.25rem; }
   section#section-help_phss div.row:nth-child(3) hr:nth-child(7) {
     display: none; }
   section#section-help_phss div.row:nth-child(5) div:nth-child(1),
@@ -1394,21 +1397,24 @@ div#contact-confirmation_message p {
     top: 9.5rem;
     left: 29.25%; }
   div#section-splash .carousel div#splash-item-desc {
-    margin-bottom: 19.5rem; }
+    margin-bottom: 14.5rem; }
   div#section-splash .carousel a#a-splash-learn_more {
     top: 15rem; }
+  div#section-splash .carousel .carousel-control-prev,
+  div#section-splash .carousel .carousel-control-next {
+    height: 8.25rem; }
   section#section-what_phss_does div.row:nth-child(4) > div:first-of-type,
   section#section-what_phss_does div.row:nth-child(4) > div:nth-child(2),
   section#section-what_phss_does div.row:nth-child(4) > div:nth-child(3) {
     position: relative; }
   section#section-what_phss_does div.row:nth-child(4) > div:first-of-type {
-    top: 35rem; }
+    top: 32rem; }
     section#section-what_phss_does div.row:nth-child(4) > div:first-of-type h5 {
       text-align: center; }
   section#section-what_phss_does div.row:nth-child(4) > div:nth-child(2) {
-    top: -30rem; }
+    top: -38rem; }
   section#section-what_phss_does div.row:nth-child(4) > div:nth-child(3) {
-    top: -28rem; }
+    top: -38rem; }
   section#section-events {
     /* 	div#calendar-events	{
 			width: 20.5rem;
@@ -1429,7 +1435,7 @@ div#contact-confirmation_message p {
       section#section-events div.row:nth-child(6) div:first-of-type div h6 {
         width: 20.5rem; }
     section#section-events div.row:nth-child(6) div:nth-child(2) {
-      top: -68rem; }
+      top: -86rem; }
   section#section-help_phss div.row:nth-child(3) hr:nth-child(7) {
     display: none; }
   section#section-help_phss div.row:nth-child(5) div:nth-child(1),
@@ -1470,7 +1476,7 @@ div#contact-confirmation_message p {
   div#section-splash .carousel p#p-splash {
     width: 72%; }
   div#section-splash .carousel div#splash-item-desc {
-    margin-bottom: 15.5rem; }
+    margin-bottom: 23rem; }
   div#section-splash .carousel div.carousel-item {
     margin-bottom: 5.5rem; }
     div#section-splash .carousel div.carousel-item a {
@@ -1485,21 +1491,21 @@ div#contact-confirmation_message p {
   section#section-what_phss_does div.row:nth-child(4) > div:nth-child(3) {
     position: relative; }
   section#section-what_phss_does div.row:nth-child(4) > div:first-of-type {
-    top: 32.5rem; }
+    top: 30rem; }
     section#section-what_phss_does div.row:nth-child(4) > div:first-of-type h5 {
       text-align: center; }
   section#section-what_phss_does div.row:nth-child(4) > div:nth-child(2) {
-    top: -34rem; }
+    top: -42.25rem; }
   section#section-what_phss_does div.row:nth-child(4) > div:nth-child(3) {
-    top: -32.25rem; }
+    top: -42.5rem; }
   section#section-events div.row:nth-child(5) > div:first-of-type h5:first-of-type {
     margin: 2rem auto; }
   section#section-events div.row:nth-child(6) div:first-of-type div > h6 {
     width: 18rem; }
   section#section-events div.row:nth-child(6) div:first-of-type {
-    top: 29.5rem; }
+    top: 29rem; }
   section#section-events div.row:nth-child(6) div:nth-child(2) {
-    top: -81.5rem; }
+    top: -103.75rem; }
   section#section-events div.row:nth-child(6) div > ul {
     width: 81%; }
   section#section-help_phss div.row:nth-child(3) hr:nth-child(7) {

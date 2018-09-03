@@ -1644,10 +1644,6 @@ div#contact-confirmation_message {
 		}
 	}
 
-	section:last-of-type {
-		margin-bottom: 8rem;
-	}
-
 	h3 {
 		font-size: $font_size_header_iphone;
 	}
@@ -1831,24 +1827,34 @@ div#contact-confirmation_message {
 			position: relative;
 		}
 
-		div.row:nth-child(4) > div:first-of-type {
-			top: 36rem;
+		p#p-what_phss_does-desc	{
+			width: 81%;
+		}
 
-			h5 {
-				text-align: center;
-				margin-bottom: 0.75rem;
+		div.row:nth-child(4)	{
+			div:first-of-type {
+				top: 32.75rem;
+	
+				h5 {
+					text-align: center;
+					margin-bottom: 0.75rem;
+				}
+
+				ul li	{
+					width: 81%;
+				}
 			}
-		}
 
-		div.row:nth-child(4) > div:nth-child(2) {
-			top: -26rem;
-		}
+			div:nth-child(2) {
+				top: -34.25rem;
+			}
 
-		div.row:nth-child(4) > div:nth-child(3) {
-			top: -24.25rem;
-
-			a#a-what_phss_does-more-mission {
-				padding: 0.9rem;
+			div:nth-child(3) {
+				top: -34.25rem;
+	
+				a#a-what_phss_does-more-mission {
+					padding: 0.9rem;
+				}
 			}
 		}
 
@@ -1881,6 +1887,8 @@ div#contact-confirmation_message {
 	}
 
 	section#section-events {
+		margin-bottom: 7rem;
+
 		h3 {
 			margin: 0 auto 1.5rem auto;
 		}
@@ -1933,7 +1941,7 @@ div#contact-confirmation_message {
 			}
 
 			div:nth-child(2)	{
-				top: -60.5rem;
+				top: -76.25rem;
 
 				hr {
 					width: 81%;
@@ -2140,7 +2148,7 @@ div#contact-confirmation_message {
 		}
 
 		div.row:nth-child(4) > div:first-of-type {
-			top: 34.5rem;
+			top: 32.25rem;
 
 			h5 {
 				text-align: center;
@@ -2149,25 +2157,24 @@ div#contact-confirmation_message {
 		}
 
 		div.row:nth-child(4) > div:nth-child(2) {
-			top: -26.5rem;
+			top: -34rem;
 		}
 
 		div.row:nth-child(4) > div:nth-child(3) {
-			top: -25rem;
+			top: -34rem;
 		}
 	}
 
 	section#section-events {
 		div.row:nth-child(6) {
 			div:first-of-type {
-				top: 29.5rem;
+				top: 29rem;
 			}
 
 			div:nth-child(2) {
-				top: -66.5rem;
+				top: -84.25rem;
 			}
 		}
-		
 	}
 
 	section#section-help_phss {
@@ -2263,13 +2270,20 @@ div#contact-confirmation_message {
 			}
 
 			div#splash-item-desc {
-				margin-bottom: 19.5rem;
+				margin-bottom: 14.5rem;
 			}
 
 			a#a-splash-learn_more {
 				top: 15rem;
 			}
+
+			.carousel-control-prev, 
+			.carousel-control-next	{
+				height: 8.25rem;
+			}
 		}
+
+		
 	}
 
 	section#section-what_phss_does {
@@ -2280,7 +2294,7 @@ div#contact-confirmation_message {
 		}
 
 		div.row:nth-child(4) > div:first-of-type {
-			top: 35rem;
+			top: 32rem;
 
 			h5 {
 				text-align: center;
@@ -2288,11 +2302,11 @@ div#contact-confirmation_message {
 		}
 
 		div.row:nth-child(4) > div:nth-child(2) {
-			top: -30rem;
+			top: -38rem;
 		}
 
 		div.row:nth-child(4) > div:nth-child(3) {
-			top: -28rem;
+			top: -38rem;
 		}
 	}
 
@@ -2309,10 +2323,8 @@ div#contact-confirmation_message {
 			}
 			
 			div:nth-child(2)	{
-				top: -68rem;
+				top: -86rem;
 			}
-
-
 		}
 
 	/* 	div#calendar-events	{
@@ -2406,7 +2418,7 @@ div#contact-confirmation_message {
 			}
 
 			div#splash-item-desc {
-				margin-bottom: 15.5rem;
+				margin-bottom: 23rem;
 			}
 
 			div.carousel-item	{
@@ -2436,7 +2448,7 @@ div#contact-confirmation_message {
 		}
 
 		div.row:nth-child(4) > div:first-of-type {
-			top: 32.5rem;
+			top: 30rem;
 
 			h5 {
 				text-align: center;
@@ -2444,11 +2456,11 @@ div#contact-confirmation_message {
 		}
 
 		div.row:nth-child(4) > div:nth-child(2) {
-			top: -34rem;
+			top: -42.25rem;
 		}
 
 		div.row:nth-child(4) > div:nth-child(3) {
-			top: -32.25rem;
+			top: -42.5rem;
 		}
 	}
 
@@ -2463,11 +2475,11 @@ div#contact-confirmation_message {
 			} 
 
 			div:first-of-type {
-				top: 29.5rem;
+				top: 29rem;
 			}
 
 			div:nth-child(2) {
-				top: -81.5rem;
+				top: -103.75rem;
 			}
 
 			div > ul {

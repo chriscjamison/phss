@@ -174,25 +174,29 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 				switch (window_width)	{
 					case 320:
 						div_top_css = {
-							top: "32.5rem"
+							top: "30rem"
 						};
 
 						div_img_top_css = {
-							top: "-24rem"
+							top: "-42.25rem"
 						};
 
 						div_button_top_css = {
-							top: "-22.25rem"
+							top: "-42.5rem"
 						};
 					break;
 
 					case 360:
+						div_top_css = {
+							top: "32rem"
+						};
+						
 						div_img_top_css = {
-							top: "-22rem"
+							top: "-38rem"
 						};
 
 						div_button_top_css = {
-							top: "-20rem"
+							top: "-38rem"
 						};
 					break;
 
@@ -202,11 +206,11 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 						};
 
 						div_img_top_css = {
-							top: "-22rem"
+							top: "-36rem"
 						};
 
 						div_button_top_css = {
-							top: "-20.5em"
+							top: "-36em"
 						};
 					break;
 
@@ -216,11 +220,11 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 						};
 
 						div_img_top_css = {
-							top: "-21.5rem"
+							top: "-34.25rem"
 						};
 
 						div_button_top_css = {
-							top: "-19.75rem"
+							top: "-34.25rem"
 						};
 					break;
 				}
@@ -264,7 +268,35 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 					switch (window_width)	{
 						case 320:
 							div_top_css = {
-								top: "32.5rem"
+								top: "30em"
+							};
+
+							div_img_top_css = {
+								top: "-42.25rem"
+							};
+
+							div_button_top_css = {
+								top: "-42.5rem"
+							};
+						break;
+	
+						case 360:
+							div_top_css = {
+								top: "32rem"
+							};
+
+							div_img_top_css = {
+								top: "-38rem"
+							};
+
+							div_button_top_css = {
+								top: "-38rem"
+							};
+						break;
+
+						case 375:
+							div_top_css = {
+								top: "32.25rem"
 							};
 
 							div_img_top_css = {
@@ -272,49 +304,21 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 							};
 
 							div_button_top_css = {
-								top: "-32.25rem"
-							};
-						break;
-	
-						case 360:
-							div_top_css = {
-								top: "35rem"
-							};
-
-							div_img_top_css = {
-								top: "-30rem"
-							};
-
-							div_button_top_css = {
-								top: "-28rem"
-							};
-						break;
-
-						case 375:
-							div_top_css = {
-								top: "34.5rem"
-							};
-
-							div_img_top_css = {
-								top: "-26.5rem"
-							};
-
-							div_button_top_css = {
-								top: "-25rem"
+								top: "-34rem"
 							};
 						break;
 
 						case 414:
 							div_top_css = {
-								top: "35.5rem"
+								top: "32.75rem"
 							};
 
 							div_img_top_css = {
-								top: "-26rem"
+								top: "-34.25rem"
 							};
 
 							div_button_top_css = {
-								top: "-24.25rem"
+								top: "-34.25rem"
 							};
 						break;
 					}
@@ -333,57 +337,57 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 					switch (window_width)	{
 						case 320:
 							div_top_css = {
-								top: "32.5rem"
+								top: "30rem"
 							};
 
 							div_img_top_css = {
-								top: "-37.5rem"
+								top: "-46.25rem"
 							};
 
 							div_button_top_css = {
-								top: "-35.75rem"
+								top: "-46.5rem"
 							};
 						break;
 	
 						case 360:
 							div_top_css = {
-								top: "35rem"
+								top: "32rem"
 							};
 
 							div_img_top_css = {
-								top: "-33.5rem"
+								top: "-42rem"
 							};
 
 							div_button_top_css = {
-								top: "-31.5rem"
+								top: "-42rem"
 							};
 						break;
 
 						case 375:
 							div_top_css = {
-								top: "34.5rem"
+								top: "32.25rem"
 							};
 
 							div_img_top_css = {
-								top: "-31.75rem"
+								top: "-40rem"
 							};
 
 							div_button_top_css = {
-								top: "-30.25rem"
+								top: "-40rem"
 							};
 						break;
 
 						case 414:
 							div_top_css = {
-								top: "35.5rem"
+								top: "32.75rem"
 							};
 
 							div_img_top_css = {
-								top: "-27.75rem"
+								top: "-36.25rem"
 							};
 
 							div_button_top_css = {
-								top: "-26rem"
+								top: "-36.25rem"
 							};
 						break;
 					}
@@ -471,11 +475,11 @@ $("a#a-events-presenting, a#a-events-platinum, a#a-events-gold, a#a-events-silve
 					switch (window_width)	{
 						case 320:
 							div_desc_top_css = {
-								top: "29.5rem"
+								top: "29rem"
 							};
 		
 							div_button_top_css = {
-								top: "-81.5rem"
+								top: "-103.75rem"
 							};
 						break;
 
@@ -485,17 +489,17 @@ $("a#a-events-presenting, a#a-events-platinum, a#a-events-gold, a#a-events-silve
 							};
 		
 							div_button_top_css = {
-								top: "-68rem"
+								top: "-86rem"
 							};
 						break;
 
 						case 375:
 							div_desc_top_css = {
-								top: "29.5rem"
+								top: "29rem"
 							};
 		
 							div_button_top_css = {
-								top: "-66.5rem"
+								top: "-84.25rem"
 							};
 						break;
 
@@ -505,7 +509,7 @@ $("a#a-events-presenting, a#a-events-platinum, a#a-events-gold, a#a-events-silve
 							};
 		
 							div_button_top_css = {
-								top: "-60.5rem"
+								top: "-76.25rem"
 							};
 						break;
 					}
@@ -515,11 +519,11 @@ $("a#a-events-presenting, a#a-events-platinum, a#a-events-gold, a#a-events-silve
 					switch (window_width)	{
 						case 320:
 							div_desc_top_css = {
-								top: "29.5rem"
+								top: "29rem"
 							};
 		
 							div_button_top_css = {
-								top: "-56rem"
+								top: "-69.75rem"
 							};
 						break;
 
@@ -529,17 +533,17 @@ $("a#a-events-presenting, a#a-events-platinum, a#a-events-gold, a#a-events-silve
 							};
 		
 							div_button_top_css = {
-								top: "-48.5rem"
+								top: "-60rem"
 							};
 						break;
 
 						case 375:
 							div_desc_top_css = {
-								top: "29.5rem"
+								top: "29rem"
 							};
 		
 							div_button_top_css = {
-								top: "-47rem"
+								top: "-58.25rem"
 							};
 						break;
 
@@ -549,7 +553,7 @@ $("a#a-events-presenting, a#a-events-platinum, a#a-events-gold, a#a-events-silve
 							};
 		
 							div_button_top_css = {
-								top: "-45.5rem"
+								top: "-56.25rem"
 							};
 						break;
 					}
@@ -559,11 +563,11 @@ $("a#a-events-presenting, a#a-events-platinum, a#a-events-gold, a#a-events-silve
 					switch (window_width)	{
 						case 320:
 							div_desc_top_css = {
-								top: "29.5rem"
+								top: "29rem"
 							};
 		
 							div_button_top_css = {
-								top: "-42.5rem"
+								top: "-52.25rem"
 							};
 						break;
 
@@ -573,17 +577,17 @@ $("a#a-events-presenting, a#a-events-platinum, a#a-events-gold, a#a-events-silve
 							};
 		
 							div_button_top_css = {
-								top: "-38rem"
+								top: "-46rem"
 							};
 						break;
 
 						case 375:
 							div_desc_top_css = {
-								top: "29.5rem"
+								top: "29rem"
 							};
 		
 							div_button_top_css = {
-								top: "-38rem"
+								top: "-46.25rem"
 							};
 						break;
 
@@ -593,7 +597,7 @@ $("a#a-events-presenting, a#a-events-platinum, a#a-events-gold, a#a-events-silve
 							};
 		
 							div_button_top_css = {
-								top: "-38rem"
+								top: "-46.25rem"
 							};
 						break;
 					}
@@ -603,11 +607,11 @@ $("a#a-events-presenting, a#a-events-platinum, a#a-events-gold, a#a-events-silve
 					switch (window_width)	{
 						case 320:
 							div_desc_top_css = {
-								top: "29.5rem"
+								top: "29rem"
 							};
 		
 							div_button_top_css = {
-								top: "-31.8rem"
+								top: "-39.1rem"
 							};
 						break;
 
@@ -617,17 +621,17 @@ $("a#a-events-presenting, a#a-events-platinum, a#a-events-gold, a#a-events-silve
 							};
 		
 							div_button_top_css = {
-								top: "-27.3rem"
+								top: "-32.8rem"
 							};
 						break;
 
 						case 375:
 							div_desc_top_css = {
-								top: "29.5rem"
+								top: "29rem"
 							};
 		
 							div_button_top_css = {
-								top: "-27.35rem"
+								top: "-33.05rem"
 							};
 						break;
 
@@ -637,7 +641,7 @@ $("a#a-events-presenting, a#a-events-platinum, a#a-events-gold, a#a-events-silve
 							};
 		
 							div_button_top_css = {
-								top: "-27.3rem"
+								top: "-33.1rem"
 							};
 						break;
 					}
@@ -647,11 +651,11 @@ $("a#a-events-presenting, a#a-events-platinum, a#a-events-gold, a#a-events-silve
 					switch (window_width)	{
 						case 320:
 							div_desc_top_css = {
-								top: "29.5rem"
+								top: "29rem"
 							};
 
 							div_button_top_css = {
-								top: "-14.85rem"
+								top: "-18.1rem"
 							};
 						break;
 
@@ -661,7 +665,7 @@ $("a#a-events-presenting, a#a-events-platinum, a#a-events-gold, a#a-events-silve
 							};
 		
 							div_button_top_css = {
-								top: "-13.3rem"
+								top: "-15.8rem"
 							};
 						break;
 
@@ -671,7 +675,7 @@ $("a#a-events-presenting, a#a-events-platinum, a#a-events-gold, a#a-events-silve
 							};
 		
 							div_button_top_css = {
-								top: "-13.35rem"
+								top: "-16.05rem"
 							};
 						break;
 
@@ -681,7 +685,7 @@ $("a#a-events-presenting, a#a-events-platinum, a#a-events-gold, a#a-events-silve
 							};
 		
 							div_button_top_css = {
-								top: "-13.3rem"
+								top: "-16.1rem"
 							};
 						break;
 					}
