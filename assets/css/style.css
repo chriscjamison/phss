@@ -196,6 +196,9 @@ a#why_phss-more {
   width: 12.25rem;
   margin: 0 auto; }
 
+a#a-contact-back {
+  width: 10.7rem; }
+
 a#a-what_phss_does-more-base,
 a#a-what_phss_does-more-mission,
 a#a-help_phss-sponsor_cmmt,
@@ -326,9 +329,7 @@ section#section-location div.row:nth-child(3) > div + div > strong {
 section#section-events #a-events-sponsor_cmmt {
   margin-top: 2rem; }
 
-section#section-events video {
-  width: 936px;
-  height: 490px;
+section#section-events iframe {
   margin-top: 2rem;
   border: 2px solid #ec9053; }
 
@@ -390,17 +391,25 @@ section#section-events div.row:nth-child(7) > div h5:first-of-type {
   border-top: 2px solid #fecc3c;
   border-bottom: 2px solid #fecc3c; }
 
+section#section-events div.row:nth-child(7) > div img {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+section#section-events div.row:nth-child(7) > div img:last-of-type {
+  margin-bottom: 1rem; }
+
 section#section-events hr {
   margin-top: 3rem; }
 
 section#section-events img {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  border: 2px solid #ec9053; }
 
 section#section-events div.row:nth-child(6) > div > hr {
   margin-top: 0; }
 
-section#section-events img {
-  border: 2px solid #ec9053; }
+section#section-events div.row:nth-child(8) img#events-img-feed-flyer {
+  margin-top: 3rem; }
 
 section#section-events div#calendar-events {
   width: 36.75rem;
@@ -650,7 +659,7 @@ div#contact-confirmation_message p {
   section#section-events hr {
     width: 36%; }
   section#section-events div.row:nth-child(4) > div hr {
-    width: 61%; }
+    width: 93%; }
   section#section-events div.row:nth-child(6) > div:nth-child(2) hr {
     margin: 1rem auto 1.5rem auto; }
   #contact-confirmation_message {
@@ -740,7 +749,10 @@ div#contact-confirmation_message p {
   div#section-splash .carousel a.a-pdsa,
   div#section-splash .carousel a#a-splash-pdsa_4 {
     bottom: 5.25rem; }
-  section#section-events video {
+  section#section-events iframe {
+    width: 50rem;
+    height: 28.2rem; }
+  section#section-events div.row:nth-child(7) > div img {
     width: 50rem;
     height: auto; }
   section#section-why_phss div.factoid-why_phss {
@@ -748,6 +760,8 @@ div#contact-confirmation_message p {
   section#section-location div.row:nth-child(3) > div > img,
   section#section-location div.row:nth-child(4) > div > iframe {
     width: 30.25rem; }
+  section#section-phss_supporters .phss_supporters-photo {
+    margin: 0 5% 1rem 12%; }
   section#section-phss_supporters div.row:nth-child(4) > div:nth-child(2) > h5,
   section#section-phss_supporters div.row:nth-child(4) > div:nth-child(2) > div {
     right: 0.6rem; }
@@ -921,14 +935,19 @@ div#contact-confirmation_message p {
   section#section-location div.row:nth-child(3) > div:nth-child(2) > div:nth-child(2) > strong,
   section#section-location div.row:nth-child(3) > div:nth-child(2) > div:nth-child(2) > ol {
     font-size: 1.25rem; }
-  section#section-events video {
-    width: 33rem;
-    height: auto; }
   section#section-events p.p-events {
     width: 80%;
     margin: 0 auto 1.75rem auto; }
   section#section-events hr {
     width: 40%; }
+  section#section-events iframe {
+    width: 33rem;
+    height: 18.6rem; }
+  section#section-events div.row:nth-child(4) > div hr {
+    width: 49%; }
+  section#section-events div.row:nth-child(7) > div img {
+    width: 33rem;
+    height: auto; }
   section#section-events div.row:nth-child(6) div:first-of-type {
     margin-top: 0; }
     section#section-events div.row:nth-child(6) div:first-of-type h6 {
@@ -1046,8 +1065,9 @@ div#contact-confirmation_message p {
   section#section-what_phss_does > div.row:nth-child(4) > div:nth-child(2) > img,
   section#section-location > div.row:nth-child(3) > div > img,
   section#section-location > div.row:nth-child(4) > div > iframe,
-  section#section-events video,
+  section#section-events iframe,
   section#section-events img,
+  section#section-events div.row:nth-child(7) > div img,
   section#section-help_phss > div.row:nth-child(3) > div > img,
   section#section-help_phss div.row:nth-child(5) div > div > h6 {
     width: 19.5rem;
@@ -1222,6 +1242,8 @@ div#contact-confirmation_message p {
       width: 81%; }
     section#section-events div.col-6.col-iphone-12 {
       margin-top: 0.5rem; }
+    section#section-events iframe {
+      height: 11rem; }
     section#section-events div.row:nth-child(4) hr:last-of-type {
       display: none; }
     section#section-events div.row:nth-child(5) h5 {
@@ -1246,11 +1268,20 @@ div#contact-confirmation_message p {
       section#section-events div.row:nth-child(6) div:nth-child(2) a#a-events-presenting {
         padding: 1rem;
         font-size: 1rem; }
-    section#section-events div.row:nth-child(7) > div h5:first-of-type {
+    section#section-events div.row:nth-child(7) div h5:first-of-type {
       width: 81%;
       margin-top: 3rem;
       margin-bottom: 1rem;
       font-weight: 700; }
+    section#section-events div.row:nth-child(7) div hr:first-of-type {
+      margin-top: 2rem; }
+    section#section-events div.row:nth-child(7) div img {
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
+    section#section-events div.row:nth-child(7) div img:last-of-type {
+      margin-bottom: 0; }
+    section#section-events div.row:nth-child(8) > div img#events-img-feed-flyer {
+      margin-top: 2rem; }
   section#section-help_phss p.p-help_phss {
     width: 92%;
     margin: 0 auto; }
@@ -1285,8 +1316,6 @@ div#contact-confirmation_message p {
     display: block; }
   section#section-phss_supporters div.row:nth-child(3) > div > div > ul {
     width: 22.1rem; }
-  a#a-contact-back {
-    width: 10.7rem; }
   div#content-form-contact {
     padding: 1rem; }
   #form-contact {
@@ -1299,8 +1328,9 @@ div#contact-confirmation_message p {
   section#section-what_phss_does > div.row:nth-child(4) > div:nth-child(2) > img,
   section#section-location > div.row:nth-child(3) > div > img,
   section#section-location > div.row:nth-child(4) > div > iframe,
-  section#section-events video,
+  section#section-events iframe,
   section#section-events img,
+  section#section-events div.row:nth-child(7) > div img,
   section#section-help_phss > div.row:nth-child(3) > div > img,
   section#section-help_phss div.row:nth-child(5) div > div > h6 {
     width: 17rem;
@@ -1343,6 +1373,8 @@ div#contact-confirmation_message p {
     top: -34rem; }
   section#section-what_phss_does div.row:nth-child(4) > div:nth-child(3) {
     top: -34rem; }
+  section#section-events iframe {
+    height: 9.6rem; }
   section#section-events div.row:nth-child(6) div:first-of-type {
     top: 29rem; }
   section#section-events div.row:nth-child(6) div:nth-child(2) {
@@ -1385,8 +1417,9 @@ div#contact-confirmation_message p {
   section#section-what_phss_does > div.row:nth-child(4) > div:nth-child(2) > img,
   section#section-location > div.row:nth-child(3) > div > img,
   section#section-location > div.row:nth-child(4) > div > iframe,
-  section#section-events video,
+  section#section-events iframe,
   section#section-events img,
+  section#section-events div.row:nth-child(7) > div img,
   section#section-help_phss > div.row:nth-child(3) > div > img,
   section#section-help_phss div.row:nth-child(5) div > div > h6 {
     width: 16.75rem;
@@ -1397,7 +1430,7 @@ div#contact-confirmation_message p {
     top: 9.5rem;
     left: 29.25%; }
   div#section-splash .carousel div#splash-item-desc {
-    margin-bottom: 14.5rem; }
+    margin-bottom: 15rem; }
   div#section-splash .carousel a#a-splash-learn_more {
     top: 15rem; }
   div#section-splash .carousel .carousel-control-prev,
@@ -1430,6 +1463,8 @@ div#contact-confirmation_message p {
 			padding: 0.4rem 0;
 			font-size: $font_size_header_iphone;
 		} */ }
+    section#section-events iframe {
+      height: 9.46rem; }
     section#section-events div.row:nth-child(6) div:first-of-type {
       top: 29.75rem; }
       section#section-events div.row:nth-child(6) div:first-of-type div h6 {
@@ -1468,7 +1503,8 @@ div#contact-confirmation_message p {
   section#section-location > div.row:nth-child(3) > div > img,
   section#section-location > div.row:nth-child(4) > div > iframe,
   section#section-events img,
-  section#section-events video,
+  section#section-events iframe,
+  section#section-events div.row:nth-child(7) > div img,
   section#section-help_phss > div.row:nth-child(3) > div > img,
   section#section-help_phss div.row:nth-child(5) div > div > h6 {
     width: 14.75rem;
@@ -1498,6 +1534,8 @@ div#contact-confirmation_message p {
     top: -42.25rem; }
   section#section-what_phss_does div.row:nth-child(4) > div:nth-child(3) {
     top: -42.5rem; }
+  section#section-events iframe {
+    height: 8.3rem; }
   section#section-events div.row:nth-child(5) > div:first-of-type h5:first-of-type {
     margin: 2rem auto; }
   section#section-events div.row:nth-child(6) div:first-of-type div > h6 {
