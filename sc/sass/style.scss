@@ -83,7 +83,7 @@ p.after_first:first-line {
 }
 
 section {
-	margin: 3rem 0 7rem 0;
+	margin: 3rem 0 5rem 0;
 
 	div:nth-child(2) > div > h3 {
 		width: 36%;
@@ -917,6 +917,8 @@ div#contact-confirmation_message {
 	}
 
 	section#section-events {
+		margin-bottom: 8rem;
+
 		h5 {
 			margin: 0 auto 0.25rem auto;
 		}
@@ -931,6 +933,12 @@ div#contact-confirmation_message {
 
 		div.row:nth-child(6) > div:nth-child(2)	hr {
 			margin: 1rem auto 1.5rem auto;
+		}
+	}
+
+	section#section-phss_supporters {
+		div.phss_supporters-photo-img {
+			margin-left: 2rem;
 		}
 	}
 
@@ -1016,6 +1024,10 @@ div#contact-confirmation_message {
 	}
 
 	section#section-phss_supporters {
+		div.phss_supporters-photo-img {
+			margin-left: 1rem;
+		}
+
 		div.row:nth-child(3) > div:first-of-type {
 			margin-top: 0;
 		}
@@ -1115,6 +1127,10 @@ div#contact-confirmation_message {
 		.phss_supporters-photo {
 			margin: 0 5% 1rem 12%;
 		}	
+
+		div.phss_supporters-photo-img {
+			margin-left: 0.75rem;
+		}
 		
 		div.row:nth-child(4) > div:nth-child(2) > h5, 
 		div.row:nth-child(4) > div:nth-child(2) > div {
@@ -1137,7 +1153,7 @@ div#contact-confirmation_message {
 	}
 
 	section {
-		margin: 3rem 0;
+		margin: 3rem 0 4.5rem 0;
 	}
 
 	h3 {
@@ -1529,10 +1545,6 @@ div#contact-confirmation_message {
   	max-width: 58.3333333333%;
 	}
 
-	section:last-of-type {
-		margin-bottom: 2rem;
-	}
-
 	p, 
 	section#section-location div.row:nth-child(4) > div:nth-child(2) > div:nth-child(2) > strong, 
 	section#section-location div.row:nth-child(4) > div:nth-child(2) > div:nth-child(2) > ol, 
@@ -1670,7 +1682,7 @@ div#contact-confirmation_message {
 	}
 
 	section {
-		margin: 2rem 0;
+		margin: 2rem 0 4.5rem 0 ;
 
 		div:nth-child(2) > div > h3 {
 			width: 81%;
@@ -2093,9 +2105,13 @@ div#contact-confirmation_message {
 			margin: 0;
 			display: block;
 
+			ul {
+				padding: 0 0 0 1.25rem;
+			}
+
 			ul li:first-of-type {
-				width: 7.25rem;
-				margin-left: 4.9rem;
+				width: 7rem;
+				margin-left: 6.28rem;
 			}
 
 			ul ul li:first-of-type {
@@ -2105,13 +2121,14 @@ div#contact-confirmation_message {
 		}
 
 		div.phss_supporters-photo-img {
-			margin: 0 auto 1.75rem auto;
+			width: 6.25rem;
+			margin: 0 auto 0.75rem auto;
+			margin-left: auto;
 			display: block;
 		}
 
 		div.row:nth-child(3) > div > div > ul {
 			width: 22.1rem;
-			// margin-bottom: 6rem;
 		}
 	}
 
@@ -2268,29 +2285,12 @@ div#contact-confirmation_message {
 	}
 
 	section#section-phss_supporters {
-		.phss_supporters-photo {
-			margin: 0;
-			display: block;
-
-			ul li:first-of-type {
-				width: 7.25rem;
-				margin-left: 3.9rem;
-			}
-
-			ul ul li:first-of-type {
-				margin-left: 0;
-				margin-bottom: 0;
-			}
-		}
-
-		div.phss_supporters-photo-img {
-			margin: 0 auto 1.75rem auto;
-			display: block;
+		.phss_supporters-photo ul li:first-of-type {
+			margin-left: 5.08rem;
 		}
 
 		div.row:nth-child(3) > div > div > ul {
 			width: 18.75rem;
-			// margin-bottom: 6rem;
 		}
 	}
 
@@ -2433,29 +2433,13 @@ div#contact-confirmation_message {
 	}
 
 	section#section-phss_supporters {
-		.phss_supporters-photo {
-			margin: 0;
-			display: block;
-
-			ul li:first-of-type {
-				width: 7.25rem;
-				margin-left: 1.98rem;
-			}
-
-			ul ul li:first-of-type {
-				margin-left: 0;
-				margin-bottom: 0;
-			}
-		}
-
-		div.phss_supporters-photo-img {
-			margin: 0 auto 1.75rem auto;
-			display: block;
+		.phss_supporters-photo ul li:first-of-type {
+			width: 7rem;
+			margin-left: 4.58rem;
 		}
 
 		div.row:nth-child(3) > div > div > ul {
 			width: 18.75rem;
-			margin-bottom: 6rem;
 		}
 	}
 }
@@ -2584,29 +2568,12 @@ div#contact-confirmation_message {
 	}
 
 	section#section-phss_supporters {
-		.phss_supporters-photo {
-			margin: 0;
-			display: block;
-
-			ul li:first-of-type {
-				width: 7.25rem;
-				margin-left: 1.98rem;
-			}
-
-			ul ul li:first-of-type {
-				margin-left: 0;
-				margin-bottom: 0;
-			}
-		}
-
-		div.phss_supporters-photo-img {
-			margin: 0 auto 1.75rem auto;
-			display: block;
+		.phss_supporters-photo ul li:first-of-type {
+				margin-left: 3.3rem;
 		}
 
 		div.row:nth-child(3) > div > div > ul {
 			width: 16.25rem;
-			margin-bottom: 6rem;
 		}
 	}
 }

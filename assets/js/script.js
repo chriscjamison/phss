@@ -790,13 +790,14 @@ $(window).scroll(
 			var window_at_bottom_value;
 
 			window_at_bottom_value = window_position - (Math.round(body_height) - window_height);
-// console.log("window_at_bottom_value = " + window_at_bottom_value);
+
 			if (window_position >= 78) {
 				nav_css = {
 					position: "fixed"
 				};
 
-				if (window_at_bottom_value === 112 || 
+				if (window_at_bottom_value === 80 || 
+						window_at_bottom_value === 128 || 
 						window_at_bottom_value === -4) {
 					nav_css.top = nav_top_value;
 
