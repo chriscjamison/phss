@@ -325,12 +325,12 @@ a#help_phss-donate {
 section#section-what_phss_does ul > li, 
 section#section-help_phss .div-help_phss ul > li, 
 section#section-phss_supporters div.phss_supporters-photo ul > li {
-	list-style-image: url('/phss/assets/img/content/phss_supporters-bullet-dk.png');
+	list-style-image: url('/phss/assets/img/content/phss_supporters-bullet-dk.png?v=1');
 }
 
 section#section-help_phss .div-help_phss ul > ul > li, 
 section#section-phss_supporters div.phss_supporters-photo ul > ul > li {
-	list-style-image: url('/phss/assets/img/content/phss_supporters-bullet-lt.png');
+	list-style-image: url('/phss/assets/img/content/phss_supporters-bullet-lt.png?v=1');
 }
 
 
@@ -375,7 +375,7 @@ div.factoid-why_phss {
 
 	div.factoid-why_phss-header	{
 		height: 12.13rem;
-		background-image: url('/phss/assets/img/content/polygon_1.gif');
+		background-image: url('/phss/assets/img/content/polygon_1.gif?v=1');
 		color: $yellow_1;
 	}
 
@@ -700,7 +700,7 @@ section#section-phss_supporters {
  
 	div.row:nth-child(3) > div:nth-child(2), 
 	div.row:nth-child(4) > div:nth-child(2) {
-		background-image: url('/phss/assets/img/content/phss_supporters-polygon.png');
+		background-image: url('/phss/assets/img/content/phss_supporters-polygon.png?v=1');
 		background-repeat: no-repeat;
 	}
 
@@ -722,7 +722,7 @@ section#section-phss_supporters {
 		width: 6.25rem;
 		height: 7.375rem;
 		display: inline-block;
-		background-image: url('/phss/assets/img/content/phss_supporters-photos.png');
+		background-image: url('/phss/assets/img/content/phss_supporters-photos.png?v=1');
 	}
 
 	div#phss_supporters-photo-img-2 {
@@ -754,7 +754,7 @@ section#section-phss_supporters {
 		}
 
 		ul li:first-of-type {
-			list-style-image: url('/phss/assets/img/content/phss_supporters-bullet-lt.png');
+			list-style-image: url('/phss/assets/img/content/phss_supporters-bullet-lt.png?v=1');
 			font-weight: $font_weight_normal;
 		}
 	}
@@ -765,7 +765,7 @@ section#section-phss_supporters {
 		position: relative;
 		top: 1rem;	
 		right: 2.25rem;
-		background-image: url('/phss/assets/img/content/phss_supporters-businesses.gif');
+		background-image: url('/phss/assets/img/content/phss_supporters-businesses.gif?v=1');
 	}
 
 	#phss_supporters-business-1 {
