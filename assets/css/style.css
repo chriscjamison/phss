@@ -96,7 +96,7 @@ header {
 
 .navbar {
   width: 100%;
-  padding: 0 4rem;
+  padding: 0 7.5rem;
   border-top: 2px solid #ec9053;
   border-bottom: 2px solid #efae60;
   z-index: 2; }
@@ -155,8 +155,8 @@ p#p-splash-pdsa {
   font-size: 1.45rem;
   font-weight: 300;
   text-align: left;
-  line-height: 2.1rem;
-  color: #efae60; }
+  line-height: 2.1;
+  color: #d2a93a; }
 
 p#p-splash-pdsa {
   width: 100%;
@@ -226,11 +226,11 @@ a#help_phss-donate {
 section#section-what_phss_does ul > li,
 section#section-help_phss .div-help_phss ul > li,
 section#section-phss_supporters div.phss_supporters-photo ul > li {
-  list-style-image: url("/phss/assets/img/content/phss_supporters-bullet-dk.png"); }
+  list-style-image: url("/phss/assets/img/content/phss_supporters-bullet-dk.png?v=1"); }
 
 section#section-help_phss .div-help_phss ul > ul > li,
 section#section-phss_supporters div.phss_supporters-photo ul > ul > li {
-  list-style-image: url("/phss/assets/img/content/phss_supporters-bullet-lt.png"); }
+  list-style-image: url("/phss/assets/img/content/phss_supporters-bullet-lt.png?v=1"); }
 
 section#section-what_phss_does .visible {
   display: block; }
@@ -263,7 +263,7 @@ div.factoid-why_phss {
   text-align: left; }
   div.factoid-why_phss div.factoid-why_phss-header {
     height: 12.13rem;
-    background-image: url("/phss/assets/img/content/polygon_1.gif");
+    background-image: url("/phss/assets/img/content/polygon_1.gif?v=1");
     color: #fecc3c; }
   div.factoid-why_phss div.factoid-why_phss-header span:first-of-type {
     width: 10.06rem;
@@ -478,88 +478,68 @@ section#section-help_phss div.row:nth-child(4) h5 {
   text-align: center;
   font-weight: 700; }
 
-section#section-phss_supporters h5 {
-  width: 11.2rem;
-  margin: 0 auto 1.5rem auto;
-  padding: 0.5rem 0 0.75rem 0;
-  border-top: 2px solid #fecc3c;
-  border-bottom: 2px solid #fecc3c;
-  text-align: center;
-  font-weight: 700; }
+section#section-phss_supporters {
+  margin: 3rem 0 7rem 0;
+  /*
+	div.row:nth-child(4) > div:nth-child(2) > div	{
+		width: 100px;
+		margin: 0 auto;
+		position: relative;
+		top: 1rem;	
+		right: 2.25rem;
+		background-image: url('/phss/assets/img/content/phss_supporters-businesses.gif?v=1');
+	}
+ 
+	#phss_supporters-business-1 {
+		height: 113px;
+	}
 
-section#section-phss_supporters div.row:nth-child(4) > div:nth-child(2) > h5 {
-  position: relative;
-  top: 2rem;
-  right: 2.25rem; }
+	#phss_supporters-business-2 {
+		height: 44px;
+		top: 1.75rem;
+		background-position: 0 -113px;
+	}
 
-section#section-phss_supporters div.row:nth-child(3) > div:nth-child(2),
-section#section-phss_supporters div.row:nth-child(4) > div:nth-child(2) {
-  background-image: url("/phss/assets/img/content/phss_supporters-polygon.png");
-  background-repeat: no-repeat; }
-
-section#section-phss_supporters div.row:nth-child(4) > div:nth-child(2) {
-  height: 26rem;
-  background-position: 0px -72px; }
-
-section#section-phss_supporters div.row:nth-child(4) > div:first-of-type {
-  margin-top: 2rem; }
-
-section#section-phss_supporters .phss_supporters-photo {
-  margin: 0 5% 1rem 5%;
-  display: inline-flex; }
-
-section#section-phss_supporters div.phss_supporters-photo-img {
-  width: 6.25rem;
-  height: 7.375rem;
-  display: inline-block;
-  background-image: url("/phss/assets/img/content/phss_supporters-photos.png"); }
-
-section#section-phss_supporters div#phss_supporters-photo-img-2 {
-  background-position: -100px 0; }
-
-section#section-phss_supporters div#phss_supporters-photo-img-3 {
-  background-position: -200px 0; }
-
-section#section-phss_supporters div#phss_supporters-photo-img-4 {
-  background-position: -300px 0; }
-
-section#section-phss_supporters div.row:nth-child(4) > div > div > ul {
-  width: 18rem;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 1.25rem; }
-
-section#section-phss_supporters div.phss_supporters-photo ul li:first-of-type {
-  margin-bottom: 0.25rem;
-  list-style-type: none;
-  list-style-image: none;
-  font-weight: 700;
-  line-height: 1.5rem; }
-
-section#section-phss_supporters div.phss_supporters-photo ul ul li:first-of-type {
-  list-style-image: url("/phss/assets/img/content/phss_supporters-bullet-lt.png");
-  font-weight: 400; }
-
-section#section-phss_supporters div.row:nth-child(4) > div:nth-child(2) > div {
-  width: 100px;
-  margin: 0 auto;
-  position: relative;
-  top: 1rem;
-  right: 2.25rem;
-  background-image: url("/phss/assets/img/content/phss_supporters-businesses.gif"); }
-
-section#section-phss_supporters #phss_supporters-business-1 {
-  height: 113px; }
-
-section#section-phss_supporters #phss_supporters-business-2 {
-  height: 44px;
-  top: 1.75rem;
-  background-position: 0 -113px; }
-
-section#section-phss_supporters #phss_supporters-business-3 {
-  height: 25px;
-  top: 3rem;
-  background-position: 0 -157px; }
+	#phss_supporters-business-3 {
+		height: 25px;
+		top: 3rem;
+		background-position: 0 -157px;
+	}
+ */ }
+  section#section-phss_supporters div.row:nth-child(4) > div:nth-child(2) > h5 {
+    position: relative;
+    top: 2rem;
+    right: 2.25rem; }
+  section#section-phss_supporters div.row:nth-child(3) > div:nth-child(2),
+  section#section-phss_supporters div.row:nth-child(4) > div:nth-child(2) {
+    background-image: url("/phss/assets/img/content/phss_supporters-polygon.png?v=1");
+    background-repeat: no-repeat; }
+  section#section-phss_supporters div.row:nth-child(4) > div:nth-child(2) {
+    height: 26rem;
+    background-position: 0px -72px; }
+  section#section-phss_supporters div.row:nth-child(4) > div:first-of-type {
+    margin-top: 2rem; }
+  section#section-phss_supporters div.row:nth-child(3) h5 {
+    width: 11.2rem;
+    margin: 0 auto 1.5rem auto;
+    padding: 0.5rem 0 0.75rem 0;
+    border-top: 2px solid #fecc3c;
+    border-bottom: 2px solid #fecc3c;
+    text-align: center;
+    font-weight: 700; }
+  section#section-phss_supporters div.row:nth-child(3) ul {
+    width: 33rem;
+    margin: 0 auto; }
+    section#section-phss_supporters div.row:nth-child(3) ul ul {
+      width: auto; }
+      section#section-phss_supporters div.row:nth-child(3) ul ul li:first-of-type {
+        list-style-image: url("/phss/assets/img/content/phss_supporters-bullet-lt.png?v=1");
+        font-weight: 400; }
+  section#section-phss_supporters div.row:nth-child(4) > div > div > ul {
+    width: 18rem;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1.25rem; }
 
 #content-form-contact,
 #contact-confirmation_message,
@@ -633,6 +613,8 @@ div#contact-confirmation_message p {
   color: #483729; }
 
 @media (max-width: 1920px) {
+  .navbar {
+    padding: 0 16rem; }
   nav {
     /* li:first-of-type {
 			width: ((106% / 3) / 1.5);
@@ -644,7 +626,7 @@ div#contact-confirmation_message p {
   div#section-splash .carousel div.carousel-item a {
     left: 45%; }
   div#section-splash .carousel a#a-splash-learn_more {
-    top: 17.25rem;
+    top: 22.5rem;
     left: 4rem; }
   div#section-splash .carousel p#p-splash-pdsa {
     top: 21.75rem;
@@ -690,13 +672,13 @@ div#contact-confirmation_message p {
     nav li:last-of-type {
       text-align: right; }
   div#section-splash .carousel a#a-splash-learn_more {
-    top: 15.25rem; }
+    top: 20.5rem; }
   div#section-splash .carousel p#p-splash-pdsa {
     top: 17.5rem;
     bottom: auto;
     left: 29rem;
     font-size: 1.25rem;
-    line-height: 1.75rem; }
+    line-height: 1.75; }
   div#section-splash .carousel a#a-splash-pdsa_1 {
     top: 25rem;
     bottom: auto;
@@ -730,8 +712,6 @@ div#contact-confirmation_message p {
     margin-left: 1rem; }
   section#section-phss_supporters div.row:nth-child(3) > div:first-of-type {
     margin-top: 0; }
-  section#section-phss_supporters div.row:nth-child(3) > div > div > ul {
-    width: 33rem; }
   section#section-phss_supporters div.row:nth-child(3) > div:nth-child(2) > h5,
   section#section-phss_supporters div.row:nth-child(3) > div:nth-child(2) > div {
     right: 4.25rem; }
@@ -739,6 +719,8 @@ div#contact-confirmation_message p {
     margin: 11% 38.25%; } }
 
 @media (max-width: 1366px) {
+  .navbar {
+    padding: 0 7.5rem; }
   nav {
     /* li:first-of-type {
 			width: ((105.5% / 5) / 1.5);
@@ -752,14 +734,14 @@ div#contact-confirmation_message p {
   div#section-splash .carousel div.carousel-item a {
     left: 43.7%; }
   div#section-splash .carousel a#a-splash-learn_more {
-    top: 19.5rem;
+    top: 25rem;
     left: 4rem; }
   div#section-splash .carousel p#p-splash-pdsa {
     top: 15rem;
     bottom: auto;
     left: 24.25rem;
     font-size: 1rem;
-    line-height: 1.5rem; }
+    line-height: 1.5; }
   div#section-splash .carousel a#a-splash-pdsa_1 {
     top: 21rem;
     bottom: auto;
@@ -779,8 +761,6 @@ div#contact-confirmation_message p {
   section#section-phss_supporters div.row:nth-child(4) > div:nth-child(2) > h5,
   section#section-phss_supporters div.row:nth-child(4) > div:nth-child(2) > div {
     right: 0.6rem; }
-  section#section-phss_supporters div.row:nth-child(3) > div > div > ul {
-    width: 33rem; }
   #contact-confirmation_message {
     margin: 10% 36.5%; } }
 
@@ -854,7 +834,7 @@ div#contact-confirmation_message p {
     header a {
       font-size: 1rem; }
   .navbar {
-    padding: 0 2rem; }
+    padding: 0 14.5rem; }
   nav {
     /* li:first-of-type {
 			width: ((105% / 5) / 1.5);
@@ -863,7 +843,7 @@ div#contact-confirmation_message p {
     nav ul {
       margin-bottom: 0; }
     nav li {
-      width: 33%;
+      width: 32.66667%;
       border-right: none;
       vertical-align: middle; }
     nav li:last-of-type {
@@ -877,7 +857,7 @@ div#contact-confirmation_message p {
     left: 42%; }
   div#section-splash .carousel a#a-splash-learn_more {
     width: 7.2rem;
-    top: 17rem;
+    top: 18rem;
     left: 2rem; }
   div#section-splash .carousel div.col-ipad-6 {
     margin-top: 0; }
@@ -892,7 +872,7 @@ div#contact-confirmation_message p {
   div#section-splash .carousel a#a-splash-pdsa_4 {
     bottom: 4.25rem; }
   section#section-what_phss_does p.p-what_phss_does {
-    width: 80%;
+    width: 55%;
     margin: 0 auto; }
   section#section-what_phss_does div.row:nth-child(4) div:nth-child(1) h5 {
     text-align: center; }
@@ -984,6 +964,7 @@ div#contact-confirmation_message p {
   section#section-help_phss hr {
     width: 40%; }
   section#section-phss_supporters {
+    margin: 2rem 0 7rem 0;
     /* 		div.row:nth-child(3), 
 		div.row:nth-child(3) > div:nth-child(2) {
 			display: none;
@@ -1024,6 +1005,8 @@ div#contact-confirmation_message p {
     font-size: 1.5rem; }
   header ul {
     margin-top: 1.1rem; }
+  .navbar {
+    padding: 0 6rem; }
   nav {
     /* li:first-of-type {
 			width: ((105.1% / 5) / 1.6);
@@ -1047,7 +1030,7 @@ div#contact-confirmation_message p {
     left: 9.5rem;
     line-height: 1.4; }
   div#section-splash .carousel a#a-splash-learn_more {
-    top: 10.75rem; }
+    top: 13.75rem; }
   div#section-splash .carousel div.carousel-item a {
     width: 9.1rem;
     left: 40.5%;
@@ -1168,8 +1151,12 @@ div#contact-confirmation_message p {
       top: 11rem;
       bottom: auto; }
   div#section-splash .carousel div#splash-item-desc {
-    margin-bottom: 13.5rem; }
+    margin-bottom: 18.25rem; }
     div#section-splash .carousel div#splash-item-desc div {
+      top: 9.5rem; }
+  div#section-splash .carousel div#splash-item-events-desc {
+    margin-bottom: 12.25rem; }
+    div#section-splash .carousel div#splash-item-events-desc div {
       top: 9.5rem; }
   div#section-splash .carousel p#p-splash {
     width: 77%;
@@ -1185,7 +1172,7 @@ div#contact-confirmation_message p {
   div#section-splash .carousel a#a-splash-pdsa_4 {
     bottom: auto; }
   div#section-splash .carousel a#a-splash-pdsa_1 {
-    top: 10rem;
+    top: 9rem;
     left: 6.2rem;
     display: block; }
   div#section-splash .carousel p#p-splash-pdsa {
@@ -1204,6 +1191,8 @@ div#contact-confirmation_message p {
     position: relative; }
   section#section-what_phss_does p#p-what_phss_does-desc {
     width: 81%; }
+  section#section-what_phss_does p.p-what_phss_does {
+    width: 80%; }
   section#section-what_phss_does div.row:nth-child(4) div:first-of-type {
     top: 32.75rem; }
     section#section-what_phss_does div.row:nth-child(4) div:first-of-type h5 {
@@ -1231,6 +1220,7 @@ div#contact-confirmation_message p {
   section#section-location div.row:nth-child(4) > div:nth-child(2) > div.col-iphone-12:nth-child(2) > div:nth-child(2) > ol:nth-child(2) {
     margin-bottom: 0; }
   section#section-events {
+    margin-top: 1rem;
     margin-bottom: 7rem;
     /* 		a#a-events-sponsor_cmmt {
 			font-size: $font_size_base_ipad;
@@ -1365,7 +1355,10 @@ div#contact-confirmation_message p {
     margin-left: auto;
     display: block; }
   section#section-phss_supporters div.row:nth-child(3) > div > div > ul {
-    width: 22.1rem; }
+    width: 17rem;
+    padding: 0; }
+    section#section-phss_supporters div.row:nth-child(3) > div > div > ul ul {
+      padding-left: 1.75rem; }
   div#content-form-contact {
     padding: 1rem; }
   #form-contact {
@@ -1392,7 +1385,9 @@ div#contact-confirmation_message p {
     width: 100%;
     text-align: center; }
   div#section-splash .carousel div#splash-item-desc {
-    margin-bottom: 14.5rem; }
+    margin-bottom: 19.25rem; }
+  div#section-splash .carousel div#splash-item-events-desc {
+    margin-bottom: 13rem; }
   div#section-splash .carousel p#p-splash {
     width: 75%;
     margin: 0 1rem 1rem 2rem; }
@@ -1451,10 +1446,12 @@ div#contact-confirmation_message p {
     top: 0; }
   section#section-help_phss div.row:nth-child(5) div:nth-child(2) {
     top: -57rem; }
-  section#section-phss_supporters .phss_supporters-photo ul li:first-of-type {
-    margin-left: 5.08rem; }
-  section#section-phss_supporters div.row:nth-child(3) > div > div > ul {
-    width: 18.75rem; }
+  section#section-phss_supporters {
+    /* div.row:nth-child(3) > div > div > ul {
+			width: 18.75rem;
+		} */ }
+    section#section-phss_supporters .phss_supporters-photo ul li:first-of-type {
+      margin-left: 5.08rem; }
   #contact-confirmation_message {
     width: 19.25em;
     height: 22.5em;
@@ -1479,7 +1476,9 @@ div#contact-confirmation_message p {
     top: 9.5rem;
     left: 29.25%; }
   div#section-splash .carousel div#splash-item-desc {
-    margin-bottom: 15rem; }
+    margin-bottom: 19.5rem; }
+  div#section-splash .carousel div#splash-item-events-desc {
+    margin-bottom: 13rem; }
   div#section-splash .carousel a#a-splash-learn_more {
     top: 15rem; }
   div#section-splash .carousel .carousel-control-prev,
@@ -1543,11 +1542,13 @@ div#contact-confirmation_message p {
       top: 0; }
   section#section-help_phss div.row:nth-child(5) div:nth-child(2) {
     top: -58.25rem; }
-  section#section-phss_supporters .phss_supporters-photo ul li:first-of-type {
-    width: 7rem;
-    margin-left: 4.58rem; }
-  section#section-phss_supporters div.row:nth-child(3) > div > div > ul {
-    width: 18.75rem; } }
+  section#section-phss_supporters {
+    /* div.row:nth-child(3) > div > div > ul {
+			width: 17rem;
+		} */ }
+    section#section-phss_supporters .phss_supporters-photo ul li:first-of-type {
+      width: 7rem;
+      margin-left: 4.58rem; } }
 
 @media (max-width: 320px) {
   section#section-what_phss_does > div.row:nth-child(4) > div:nth-child(2) > img,
@@ -1563,15 +1564,20 @@ div#contact-confirmation_message p {
   div#section-splash .carousel p#p-splash {
     width: 72%; }
   div#section-splash .carousel div#splash-item-desc {
-    margin-bottom: 23rem; }
+    margin-bottom: 24.5rem; }
+  div#section-splash .carousel div#splash-item-events-desc {
+    margin-bottom: 14rem; }
+    div#section-splash .carousel div#splash-item-events-desc div {
+      top: 8.5rem; }
   div#section-splash .carousel div.carousel-item {
     margin-bottom: 5.5rem; }
     div#section-splash .carousel div.carousel-item a {
       left: 5.4rem; }
   div#section-splash .carousel a#a-splash-learn_more {
-    top: 17.5rem;
+    top: 19rem;
     left: 6.5rem; }
   div#section-splash .carousel a#a-splash-pdsa_1 {
+    top: 9.5rem;
     left: 3.75rem; }
   section#section-what_phss_does div.row:nth-child(4) > div:first-of-type,
   section#section-what_phss_does div.row:nth-child(4) > div:nth-child(2),
@@ -1625,4 +1631,4 @@ div#contact-confirmation_message p {
   section#section-phss_supporters .phss_supporters-photo ul li:first-of-type {
     margin-left: 3.3rem; }
   section#section-phss_supporters div.row:nth-child(3) > div > div > ul {
-    width: 16.25rem; } }
+    width: 14rem; } }

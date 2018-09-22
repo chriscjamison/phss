@@ -22,6 +22,7 @@ var all_links_elements;
 
 header_links_selector = "header > ul > li > a";
 nav_links_selector = "nav > ul > li > a";
+
 pdsa_links_selector = "#p-splash-pdsa a";
 all_links_selector = header_links_selector + "," + nav_links_selector + "," + pdsa_links_selector;
 
@@ -146,7 +147,7 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 		var h5_and_p_selectors;
 
 		h5_and_p_selectors = " #header-what_phss_does-" + id_selector + ", #p-what_phss_does-" + id_selector;
-// console.log("h5_and_p_selectors = " + h5_and_p_selectors);
+
 		var window_width;
 
 		window_width = $(window).width();
@@ -416,7 +417,7 @@ $("a#a-what_phss_does-more-base, a#a-what_phss_does-more-mission, a#a-what_phss_
 			$(h5_and_p_and_ul_elements).removeClass("not_visible");
 
 			$(h5_and_p_and_ul_elements).addClass("visible");
-// console.log("h5_and_p_and_ul_selectors = " + h5_and_p_and_ul_selectors);
+
 		}	else {
 			var h5_and_p_elements = {};
 
@@ -796,7 +797,7 @@ $(window).scroll(
 					position: "fixed"
 				};
 
-				if (window_at_bottom_value === 80 || 
+				if (window_at_bottom_value === 112 || 
 						window_at_bottom_value === 128 || 
 						window_at_bottom_value === -4) {
 					nav_css.top = nav_top_value;
@@ -920,13 +921,25 @@ function showMenu ()	{
 
 	menu_links_visible_value = $(menu_visible_links_elements).css("display");
 
+	var menu_link_a_selector;
+	var menu_link_a_element = {};
+
+	menu_link_a_selector = "nav > ul:first-of-type > li > a";
+	menu_link_a_element = $(menu_link_a_selector);
+
 	if (menu_links_visible_value === "none")	{
+		$(menu_link_a_element).text("Close");
+
 		$(menu_visible_links_elements).css(show_menu_visible_links_css);
 		$(menu_link_element).css(show_menu_link_css);
+
 		$(navbar_element).css(navbar_show_css);
 	}	else {
+		$(menu_link_a_element).text("Menu");
+
 		$(menu_visible_links_elements).css(hide_menu_visible_links_css);
 		$(menu_link_element).css(hide_menu_link_css);
+
 		$(navbar_element).css(navbar_hide_css);
 	}
 }	// END of FUNCTION 'showMenu'

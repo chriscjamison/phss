@@ -4,7 +4,7 @@ $yellow_1: #fecc3c;
 $yellow_2: #fbd055;
 $orange_1: #ec9053;
 $orange_2: #cd854b;
-$orange_3: #efae60;
+$orange_3: #d2a93a;
 $purple_link: #8c0d98;
 $purple_1: #c86678;
 $brown_1: #483729;
@@ -156,7 +156,7 @@ header {
 
 .navbar {
 	width: 100%;
-	padding: 0 4rem;
+	padding: 0 7.5rem;
 	border-top: $border_2;
 	border-bottom: $border_4;
 	z-index: 2;
@@ -241,7 +241,7 @@ p#p-splash-pdsa {
   font-size: $font_size_splash;
 	font-weight: $font_weight_light;
 	text-align: left;
-	line-height: 2.1rem;
+	line-height: 2.1;
 	color: $orange_3;
 }
 
@@ -682,16 +682,8 @@ section#section-help_phss {
 }
 
 section#section-phss_supporters {
-	h5 {
-		width: 11.2rem;
-		margin: 0 auto 1.5rem auto;
-		padding: 0.5rem 0 0.75rem 0;
-		border-top: $border_1;
-		border-bottom: $border_1;
-		text-align: center;
-		font-weight: $font_weight_bold;
-	}
-
+	margin: 3rem 0 7rem 0;
+	
 	div.row:nth-child(4) > div:nth-child(2) > h5 { 
 		position: relative;
 		top: 2rem;
@@ -712,29 +704,31 @@ section#section-phss_supporters {
 	div.row:nth-child(4) > div:first-of-type {
 		margin-top: 2rem;
 	}
-	
-	.phss_supporters-photo {
-		margin: 0 5% 1rem 5%;
-		display: inline-flex;
-	}
 
-	div.phss_supporters-photo-img {
-		width: 6.25rem;
-		height: 7.375rem;
-		display: inline-block;
-		background-image: url('/phss/assets/img/content/phss_supporters-photos.png?v=1');
-	}
+	div.row:nth-child(3) { 
+		h5 {
+			width: 11.2rem;
+			margin: 0 auto 1.5rem auto;
+			padding: 0.5rem 0 0.75rem 0;
+			border-top: $border_1;
+			border-bottom: $border_1;
+			text-align: center;
+			font-weight: $font_weight_bold;
+		}
 
-	div#phss_supporters-photo-img-2 {
-		background-position: -100px 0;
-	}
+		ul {
+			width: 33rem;
+			margin: 0 auto;
 
-	div#phss_supporters-photo-img-3 {
-		background-position: -200px 0;
-	}
+			ul {
+				width: auto;
 
-	div#phss_supporters-photo-img-4 {
-		background-position: -300px 0;
+				li:first-of-type {
+					list-style-image: url('/phss/assets/img/content/phss_supporters-bullet-lt.png?v=1');
+					font-weight: $font_weight_normal;
+				}
+			}
+		}
 	}
 
 	div.row:nth-child(4) > div > div > ul {
@@ -743,22 +737,7 @@ section#section-phss_supporters {
 		vertical-align: top;
 		font-size: $font_size_base;
 	}
-
-	div.phss_supporters-photo ul {
-		li:first-of-type {
-			margin-bottom: 0.25rem;
-			list-style-type: none;
-			list-style-image: none;
-			font-weight: $font_weight_bold;
-			line-height: 1.5rem;
-		}
-
-		ul li:first-of-type {
-			list-style-image: url('/phss/assets/img/content/phss_supporters-bullet-lt.png?v=1');
-			font-weight: $font_weight_normal;
-		}
-	}
-
+	/*
 	div.row:nth-child(4) > div:nth-child(2) > div	{
 		width: 100px;
 		margin: 0 auto;
@@ -767,7 +746,7 @@ section#section-phss_supporters {
 		right: 2.25rem;
 		background-image: url('/phss/assets/img/content/phss_supporters-businesses.gif?v=1');
 	}
-
+ 
 	#phss_supporters-business-1 {
 		height: 113px;
 	}
@@ -783,7 +762,7 @@ section#section-phss_supporters {
 		top: 3rem;
 		background-position: 0 -157px;
 	}
-}
+ */}
 
 #content-form-contact, 
 #contact-confirmation_message, 
@@ -876,6 +855,10 @@ div#contact-confirmation_message {
 }
 
 @media (max-width: 1920px)	{
+	.navbar {
+		padding: 0 16rem;
+	}
+
 	nav {
 		li {
 			width: (99% / 3);
@@ -897,7 +880,7 @@ div#contact-confirmation_message {
 			}
 	
 			a#a-splash-learn_more {
-				top: 17.25rem;
+				top: 22.5rem;
 				left: 4rem;
 			}
 	
@@ -984,7 +967,7 @@ div#contact-confirmation_message {
 	div#section-splash {
 		.carousel {
 			a#a-splash-learn_more {
-				top: 15.25rem;
+				top: 20.5rem;
 			}
 
 			p#p-splash-pdsa {
@@ -992,7 +975,7 @@ div#contact-confirmation_message {
 				bottom: auto;
 				left: 29rem;
 				font-size: $font_size_base;
-				line-height: 1.75rem;
+				line-height: 1.75;
 			}
 
 			a#a-splash-pdsa_1 {
@@ -1053,10 +1036,6 @@ div#contact-confirmation_message {
 			margin-top: 0;
 		}
 
-		div.row:nth-child(3) > div > div > ul {
-			width: 33rem;
-		}
-
 		div.row:nth-child(3) > div:nth-child(2) > h5, 
 		div.row:nth-child(3) > div:nth-child(2) > div {
 			right: 4.25rem;
@@ -1069,6 +1048,10 @@ div#contact-confirmation_message {
 }
 
 @media (max-width: 1366px) {
+	.navbar {
+		padding: 0 7.5rem;
+	}
+
 	nav {
 		li {
 			width: (99% / 3);
@@ -1094,7 +1077,7 @@ div#contact-confirmation_message {
 			}
 			
 			a#a-splash-learn_more {
-				top: 19.5rem;
+				top: 25rem;
 				left: 4rem;
 			}
 
@@ -1103,7 +1086,7 @@ div#contact-confirmation_message {
 				bottom: auto;
 				left: 24.25rem;
 				font-size: $font_size_base_ipad;
-				line-height: 1.5rem;
+				line-height: 1.5;
 			}
 
 			a#a-splash-pdsa_1 {
@@ -1144,10 +1127,6 @@ div#contact-confirmation_message {
 		div.row:nth-child(4) > div:nth-child(2) > h5, 
 		div.row:nth-child(4) > div:nth-child(2) > div {
 			right: 0.6rem;
-		}
-
-		div.row:nth-child(3) > div > div > ul	{
-			width: 33rem;
 		}
 	}
 
@@ -1266,7 +1245,7 @@ div#contact-confirmation_message {
 	}	
 
 	.navbar {
-		padding: 0 2rem;
+		padding: 0 14.5rem;
 	}
 
 	nav {
@@ -1275,7 +1254,7 @@ div#contact-confirmation_message {
 		}
 
 		li {
-			width: (99% / 3);
+			width: (98% / 3);
 			border-right: none;
 			vertical-align: middle;
 		}
@@ -1307,7 +1286,7 @@ div#contact-confirmation_message {
 
 			a#a-splash-learn_more {
 				width: 7.2rem;
-				top: 17rem;
+				top: 18rem;
 				left: 2rem;
 			}
 	
@@ -1335,7 +1314,7 @@ div#contact-confirmation_message {
 
 	section#section-what_phss_does {		
 		p.p-what_phss_does {
-			width: 80%;
+			width: 55%;
 			margin: 0 auto;
 		}
 
@@ -1493,6 +1472,8 @@ div#contact-confirmation_message {
 	}
 
 	section#section-phss_supporters {
+		margin: 2rem 0 7rem 0;
+
 /* 		div.row:nth-child(3), 
 		div.row:nth-child(3) > div:nth-child(2) {
 			display: none;
@@ -1558,6 +1539,10 @@ div#contact-confirmation_message {
 		}
 	}
 
+	.navbar {
+		padding: 0 6rem;
+	}
+
 	nav {
 		ul {
 			margin-bottom: 0;
@@ -1595,7 +1580,7 @@ div#contact-confirmation_message {
 			}
 
 			a#a-splash-learn_more {
-				top: 10.75rem;
+				top: 13.75rem;
 			}
 
 			div.carousel-item a {
@@ -1812,7 +1797,15 @@ div#contact-confirmation_message {
 			}
 
 			div#splash-item-desc {
-				margin-bottom: 13.5rem;
+				margin-bottom: 18.25rem;
+				
+				div	{
+					top: 9.5rem;
+				}
+			}
+			
+			div#splash-item-events-desc	{
+				margin-bottom: 12.25rem;
 				
 				div	{
 					top: 9.5rem;
@@ -1839,7 +1832,7 @@ div#contact-confirmation_message {
 			}
 
 			a#a-splash-pdsa_1 {
-				top: 10rem;
+				top: 9rem;
 				left: 6.2rem;
 				display: block;
 			}
@@ -1870,6 +1863,11 @@ div#contact-confirmation_message {
 		p#p-what_phss_does-desc	{
 			width: 81%;
 		}
+
+		p.p-what_phss_does {
+			width: 80%;
+		}
+
 
 		div.row:nth-child(4)	{
 			div:first-of-type {
@@ -1927,6 +1925,7 @@ div#contact-confirmation_message {
 	}
 
 	section#section-events {
+		margin-top: 1rem;
 		margin-bottom: 7rem;
 
 		h3 {
@@ -2130,7 +2129,12 @@ div#contact-confirmation_message {
 		}
 
 		div.row:nth-child(3) > div > div > ul {
-			width: 22.1rem;
+			width: 17rem;
+			padding: 0;
+
+			ul {
+				padding-left: 1.75rem;
+			}
 		}
 	}
 
@@ -2178,7 +2182,11 @@ div#contact-confirmation_message {
 	div#section-splash {
 		.carousel {
 			div#splash-item-desc	{
-				margin-bottom: 14.5rem;
+				margin-bottom: 19.25rem;
+			}
+
+			div#splash-item-events-desc	{
+				margin-bottom: 13rem;
 			}
 	
 			p#p-splash	{
@@ -2296,9 +2304,9 @@ div#contact-confirmation_message {
 			margin-left: 5.08rem;
 		}
 
-		div.row:nth-child(3) > div > div > ul {
+		/* div.row:nth-child(3) > div > div > ul {
 			width: 18.75rem;
-		}
+		} */
 	}
 
 	#contact-confirmation_message {
@@ -2337,7 +2345,11 @@ div#contact-confirmation_message {
 			}
 
 			div#splash-item-desc {
-				margin-bottom: 15rem;
+				margin-bottom: 19.5rem;
+			}
+						
+			div#splash-item-events-desc	{
+				margin-bottom: 13rem;
 			}
 
 			a#a-splash-learn_more {
@@ -2450,9 +2462,9 @@ div#contact-confirmation_message {
 			margin-left: 4.58rem;
 		}
 
-		div.row:nth-child(3) > div > div > ul {
-			width: 18.75rem;
-		}
+		/* div.row:nth-child(3) > div > div > ul {
+			width: 17rem;
+		} */
 	}
 }
 
@@ -2477,7 +2489,15 @@ div#contact-confirmation_message {
 			}
 
 			div#splash-item-desc {
-				margin-bottom: 23rem;
+				margin-bottom: 24.5rem;
+			}
+			
+			div#splash-item-events-desc	{
+				margin-bottom: 14rem;
+
+				div {
+					top: 8.5rem;
+				}
 			}
 
 			div.carousel-item	{
@@ -2489,11 +2509,12 @@ div#contact-confirmation_message {
 			}
 
 			a#a-splash-learn_more {
-				top: 17.5rem;
+				top: 19rem;
 				left: 6.5rem;
 			}
 
 			a#a-splash-pdsa_1 {
+				top: 9.5rem;
 				left: 3.75rem;
 			}
 		}
@@ -2590,7 +2611,7 @@ div#contact-confirmation_message {
 		}
 
 		div.row:nth-child(3) > div > div > ul {
-			width: 16.25rem;
+			width: 14rem;
 		}
 	}
 }
